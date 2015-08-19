@@ -520,8 +520,14 @@
 
     .contact {
       .contact-container {
-        h1 {
-          line-height: 0px
+        .contact-text {
+          h1, h2 {
+            text-align: center;
+          }
+
+          h1 {
+            line-height: 0px
+          }
         }
 
         .contact-methods {

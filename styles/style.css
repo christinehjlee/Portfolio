@@ -392,7 +392,9 @@ html {
           text-align: left; }
           .portfolio-home .content-container .other-works .other-works-container .project .project-description button:hover {
             color: #2E3839; } }
-.portfolio-home .content-container .contact .contact-container h1 {
+.portfolio-home .content-container .contact .contact-container .contact-text h1, .portfolio-home .content-container .contact .contact-container .contact-text h2 {
+  text-align: center; }
+.portfolio-home .content-container .contact .contact-container .contact-text h1 {
   line-height: 0px; }
 .portfolio-home .content-container .contact .contact-container .contact-methods {
   width: 100%;
