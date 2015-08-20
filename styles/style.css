@@ -819,14 +819,21 @@ body:before {
       color: #E150A5;
       cursor: pointer; }
   @media screen and (min-width: 600px) {
-    .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description {
+    .portfolio-case-studies .content-container .case-writeup .recent-project-container {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%; }
-      .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description:last-child {
+      width: 100%; }
+      .portfolio-case-studies .content-container .case-writeup .recent-project-container:last-child {
         margin-right: 0; }
+      .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%; }
+        .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description p:last-child {
+          margin-right: 0; }
       .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description h2 {
         line-height: 0; }
       .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description img {
@@ -837,15 +844,15 @@ body:before {
         margin-left: 17.05961%; }
         .portfolio-case-studies .content-container .case-writeup .recent-project-container .recent-project-description img:last-child {
           margin-right: 0; }
-    .portfolio-case-studies .content-container .case-writeup .recent-project-container button {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%;
-      margin-left: 59.70863%;
-      padding: 15px 50px; }
-      .portfolio-case-studies .content-container .case-writeup .recent-project-container button:last-child {
-        margin-right: 0; }
+      .portfolio-case-studies .content-container .case-writeup .recent-project-container button {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%;
+        margin-left: 59.70863%;
+        padding: 15px 50px; }
+        .portfolio-case-studies .content-container .case-writeup .recent-project-container button:last-child {
+          margin-right: 0; }
     .portfolio-case-studies .content-container .case-writeup .personas {
       float: left;
       display: block;
