@@ -459,7 +459,8 @@ body:before {
     height: 3px;
     background-color: #0FA3B1; }
   .case-studies header {
-    padding: 16px 1em 15px 1em; }
+    padding: 16px 1em 15px 1em;
+    background: #FFFFFF; }
     .case-studies header .title {
       font-family: "Petrona", Georgia, serif;
       font-size: 21px;
