@@ -421,8 +421,18 @@
         }
 
         .bio-tldr {
-          @include span-columns(6);
+          @include span-columns(8);
           @include shift(4);
+
+          h5 {
+            @include span-columns(1.5 of 8);
+            text-align: right;
+            line-height: 2px;
+          }
+
+          p {
+            @include span-columns(5.5 of 8);
+          }
         }
       }
     }
