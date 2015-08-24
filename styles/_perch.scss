@@ -8,7 +8,7 @@
       font-size: 38px;
       font-weight: 100;
       line-height: 43px;
-      color: $teal;
+      color: $perch;
     }
 
     h2, h5, p {
@@ -39,7 +39,7 @@
     }
 
     img {
-      width: 50%;
+      width: 100%;
     }
 
     section {
@@ -62,14 +62,14 @@
       line-height: 0px;
       letter-spacing: 1.5px;
       text-align: center;
-      color: $teal;
+      color: $perch;
 
       .line {
         position: absolute;
         width: 100%;
         top: 34%;
 
-        border-bottom: 1px solid $teal;
+        border-bottom: 1px solid $perch;
       }
 
       .box-container {
@@ -101,8 +101,6 @@
             margin-right: -50%;
             min-width: 100%;
             transform: translate(-50%, -50%);
-
-            border: 1px solid $teal;
           }
         }
 
@@ -121,7 +119,7 @@
 
           background: -webkit-gradient(linear, 0 0, 100% 0, from($lightest-gray), to($lightest-gray), color-stop(50%, $light-gray));
 
-          border-bottom: 0px solid $teal;
+          border-bottom: 0px solid $perch;
         }
 
         .box-container {
@@ -140,12 +138,16 @@
             width: 95%;
 
             border: 1px solid $lightest_gray;
+
+            span {
+              border: 0px solid $perch;
+            }
           }
 
           .box-left, .box-right {
             z-index: 1;
 
-            border: 1px solid $teal;
+            border: 1px solid $perch;
             background: $white;
           }
 
@@ -184,8 +186,6 @@
       margin: 0 auto;
       float: none;
 
-      background-image: url("../images/nico/nico-bg.png");
-
       h1 {
         text-align: center;
       }
@@ -198,9 +198,11 @@
         color: $white;
       }
 
+      background-image: url("../images/perch/bg.png");
+
       @include media ($desktop) {
         .case-header {
-          padding-top: 60px;
+          padding-top: 110px;
 
           .logo {
             @include span-columns(4);
@@ -208,7 +210,7 @@
           }
 
           img {
-            @include span-columns(6);
+            @include span-columns(10);
             @include shift(1);
           }
 
@@ -355,7 +357,7 @@
     }
 
     .personas {
-      margin: -40px 0 70px 0;
+      margin: -33px 0 70px 0;
     }
 
     .other-works {
@@ -407,7 +409,7 @@
 
               button {
                 &:hover {
-                  color: $black;
+                  color: $magenta;
                 }
               }
             }
