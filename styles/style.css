@@ -32,10 +32,10 @@ body:before {
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 0.2em;
     background-color: #0FA3B1; }
   .portfolio-home header {
-    padding: 16px 1em 15px 1em;
+    padding: 1em;
     background: #FFFFFF; }
     .portfolio-home header .title {
       font-family: "Petrona", Georgia, serif;
@@ -306,7 +306,8 @@ body:before {
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-left: 25.58941%; }
+        margin-left: 25.58941%;
+        margin-top: 1.2em; }
         .portfolio-home .content-container .intro .intro-container:last-child {
           margin-right: 0; } }
   .portfolio-home .content-container .recent-work {
