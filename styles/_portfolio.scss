@@ -9,13 +9,13 @@
     left: 0;
     right: 0;
 
-    height: 3px;
+    height: 0.2em;
 
     background-color: $teal;
   }
 
   header {
-    padding: 16px 1em 15px 1em;
+    padding: 1em;
 
     background: $white;
 
@@ -399,6 +399,8 @@
         .intro-container {
           @include span-columns(6);
           @include shift (3);
+
+          margin-top: 1.2em;
         }
       }
     }
