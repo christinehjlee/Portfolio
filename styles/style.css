@@ -439,6 +439,8 @@ body:before {
       margin-right: 0; }
       .portfolio-home .content-container .contact .contact-container .contact-text:last-child {
         margin-right: 0; }
+      .portfolio-home .content-container .contact .contact-container .contact-text h1, .portfolio-home .content-container .contact .contact-container .contact-text h2 {
+        text-align: left; }
     .portfolio-home .content-container .contact .contact-container .contact-methods {
       float: left;
       display: block;

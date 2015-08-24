@@ -551,6 +551,10 @@
           .contact-text {
             @include span-columns(4 of 12);
             @include omega();
+
+            h1, h2 {
+              text-align: left;
+            }
           }
 
           .contact-methods {
