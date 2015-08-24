@@ -288,17 +288,21 @@
           width: 95%;
 
           background: $white;
-          border: 1px solid $teal;
 
+          line-height: 1.2em;
           text-align: center;
 
           span {
             position: absolute;
             margin: 0;
+            padding: 0.5em;
             top: 50%;
             left: 50%;
             margin-right: -50%;
-            transform: translate(-50%, -50%)
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+
+            border: 1px solid $teal;
           }
         }
 
@@ -310,6 +314,7 @@
 
       @include media ($desktop) {
         font-size: 28px;
+        line-height: 0px;
 
         .line {
           top: 50%;
@@ -531,13 +536,13 @@
           }
 
           h1 {
-            line-height: 0px
+            line-height: 0px;
           }
         }
 
         .contact-methods {
           width: 100%;
-          margin: 0 auto;
+          margin: 3em auto 0 auto;
 
           a {
             padding: 27px;

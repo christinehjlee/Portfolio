@@ -286,17 +286,21 @@
           width: 95%;
 
           background: $white;
-          border: 1px solid $teal;
 
+          line-height: 1.2em;
           text-align: center;
 
           span {
             position: absolute;
             margin: 0;
+            padding: 0.5em;
             top: 50%;
             left: 50%;
             margin-right: -50%;
-            transform: translate(-50%, -50%)
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+
+            border: 1px solid $teal;
           }
         }
 
@@ -334,6 +338,10 @@
             width: 95%;
 
             border: 1px solid $lightest_gray;
+
+            span {
+              border: 0px solid $teal;
+            }
           }
 
           .box-left, .box-right {
