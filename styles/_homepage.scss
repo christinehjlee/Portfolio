@@ -1,4 +1,4 @@
-.portfolio-home {
+.homepage {
   margin: 0 0;
 
   /////* HEADER */////
@@ -341,6 +341,10 @@
             width: 95%;
 
             border: 1px solid $lightest_gray;
+
+            span {
+              border: 0px solid $teal;
+            }
           }
 
           .box-left, .box-right {
