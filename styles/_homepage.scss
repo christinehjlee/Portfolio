@@ -451,7 +451,7 @@
             @include span-columns(6 of 12);
           }
 
-          .recent-project-description {
+          .recent-project-description, button {
             @include span-columns(5 of 12);
             @include omega();
             @include shift(1);
@@ -462,9 +462,6 @@
           }
 
           button {
-            @include span-columns(5 of 12);
-            @include shift(7);
-
             padding: 15px 50px;
           }
         }
