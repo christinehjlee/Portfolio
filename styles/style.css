@@ -334,26 +334,19 @@ html {
           width: 48.82117%; }
           .homepage .content-container .recent-work .recent-project-container img:last-child {
             margin-right: 0; }
-        .homepage .content-container .recent-work .recent-project-container .recent-project-description {
+        .homepage .content-container .recent-work .recent-project-container .recent-project-description, .homepage .content-container .recent-work .recent-project-container button {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 40.29137%;
           margin-right: 0;
           margin-left: 8.5298%; }
-          .homepage .content-container .recent-work .recent-project-container .recent-project-description:last-child {
+          .homepage .content-container .recent-work .recent-project-container .recent-project-description:last-child, .homepage .content-container .recent-work .recent-project-container button:last-child {
             margin-right: 0; }
-          .homepage .content-container .recent-work .recent-project-container .recent-project-description h2 {
+          .homepage .content-container .recent-work .recent-project-container .recent-project-description h2, .homepage .content-container .recent-work .recent-project-container button h2 {
             line-height: 0; }
         .homepage .content-container .recent-work .recent-project-container button {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-left: 59.70863%;
-          padding: 15px 50px; }
-          .homepage .content-container .recent-work .recent-project-container button:last-child {
-            margin-right: 0; } }
+          padding: 15px 50px; } }
   .homepage .content-container .other-works {
     display: block; }
     .homepage .content-container .other-works::after {
