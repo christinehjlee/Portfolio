@@ -538,7 +538,6 @@
 
     .contact {
       @include row();
-
       .contact-container {
         .contact-text {
           h1, h2 {
@@ -558,7 +557,6 @@
             padding: 27px;
 
             text-decoration: none;
-
             text-align: center;
           }
 
