@@ -67,6 +67,11 @@
         position: absolute;
         width: 100%;
         top: 34%;
+<<<<<<< HEAD
+=======
+
+        border-bottom: 1px solid $nico;
+>>>>>>> Completed gh-pages
       }
 
       .box-container {
@@ -176,6 +181,7 @@
       }
     }
 
+<<<<<<< HEAD
     .coming-soon {
       font-family: $sans-serif;
       font-size: 16px;
@@ -183,6 +189,8 @@
       color: $dark-gray;
     }
 
+=======
+>>>>>>> Completed gh-pages
     /////* SECTIONS */////
 
     .case-overview {
@@ -192,7 +200,11 @@
       margin: 0 auto;
       float: none;
 
+<<<<<<< HEAD
       background-image: url("../images/nico/nico-bg.jpg");
+=======
+      background-image: url("../images/nico/nico-bg.png");
+>>>>>>> Completed gh-pages
 
       h1 {
         text-align: center;
@@ -423,5 +435,57 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+
+    .contact {
+      .contact-container {
+        .contact-text {
+          h1, h2 {
+            text-align: center;
+          }
+
+          h1 {
+            line-height: 0px;
+            color: $teal;
+          }
+        }
+
+        .contact-methods {
+          width: 100%;
+          margin: 0 auto;
+
+          a {
+            padding: 27px;
+
+            text-decoration: none;
+          }
+
+          img {
+            width: 40px;
+          }
+        }
+
+        @include media ($desktop) {
+          @include span-columns(12);
+
+          .contact-text {
+            @include span-columns(4 of 12);
+            @include omega();
+
+            h1, h2 {
+              text-align: left;
+            }
+          }
+
+          .contact-methods {
+            @include span-columns(3 of 12);
+            @include shift(5);
+            @include omega();
+          }
+        }
+      }
+    }
+>>>>>>> Completed gh-pages
   }
 }

@@ -491,6 +491,7 @@
             padding: 27px;
 
             text-decoration: none;
+<<<<<<< HEAD
             text-align: center;
           }
 
@@ -503,6 +504,12 @@
             &:hover {
               color: $teal;
             }
+=======
+          }
+
+          img {
+            width: 40px;
+>>>>>>> Completed gh-pages
           }
         }
 
@@ -519,8 +526,13 @@
           }
 
           .contact-methods {
+<<<<<<< HEAD
             @include span-columns(6 of 12);
             @include shift(2);
+=======
+            @include span-columns(3 of 12);
+            @include shift(5);
+>>>>>>> Completed gh-pages
             @include omega();
           }
         }
