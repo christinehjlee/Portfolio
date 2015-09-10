@@ -428,18 +428,25 @@
 
         }
 
-        .bio-tldr {
-          @include span-columns(8);
-          @include shift(4);
+        .bio-container {
+          @include span-columns(10);
+          @include shift(1);
 
-          h5 {
-            @include span-columns(1.5 of 8);
-            text-align: right;
-            line-height: 2px;
+          img {
+            @include span-columns(2 of 10);
           }
 
-          p {
-            @include span-columns(5.5 of 8);
+          .bio-tldr {
+            h5 {
+              @include span-columns(1.5 of 10);
+
+              text-align: right;
+              line-height: 2px;
+            }
+
+            p {
+              @include span-columns(5.5 of 10);
+            }
           }
         }
       }
@@ -527,7 +534,7 @@
       }
     }
 
-    .timeline {
+    .story {
       .event-container {
         @include row();
 
@@ -580,6 +587,10 @@
     }
 
     .contact {
+      @include row ();
+
+      clear: both;
+
       .contact-container {
         .contact-text {
           h1, h2 {
