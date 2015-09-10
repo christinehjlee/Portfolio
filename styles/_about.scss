@@ -432,8 +432,11 @@
           @include span-columns(10);
           @include shift(1);
 
-          img {
-            @include span-columns(2 of 10);
+          .bio-pic {
+            @include span-columns(3 of 10);
+
+            margin-top: 3%;
+            height: 17em;
           }
 
           .bio-tldr {
@@ -539,6 +542,8 @@
         @include row();
 
         .circle {
+          position: relative;
+          z-index: 1000;
           width: 15px;
           height: 15px;
 
@@ -564,9 +569,37 @@
           }
 
           a {
-            color: $magenta;
+            color: $teal;
             text-decoration: none;
           }
+        }
+      }
+
+      .event-container:first-child {
+        .circle {
+          margin-top: 0%;
+        }
+
+        h6 {
+          margin-top: 0%;
+        }
+      }
+
+      .event-container:nth-child(9) {
+        padding-bottom: 3%;
+      }
+
+      .event-container:last-child {
+        .circle {
+          margin-top: 0%;
+        }
+
+        .event {
+          border: 0px solid white;
+        }
+
+        h6 {
+          margin: 0 0 2.4em 0;
         }
       }
 
