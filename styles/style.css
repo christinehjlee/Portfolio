@@ -1271,29 +1271,36 @@ html {
         .about .content-container .intro-container .intro-header .project-tags {
           margin-top: 1em;
           color: #BABABA; }
-      .about .content-container .intro-container .bio-tldr {
+      .about .content-container .intro-container .bio-container {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-left: 34.11922%; }
-        .about .content-container .intro-container .bio-tldr:last-child {
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        .about .content-container .intro-container .bio-container:last-child {
           margin-right: 0; }
-        .about .content-container .intro-container .bio-tldr h5 {
+        .about .content-container .intro-container .bio-container img {
           float: left;
           display: block;
-          margin-right: 3.57866%;
-          width: 15.84234%;
+          margin-right: 2.84259%;
+          width: 17.72593%; }
+          .about .content-container .intro-container .bio-container img:last-child {
+            margin-right: 0; }
+        .about .content-container .intro-container .bio-container .bio-tldr h5 {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 12.5838%;
           text-align: right;
           line-height: 2px; }
-          .about .content-container .intro-container .bio-tldr h5:last-child {
+          .about .content-container .intro-container .bio-container .bio-tldr h5:last-child {
             margin-right: 0; }
-        .about .content-container .intro-container .bio-tldr p {
+        .about .content-container .intro-container .bio-container .bio-tldr p {
           float: left;
           display: block;
-          margin-right: 3.57866%;
-          width: 67.63167%; }
-          .about .content-container .intro-container .bio-tldr p:last-child {
+          margin-right: 2.84259%;
+          width: 53.72084%; }
+          .about .content-container .intro-container .bio-container .bio-tldr p:last-child {
             margin-right: 0; } }
   .about .content-container .new-section {
     display: block; }
@@ -1366,95 +1373,102 @@ html {
           padding: 15px 50px; }
           .about .content-container .new-section .section-container button:last-child {
             margin-right: 0; } }
-  .about .content-container .timeline .event-container {
+  .about .content-container .story .event-container {
     display: block; }
-    .about .content-container .timeline .event-container::after {
+    .about .content-container .story .event-container::after {
       clear: both;
       content: "";
       display: table; }
-    .about .content-container .timeline .event-container .circle {
+    .about .content-container .story .event-container .circle {
       width: 15px;
       height: 15px;
       border: 1px solid #0FA3B1;
       border-radius: 50%;
       background: #FFFFFF; }
-    .about .content-container .timeline .event-container .event {
+    .about .content-container .story .event-container .event {
       padding-left: 4%;
       margin-left: -3.1%;
       border-left: 1px solid #BABABA; }
-      .about .content-container .timeline .event-container .event h6 {
+      .about .content-container .story .event-container .event h6 {
         font-family: "Muli", Helvetica, sans-serif;
         font-size: 14px;
         color: #2E3839;
         letter-spacing: 0.5px; }
-      .about .content-container .timeline .event-container .event p {
+      .about .content-container .story .event-container .event p {
         margin-top: -27px; }
-      .about .content-container .timeline .event-container .event a {
+      .about .content-container .story .event-container .event a {
         color: #E150A5;
         text-decoration: none; }
   @media screen and (min-width: 600px) {
-    .about .content-container .timeline {
+    .about .content-container .story {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      .about .content-container .timeline:last-child {
+      .about .content-container .story:last-child {
         margin-right: 0; }
-      .about .content-container .timeline .circle {
+      .about .content-container .story .circle {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 6.17215%;
         margin-left: 25.58941%;
         margin-top: 3.2%; }
-        .about .content-container .timeline .circle:last-child {
+        .about .content-container .story .circle:last-child {
           margin-right: 0; }
-      .about .content-container .timeline .event {
+      .about .content-container .story .event {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .about .content-container .timeline .event:last-child {
+        .about .content-container .story .event:last-child {
           margin-right: 0; } }
-  .about .content-container .contact .contact-container .contact-text h1, .about .content-container .contact .contact-container .contact-text h2 {
-    text-align: center; }
-  .about .content-container .contact .contact-container .contact-text h1 {
-    line-height: 0px; }
-  .about .content-container .contact .contact-container .contact-methods {
-    width: 100%;
-    margin: 0 auto; }
-    .about .content-container .contact .contact-container .contact-methods a {
-      padding: 27px;
-      text-decoration: none; }
-    .about .content-container .contact .contact-container .contact-methods img {
-      width: 40px; }
-  @media screen and (min-width: 600px) {
-    .about .content-container .contact .contact-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .about .content-container .contact .contact-container:last-child {
-        margin-right: 0; }
-      .about .content-container .contact .contact-container .contact-text {
+  .about .content-container .contact {
+    display: block;
+    clear: both; }
+    .about .content-container .contact::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .about .content-container .contact .contact-container .contact-text h1, .about .content-container .contact .contact-container .contact-text h2 {
+      text-align: center; }
+    .about .content-container .contact .contact-container .contact-text h1 {
+      line-height: 0px; }
+    .about .content-container .contact .contact-container .contact-methods {
+      width: 100%;
+      margin: 0 auto; }
+      .about .content-container .contact .contact-container .contact-methods a {
+        padding: 27px;
+        text-decoration: none; }
+      .about .content-container .contact .contact-container .contact-methods img {
+        width: 40px; }
+    @media screen and (min-width: 600px) {
+      .about .content-container .contact .contact-container {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
-        margin-right: 0; }
-        .about .content-container .contact .contact-container .contact-text:last-child {
+        width: 100%; }
+        .about .content-container .contact .contact-container:last-child {
           margin-right: 0; }
-        .about .content-container .contact .contact-container .contact-text h1, .about .content-container .contact .contact-container .contact-text h2 {
-          text-align: left; }
-      .about .content-container .contact .contact-container .contact-methods {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%;
-        margin-left: 42.64902%;
-        margin-right: 0; }
-        .about .content-container .contact .contact-container .contact-methods:last-child {
-          margin-right: 0; } }
+        .about .content-container .contact .contact-container .contact-text {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-right: 0; }
+          .about .content-container .contact .contact-container .contact-text:last-child {
+            margin-right: 0; }
+          .about .content-container .contact .contact-container .contact-text h1, .about .content-container .contact .contact-container .contact-text h2 {
+            text-align: left; }
+        .about .content-container .contact .contact-container .contact-methods {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%;
+          margin-left: 42.64902%;
+          margin-right: 0; }
+          .about .content-container .contact .contact-container .contact-methods:last-child {
+            margin-right: 0; } }
 
 .perch .content-container h1 {
   font-family: "Petrona", Georgia, serif;
