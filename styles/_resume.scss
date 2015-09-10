@@ -204,6 +204,7 @@
 
   .content-container {
     h1 {
+      margin: 6.4% 0% 0% 0%;
       font-family: $serif;
       font-size: 38px;
       font-weight: 100;
@@ -415,45 +416,6 @@
 
     .resume-content {
       @include row();
-
-      .resume-header {
-        @include span-columns(8);
-        @include shift(2);
-
-        .resume-top-bar {
-          margin-bottom: 0.8em;
-          height: 0.2em;
-
-          background-color: $teal;
-        }
-
-        .name {
-          @include span-columns(2 of 8);
-
-          margin-top: 13px;
-          font-family: $serif;
-          font-size: 28px;
-          line-height: 24px;
-          letter-spacing: 1.5px;
-          color: $light-gray;
-
-          .split {
-            color: $teal;
-          }
-        }
-
-        .resume-contact {
-          @include span-columns(3 of 8);
-          @include shift(3);
-
-          p {
-            span {
-              color: $light-gray;
-            }
-            color: $dark-gray;
-          }
-        }
-      }
 
       .right-container {
         ul {
