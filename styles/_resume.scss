@@ -491,10 +491,18 @@
             padding: 27px;
 
             text-decoration: none;
+            text-align: center;
           }
 
-          img {
-            width: 40px;
+          .contact-icon {
+            @include omega();
+
+            color: $light-gray;
+            font-size: 37px;
+
+            &:hover {
+              color: $teal;
+            }
           }
         }
 
@@ -511,8 +519,8 @@
           }
 
           .contact-methods {
-            @include span-columns(3 of 12);
-            @include shift(5);
+            @include span-columns(4 of 12);
+            @include shift(4);
             @include omega();
           }
         }
