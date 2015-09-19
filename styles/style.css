@@ -1605,8 +1605,7 @@ you can use the generic selector below, but it's slower:
     height: 3px;
     background-color: #0FA3B1; }
   .case-studies header {
-    padding: 16px 1em 15px 1em;
-    background: #FFFFFF; }
+    padding: 16px 1em 15px 1em; }
     .case-studies header .title {
       font-family: "Petrona", Georgia, serif;
       font-size: 21px;
@@ -1692,7 +1691,7 @@ you can use the generic selector below, but it's slower:
       left: 0;
       right: 0;
       height: 1px;
-      background-color: #EAEAEA; }
+      background-color: #6C7074; }
     @media screen and (min-width: 600px) {
       .case-studies header {
         float: left;
@@ -2090,15 +2089,21 @@ you can use the generic selector below, but it's slower:
   .case-studies .content-container .contact .contact-container .contact-text h1, .case-studies .content-container .contact .contact-container .contact-text h2 {
     text-align: center; }
   .case-studies .content-container .contact .contact-container .contact-text h1 {
-    line-height: 0px; }
+    line-height: 0px;
+    color: #0FA3B1; }
   .case-studies .content-container .contact .contact-container .contact-methods {
     width: 100%;
-    margin: 0 auto; }
+    margin: 3em auto 0 auto; }
     .case-studies .content-container .contact .contact-container .contact-methods a {
       padding: 27px;
-      text-decoration: none; }
-    .case-studies .content-container .contact .contact-container .contact-methods img {
-      width: 40px; }
+      text-decoration: none;
+      text-align: center; }
+    .case-studies .content-container .contact .contact-container .contact-methods .contact-icon {
+      margin-right: 0;
+      color: #BABABA;
+      font-size: 37px; }
+      .case-studies .content-container .contact .contact-container .contact-methods .contact-icon:hover {
+        color: #0FA3B1; }
   @media screen and (min-width: 600px) {
     .case-studies .content-container .contact .contact-container {
       float: left;
@@ -2121,8 +2126,8 @@ you can use the generic selector below, but it's slower:
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 23.23176%;
-        margin-left: 42.64902%;
+        width: 31.76157%;
+        margin-left: 34.11922%;
         margin-right: 0; }
         .case-studies .content-container .contact .contact-container .contact-methods:last-child {
           margin-right: 0; } }

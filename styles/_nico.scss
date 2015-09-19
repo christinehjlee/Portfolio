@@ -67,8 +67,6 @@
         position: absolute;
         width: 100%;
         top: 34%;
-
-        border-bottom: 1px solid $nico;
       }
 
       .box-container {
@@ -414,63 +412,6 @@
                 }
               }
             }
-          }
-        }
-      }
-    }
-
-    .contact {
-      .contact-container {
-        .contact-text {
-          h1, h2 {
-            text-align: center;
-          }
-
-          h1 {
-            line-height: 0px;
-            color: $teal;
-          }
-        }
-
-        .contact-methods {
-          width: 100%;
-          margin: 3em auto 0 auto;
-
-          a {
-            padding: 27px;
-
-            text-decoration: none;
-            text-align: center;
-          }
-
-          .contact-icon {
-            @include omega();
-
-            color: $light-gray;
-            font-size: 37px;
-
-            &:hover {
-              color: $teal;
-            }
-          }
-        }
-
-        @include media ($desktop) {
-          @include span-columns(12);
-
-          .contact-text {
-            @include span-columns(4 of 12);
-            @include omega();
-
-            h1, h2 {
-              text-align: left;
-            }
-          }
-
-          .contact-methods {
-            @include span-columns(4 of 12);
-            @include shift(4);
-            @include omega();
           }
         }
       }
