@@ -16,8 +16,6 @@
   header {
     padding: 16px 1em 15px 1em;
 
-    background: $white;
-
     .title {
       font-family: $serif;
       font-size: 21px;
@@ -146,7 +144,7 @@
 
       height: 1px;
 
-      background-color: $lightest-gray;
+      background-color: $header-gray;
     }
 
     @include media ($desktop) {
@@ -626,22 +624,31 @@
           }
 
           h1 {
-            line-height: 0px
+            line-height: 0px;
+            color: $teal;
           }
         }
 
         .contact-methods {
           width: 100%;
-          margin: 0 auto;
+          margin: 3em auto 0 auto;
 
           a {
             padding: 27px;
 
             text-decoration: none;
+            text-align: center;
           }
 
-          img {
-            width: 40px;
+          .contact-icon {
+            @include omega();
+
+            color: $light-gray;
+            font-size: 37px;
+
+            &:hover {
+              color: $teal;
+            }
           }
         }
 
@@ -658,8 +665,8 @@
           }
 
           .contact-methods {
-            @include span-columns(3 of 12);
-            @include shift(5);
+            @include span-columns(4 of 12);
+            @include shift(4);
             @include omega();
           }
         }
