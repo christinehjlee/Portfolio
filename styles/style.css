@@ -1418,6 +1418,11 @@ you can use the generic selector below, but it's slower:
     @media screen and (min-width: 600px) {
       .homepage .content-container .project-tags {
         line-height: 24px; } }
+  .homepage .content-container .coming-soon {
+    font-family: "Muli", Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #7F7F7F; }
   .homepage .content-container .intro {
     display: block;
     padding: 20px 0;
@@ -1857,6 +1862,11 @@ you can use the generic selector below, but it's slower:
     @media screen and (min-width: 600px) {
       .case-studies .content-container .project-tags {
         line-height: 24px; } }
+  .case-studies .content-container .coming-soon {
+    font-family: "Muli", Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #7F7F7F; }
   .case-studies .content-container .case-overview {
     display: block;
     padding: 20px 0 70px 0;
@@ -2059,6 +2069,8 @@ you can use the generic selector below, but it's slower:
       display: table; }
     .case-studies .content-container .other-works .project {
       margin-bottom: 60px; }
+      .case-studies .content-container .other-works .project .project-description h2 {
+        text-align: left; }
       .case-studies .content-container .other-works .project .project-description button {
         width: 100%;
         padding: 15px 70px;
@@ -2587,6 +2599,8 @@ you can use the generic selector below, but it's slower:
     margin-top: 0%; }
   .about .content-container .story .event-container:first-child h6 {
     margin-top: 0%; }
+  .about .content-container .story .event-container:nth-child(8) .event {
+    padding-bottom: 2%; }
   .about .content-container .story .event-container:nth-child(9) {
     padding-bottom: 3%; }
   .about .content-container .story .event-container:last-child .circle {
