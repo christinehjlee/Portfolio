@@ -677,8 +677,8 @@
           }
 
           .contact-methods {
-            @include span-columns(4 of 12);
-            @include shift(4);
+            @include span-columns(6 of 12);
+            @include shift(2);
             @include omega();
           }
         }
