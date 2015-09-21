@@ -16,11 +16,6 @@
   header {
     padding: 16px 1em 15px 1em;
 
-<<<<<<< HEAD
-=======
-    background: $white;
-
->>>>>>> Completed gh-pages
     .title {
       font-family: $serif;
       font-size: 21px;
@@ -149,11 +144,7 @@
 
       height: 1px;
 
-<<<<<<< HEAD
       background-color: $header-gray;
-=======
-      background-color: $lightest-gray;
->>>>>>> Completed gh-pages
     }
 
     @include media ($desktop) {
@@ -225,10 +216,7 @@
       font-size: 21px;
       line-height: 31px;
       color: $black;
-<<<<<<< HEAD
       text-align: center;
-=======
->>>>>>> Completed gh-pages
     }
 
     h5 {
@@ -388,7 +376,6 @@
       }
     }
 
-<<<<<<< HEAD
     .coming-soon {
       font-family: $sans-serif;
       font-size: 16px;
@@ -396,8 +383,6 @@
       color: $dark-gray;
     }
 
-=======
->>>>>>> Completed gh-pages
     /////* SECTIONS */////
 
     .case-overview {
@@ -407,11 +392,7 @@
       margin: 0 auto;
       float: none;
 
-<<<<<<< HEAD
       background-image: url("../images/nico/nico-bg.jpg");
-=======
-      background-image: url("../images/nico/nico-bg.png");
->>>>>>> Completed gh-pages
 
       h1 {
         text-align: center;
@@ -439,33 +420,23 @@
             @include shift(1);
           }
 
-<<<<<<< HEAD
           .project-tags {
-=======
-          .project-tags, .project-about {
->>>>>>> Completed gh-pages
             @include span-columns(6);
             @include shift(3);
 
+            margin-top: 1em;
+
+            color: $light-gray;
             font-size: 18px;
             text-align: center;
           }
 
-<<<<<<< HEAD
           .project-about {
             @include span-columns(8);
             @include shift(2);
 
             font-size: 21px;
             text-align: center;
-          }
-
-=======
->>>>>>> Completed gh-pages
-          .project-tags {
-            margin-top: 1em;
-
-            color: $light-gray;
           }
 
         }
@@ -584,7 +555,6 @@
             }
           }
 
-<<<<<<< HEAD
           .persona-tldr {
             margin-bottom: 40px;
 
@@ -593,8 +563,6 @@
             }
           }
 
-=======
->>>>>>> Completed gh-pages
           .catarina {
             @include span-columns(5 of 12);
           }
@@ -618,13 +586,10 @@
         margin-bottom: 60px;
 
         .project-description {
-<<<<<<< HEAD
           h2 {
             text-align: left;
           }
 
-=======
->>>>>>> Completed gh-pages
           button {
             width: 100%;
             padding: 15px 70px;
@@ -684,28 +649,19 @@
           }
 
           h1 {
-<<<<<<< HEAD
             line-height: 0px;
             color: $teal;
-=======
-            line-height: 0px
->>>>>>> Completed gh-pages
           }
         }
 
         .contact-methods {
           width: 100%;
-<<<<<<< HEAD
           margin: 3em auto 0 auto;
-=======
-          margin: 0 auto;
->>>>>>> Completed gh-pages
 
           a {
             padding: 27px;
 
             text-decoration: none;
-<<<<<<< HEAD
             text-align: center;
           }
 
@@ -718,12 +674,6 @@
             &:hover {
               color: $teal;
             }
-=======
-          }
-
-          img {
-            width: 40px;
->>>>>>> Completed gh-pages
           }
         }
 
@@ -740,13 +690,8 @@
           }
 
           .contact-methods {
-<<<<<<< HEAD
             @include span-columns(6 of 12);
             @include shift(2);
-=======
-            @include span-columns(3 of 12);
-            @include shift(5);
->>>>>>> Completed gh-pages
             @include omega();
           }
         }

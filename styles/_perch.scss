@@ -432,17 +432,12 @@
 
         .contact-methods {
           width: 100%;
-<<<<<<< HEAD
           margin: 3em auto 0 auto;
-=======
-          margin: 0 auto;
->>>>>>> Completed gh-pages
 
           a {
             padding: 27px;
 
             text-decoration: none;
-<<<<<<< HEAD
             text-align: center;
           }
 
@@ -455,12 +450,6 @@
             &:hover {
               color: $teal;
             }
-=======
-          }
-
-          img {
-            width: 40px;
->>>>>>> Completed gh-pages
           }
         }
 
@@ -477,13 +466,8 @@
           }
 
           .contact-methods {
-<<<<<<< HEAD
             @include span-columns(4 of 12);
             @include shift(4);
-=======
-            @include span-columns(3 of 12);
-            @include shift(5);
->>>>>>> Completed gh-pages
             @include omega();
           }
         }

@@ -380,7 +380,6 @@
       }
     }
 
-<<<<<<< HEAD
     .coming-soon {
       font-family: $sans-serif;
       font-size: 16px;
@@ -388,8 +387,6 @@
       color: $dark-gray;
     }
 
-=======
->>>>>>> Completed gh-pages
     /////* SECTIONS */////
 
     .intro {
@@ -540,11 +537,8 @@
     }
 
     .contact {
-<<<<<<< HEAD
       @include row();
 
-=======
->>>>>>> Completed gh-pages
       .contact-container {
         .contact-text {
           h1, h2 {
@@ -564,7 +558,6 @@
             padding: 27px;
 
             text-decoration: none;
-<<<<<<< HEAD
             text-align: center;
           }
 
@@ -578,12 +571,6 @@
               color: $teal;
               cursor: pointer;
             }
-=======
-          }
-
-          img {
-            width: 40px;
->>>>>>> Completed gh-pages
           }
         }
 
@@ -600,13 +587,8 @@
           }
 
           .contact-methods {
-<<<<<<< HEAD
             @include span-columns(6 of 12);
             @include shift(2);
-=======
-            @include span-columns(3 of 12);
-            @include shift(5);
->>>>>>> Completed gh-pages
             @include omega();
           }
         }
