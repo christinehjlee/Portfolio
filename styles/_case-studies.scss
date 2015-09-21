@@ -216,6 +216,7 @@
       font-size: 21px;
       line-height: 31px;
       color: $black;
+      text-align: center;
     }
 
     h5 {
@@ -384,7 +385,7 @@
       margin: 0 auto;
       float: none;
 
-      background-image: url("../images/nico/nico-bg.png");
+      background-image: url("../images/nico/nico-bg.jpg");
 
       h1 {
         text-align: center;
@@ -412,11 +413,19 @@
             @include shift(1);
           }
 
-          .project-tags, .project-about {
+          .project-tags {
             @include span-columns(6);
             @include shift(3);
 
             font-size: 18px;
+            text-align: center;
+          }
+
+          .project-about {
+            @include span-columns(8);
+            @include shift(2);
+
+            font-size: 21px;
             text-align: center;
           }
 
@@ -539,6 +548,14 @@
               display: inline-block;
               width: 50%;
               margin: 0 auto;
+            }
+          }
+
+          .persona-tldr {
+            margin-bottom: 40px;
+
+            p {
+              line-height: 26px;
             }
           }
 
