@@ -1925,9 +1925,6 @@ you can use the generic selector below, but it's slower:
           text-align: center; }
           .case-studies .content-container .case-overview .case-header .project-about:last-child {
             margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header .project-tags {
-          margin-top: 1em;
-          color: #BABABA; }
       .case-studies .content-container .case-overview .case-tldr {
         float: left;
         display: block;
