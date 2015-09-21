@@ -538,6 +538,7 @@
 
     .contact {
       @include row();
+
       .contact-container {
         .contact-text {
           h1, h2 {

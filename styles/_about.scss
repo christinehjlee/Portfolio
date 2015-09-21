@@ -585,15 +585,12 @@
         }
       }
 
-<<<<<<< HEAD
       .event-container:nth-child(8) {
         .event {
           padding-bottom: 2%;
         }
       }
 
-=======
->>>>>>> Completed gh-pages
       .event-container:nth-child(9) {
         padding-bottom: 3%;
       }
@@ -646,17 +643,12 @@
 
         .contact-methods {
           width: 100%;
-<<<<<<< HEAD
           margin: 3em auto 0 auto;
-=======
-          margin: 0 auto;
->>>>>>> Completed gh-pages
 
           a {
             padding: 27px;
 
             text-decoration: none;
-<<<<<<< HEAD
             text-align: center;
           }
 
@@ -669,12 +661,6 @@
             &:hover {
               color: $teal;
             }
-=======
-          }
-
-          img {
-            width: 40px;
->>>>>>> Completed gh-pages
           }
         }
 
@@ -691,13 +677,8 @@
           }
 
           .contact-methods {
-<<<<<<< HEAD
             @include span-columns(6 of 12);
             @include shift(2);
-=======
-            @include span-columns(3 of 12);
-            @include shift(5);
->>>>>>> Completed gh-pages
             @include omega();
           }
         }
