@@ -1,210 +1,13 @@
-.case-studies {
-  margin: 0 0;
+.ave {
 
-  /////* HEADER */////
-  .top-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    height: 3px;
-
-    background-color: $teal;
-  }
-
-  header {
-    padding: 16px 1em 15px 1em;
-
-    .title {
-      font-family: $serif;
-      font-size: 21px;
-      line-height: 24px;
-      letter-spacing: 1.5px;
-
-      a {
-        color: $light-gray;
-        text-decoration: none;
-      }
-
-      .split {
-        color: $teal;
-      }
-    }
-
-    .hamburger {
-      position: absolute;
-      top: 20px;
-      right: 5px;
-      width: 20px;
-      height: 24px;
-
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer;
-
-      span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-
-        background: $teal;
-        opacity: 1;
-
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out;
-
-        &:nth-child(1) {
-          top: 0px;
-        }
-
-        &:nth-child(2), &:nth-child(3) {
-          top: 7px;
-        }
-
-        &:nth-child(4) {
-          top: 14px;
-        }
-      }
-
-      &.open span {
-        &:nth-child(1) {
-          top: 7px;
-          left: 50%;
-          width: 0%;
-        }
-
-        &:nth-child(2) {
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-        }
-
-        &:nth-child(3) {
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-        }
-
-        &:nth-child(4) {
-          top: 7px;
-          left: 50%;
-          width: 0%;
-        }
-      }
-    }
-
-    .mobile-menu {
-      display: none;
-      margin: 0 auto;
-
-      ul {
-        list-style-type: none;
-
-        li {
-          padding: 20px;
-
-          a {
-            font-family: $serif;
-            font-size: 38px;
-            color: $teal;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-
-    nav {
-      display: none;
-    }
-
-    .line {
-      position: absolute;
-      top: 55px;
-      left: 0;
-      right: 0;
-
-      height: 1px;
-
-      background-color: $header-gray;
-    }
-
-    @include media ($desktop) {
-      @include span-columns(12);
-
-      .title {
-        @include span-columns(4);
-      }
-
-      .nav-mobile {
-        display: none;
-      }
-
-      nav {
-        display: block;
-
-        ul {
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-
-          list-style-type: none;
-
-          line-height: 24px;
-          text-align: right;
-
-          li {
-            float: right;
-
-            a {
-              display: block;
-              padding-left: 40px;
-
-              font-family: $sans-serif;
-              font-size: 16px;
-              color: $light-gray;
-              text-decoration: none;
-
-              &:hover {
-                color: $teal;
-              }
-
-              &:selected {
-
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  /////* CONTENT */////
+  /* Content */
   .content-container {
     h1 {
       font-family: $serif;
       font-size: 38px;
       font-weight: 100;
       line-height: 43px;
-      color: $teal;
+      color: $nico;
     }
 
     h2, h5, p {
@@ -216,7 +19,6 @@
       font-size: 21px;
       line-height: 31px;
       color: $black;
-      text-align: center;
     }
 
     h5 {
@@ -265,8 +67,6 @@
         position: absolute;
         width: 100%;
         top: 34%;
-
-        border-bottom: 1px solid $teal;
       }
 
       .box-container {
@@ -299,7 +99,7 @@
             min-width: 100%;
             transform: translate(-50%, -50%);
 
-            border: 1px solid $teal;
+            border: 1px solid $nico;
           }
         }
 
@@ -318,7 +118,7 @@
 
           background: -webkit-gradient(linear, 0 0, 100% 0, from($lightest-gray), to($lightest-gray), color-stop(50%, $light-gray));
 
-          border-bottom: 0px solid $teal;
+          border-bottom: 0px solid $nico;
         }
 
         .box-container {
@@ -339,7 +139,7 @@
             border: 1px solid $lightest_gray;
 
             span {
-              border: 0px solid $teal;
+              border: 0px solid $nico;
             }
           }
 
@@ -383,7 +183,7 @@
       color: $dark-gray;
     }
 
-    /////* SECTIONS */////
+    /* Sections */
 
     .case-overview {
       @include row();
@@ -395,6 +195,7 @@
       background-image: url("../images/nico/nico-bg.jpg");
 
       h1 {
+        font-family: $sans-serif;
         text-align: center;
       }
 
@@ -420,19 +221,11 @@
             @include shift(1);
           }
 
-          .project-tags {
+          .project-tags, .project-about {
             @include span-columns(6);
             @include shift(3);
 
             font-size: 18px;
-            text-align: center;
-          }
-
-          .project-about {
-            @include span-columns(8);
-            @include shift(2);
-
-            font-size: 21px;
             text-align: center;
           }
 
@@ -468,6 +261,15 @@
       @include row();
 
       .section-container {
+        .writeup-description {
+          h2, h5 {
+            @include row();
+            @include span-columns(6 of 12);
+            @include shift(3);
+
+            text-align: left;
+          }
+        }
 
         .drop-cap {
           float: left;
@@ -547,38 +349,6 @@
             padding: 15px 50px;
           }
         }
-
-        .personas {
-          @include span-columns(12);
-          @include shift(0.75);
-
-          .persona-image{
-            text-align: center;
-
-            img {
-              display: inline-block;
-              width: 50%;
-              margin: 0 auto;
-            }
-          }
-
-          .persona-tldr {
-            margin-bottom: 40px;
-
-            p {
-              line-height: 26px;
-            }
-          }
-
-          .catarina {
-            @include span-columns(5 of 12);
-          }
-
-          .brandon {
-            @include span-columns(5 of 12);
-            @include shift(0.5);
-          }
-        }
       }
     }
 
@@ -593,10 +363,6 @@
         margin-bottom: 60px;
 
         .project-description {
-          h2 {
-            text-align: left;
-          }
-
           button {
             width: 100%;
             padding: 15px 70px;
@@ -643,63 +409,6 @@
                 }
               }
             }
-          }
-        }
-      }
-    }
-
-    .contact {
-      .contact-container {
-        .contact-text {
-          h1, h2 {
-            text-align: center;
-          }
-
-          h1 {
-            line-height: 0px;
-            color: $teal;
-          }
-        }
-
-        .contact-methods {
-          width: 100%;
-          margin: 3em auto 0 auto;
-
-          a {
-            padding: 27px;
-
-            text-decoration: none;
-            text-align: center;
-          }
-
-          .contact-icon {
-            @include omega();
-
-            color: $light-gray;
-            font-size: 37px;
-
-            &:hover {
-              color: $teal;
-            }
-          }
-        }
-
-        @include media ($desktop) {
-          @include span-columns(12);
-
-          .contact-text {
-            @include span-columns(4 of 12);
-            @include omega();
-
-            h1, h2 {
-              text-align: left;
-            }
-          }
-
-          .contact-methods {
-            @include span-columns(6 of 12);
-            @include shift(2);
-            @include omega();
           }
         }
       }
