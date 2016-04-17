@@ -1312,7 +1312,7 @@ you can use the generic selector below, but it's slower:
   .homepage .content-container p {
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F; }
   .homepage .content-container img {
     width: 100%; }
@@ -1413,7 +1413,7 @@ you can use the generic selector below, but it's slower:
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 10px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #BABABA; }
     @media screen and (min-width: 600px) {
       .homepage .content-container .project-tags {
@@ -1421,7 +1421,7 @@ you can use the generic selector below, but it's slower:
   .homepage .content-container .coming-soon {
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F; }
   .homepage .content-container .intro {
     display: block;
@@ -1466,7 +1466,7 @@ you can use the generic selector below, but it's slower:
       font-family: "Muli", Helvetica, sans-serif;
       font-size: 16px;
       line-height: 17px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: #FFFFFF;
       text-decoration: none; }
       .homepage .content-container .recent-work .recent-project-container button:hover {
@@ -1518,7 +1518,7 @@ you can use the generic selector below, but it's slower:
         font-family: "Muli", Helvetica, sans-serif;
         font-size: 16px;
         line-height: 17px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.1px;
         color: #FFFFFF;
         text-decoration: none; }
         .homepage .content-container .other-works .project .project-description button:hover {
@@ -1758,7 +1758,7 @@ you can use the generic selector below, but it's slower:
   .case-studies .content-container p {
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F; }
   .case-studies .content-container img {
     width: 100%; }
@@ -1858,7 +1858,7 @@ you can use the generic selector below, but it's slower:
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 10px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #BABABA; }
     @media screen and (min-width: 600px) {
       .case-studies .content-container .project-tags {
@@ -1866,7 +1866,7 @@ you can use the generic selector below, but it's slower:
   .case-studies .content-container .coming-soon {
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F; }
   .case-studies .content-container .case-overview {
     display: block;
@@ -1972,8 +1972,10 @@ you can use the generic selector below, but it's slower:
       font-family: "Muli", Helvetica, sans-serif;
       font-size: 16px;
       line-height: 32px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: #7F7F7F;
+      list-style-type: disc; }
+    .case-studies .content-container .case-writeup .section-container ol {
       list-style-type: decimal; }
     .case-studies .content-container .case-writeup .section-container button {
       width: 100%;
@@ -1984,7 +1986,7 @@ you can use the generic selector below, but it's slower:
       font-family: "Muli", Helvetica, sans-serif;
       font-size: 16px;
       line-height: 17px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: #FFFFFF;
       text-decoration: none; }
       .case-studies .content-container .case-writeup .section-container button:hover {
@@ -2080,7 +2082,7 @@ you can use the generic selector below, but it's slower:
         font-family: "Muli", Helvetica, sans-serif;
         font-size: 16px;
         line-height: 17px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.1px;
         color: #FFFFFF;
         text-decoration: none; }
         .case-studies .content-container .other-works .project .project-description button:hover {
@@ -3480,5 +3482,398 @@ you can use the generic selector below, but it's slower:
         margin-right: 0; }
         .resume .content-container .contact .contact-container .contact-methods:last-child {
           margin-right: 0; } }
+
+.ave {
+  /* Content */ }
+  .ave .content-container {
+    /* Sections */ }
+    .ave .content-container h1 {
+      margin-bottom: 0;
+      font-family: "Petrona", Georgia, serif;
+      font-size: 38px;
+      font-weight: 100;
+      line-height: 43px;
+      color: #6C7074; }
+    .ave .content-container h2, .ave .content-container h5, .ave .content-container p {
+      font-family: "Muli", Helvetica, sans-serif;
+      font-weight: 100; }
+    .ave .content-container h2 {
+      margin: 20px 0 10px 0;
+      font-size: 21px;
+      line-height: 31px;
+      color: #2E3839; }
+    .ave .content-container h5 {
+      margin: 30px 0 -5px 0;
+      font-size: 13px;
+      line-height: 16px;
+      color: #2E3839;
+      text-transform: uppercase; }
+    .ave .content-container p {
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: #7F7F7F; }
+    .ave .content-container a {
+      color: #E150A5;
+      text-decoration: none; }
+      .ave .content-container a:hover {
+        color: #2E3839; }
+    .ave .content-container img {
+      width: 100%; }
+    .ave .content-container section {
+      margin-bottom: 100px; }
+    .ave .content-container .wrapper {
+      max-width: 64em;
+      margin-left: auto;
+      margin-right: auto; }
+      .ave .content-container .wrapper::after {
+        clear: both;
+        content: "";
+        display: table; }
+    .ave .content-container .border {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 50px;
+      position: relative;
+      height: 65px;
+      font-family: "Petrona", Georgia, serif;
+      font-size: 21px;
+      line-height: 0px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #0FA3B1; }
+      .ave .content-container .border:last-child {
+        margin-right: 0; }
+      .ave .content-container .border .line {
+        position: absolute;
+        width: 100%;
+        top: 34%; }
+      .ave .content-container .border .box-container {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%;
+        margin-right: 0;
+        position: absolute; }
+        .ave .content-container .border .box-container:last-child {
+          margin-right: 0; }
+        .ave .content-container .border .box-container .box-center {
+          position: absolute;
+          display: block;
+          z-index: 2;
+          height: 45px;
+          width: 95%;
+          background: #FFFFFF;
+          line-height: 1.2em;
+          text-align: center; }
+          .ave .content-container .border .box-container .box-center span {
+            position: absolute;
+            margin: 0;
+            padding: 0.5em;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #0FA3B1; }
+        .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
+          display: none; }
+      @media screen and (min-width: 600px) {
+        .ave .content-container .border {
+          font-size: 28px; }
+          .ave .content-container .border .line {
+            top: 50%;
+            height: 1px;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
+            border-bottom: 0px solid #0FA3B1; }
+          .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
+            position: absolute;
+            display: block;
+            height: 45px;
+            width: 95%; }
+          .ave .content-container .border .box-container .box-center {
+            top: 10px;
+            left: 10px;
+            width: 95%;
+            border: 1px solid #EAEAEA; }
+            .ave .content-container .border .box-container .box-center span {
+              border: 0px solid #0FA3B1; }
+          .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
+            z-index: 1;
+            border: 1px solid #0FA3B1;
+            background: #FFFFFF; }
+          .ave .content-container .border .box-container .box-left {
+            top: 0; }
+          .ave .content-container .border .box-container .box-right {
+            top: 20px;
+            left: 20px; } }
+    .ave .content-container .project-tags {
+      margin-top: -5px;
+      font-family: "Muli", Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 10px;
+      letter-spacing: 0.1px;
+      color: #BABABA; }
+      @media screen and (min-width: 600px) {
+        .ave .content-container .project-tags {
+          line-height: 24px; } }
+    .ave .content-container .coming-soon {
+      font-family: "Muli", Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      color: #7F7F7F; }
+    .ave .content-container .case-overview {
+      display: block;
+      padding: 20px 0 70px 0;
+      margin: 0 auto;
+      float: none;
+      background-image: none; }
+      .ave .content-container .case-overview::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .ave .content-container .case-overview h1 {
+        font-family: "Muli", Helvetica, sans-serif;
+        text-align: center; }
+      .ave .content-container .case-overview h5 {
+        color: #0FA3B1; }
+      .ave .content-container .case-overview p {
+        color: #6C7074; }
+      .ave .content-container .case-overview .feature-image {
+        box-shadow: 0px 0px 4px 0px #D7DBDE; }
+      @media screen and (min-width: 600px) {
+        .ave .content-container .case-overview .case-header {
+          padding-top: 60px; }
+          .ave .content-container .case-overview .case-header .logo {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%;
+            margin-left: 42.64902%; }
+            .ave .content-container .case-overview .case-header .logo:last-child {
+              margin-right: 0; }
+          .ave .content-container .case-overview .case-header img {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 82.94039%;
+            margin-left: 8.5298%; }
+            .ave .content-container .case-overview .case-header img:last-child {
+              margin-right: 0; }
+          .ave .content-container .case-overview .case-header .project-tags, .ave .content-container .case-overview .case-header .project-about, .ave .content-container .case-overview .case-header .read-time {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 65.88078%;
+            margin-left: 17.05961%;
+            font-size: 18px;
+            text-align: center; }
+            .ave .content-container .case-overview .case-header .project-tags:last-child, .ave .content-container .case-overview .case-header .project-about:last-child, .ave .content-container .case-overview .case-header .read-time:last-child {
+              margin-right: 0; }
+          .ave .content-container .case-overview .case-header .project-tags {
+            margin-bottom: 0;
+            color: #BABABA; }
+          .ave .content-container .case-overview .case-header .read-time {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #6C7074; }
+        .ave .content-container .case-overview .case-tldr {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .ave .content-container .case-overview .case-tldr:last-child {
+            margin-right: 0; }
+          .ave .content-container .case-overview .case-tldr .problem {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%; }
+            .ave .content-container .case-overview .case-tldr .problem:last-child {
+              margin-right: 0; }
+          .ave .content-container .case-overview .case-tldr .my-role {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%;
+            margin-left: 8.5298%; }
+            .ave .content-container .case-overview .case-tldr .my-role:last-child {
+              margin-right: 0; }
+          .ave .content-container .case-overview .case-tldr .toolbox {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 6.17215%;
+            margin-left: 8.5298%; }
+            .ave .content-container .case-overview .case-tldr .toolbox:last-child {
+              margin-right: 0; } }
+    .ave .content-container .case-writeup {
+      display: block; }
+      .ave .content-container .case-writeup::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .ave .content-container .case-writeup .section-container .writeup-description h2, .ave .content-container .case-writeup .section-container .writeup-description h5 {
+        display: block;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%;
+        text-align: left; }
+        .ave .content-container .case-writeup .section-container .writeup-description h2::after, .ave .content-container .case-writeup .section-container .writeup-description h5::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .ave .content-container .case-writeup .section-container .writeup-description h2:last-child, .ave .content-container .case-writeup .section-container .writeup-description h5:last-child {
+          margin-right: 0; }
+      .ave .content-container .case-writeup .section-container .drop-cap {
+        float: left;
+        padding: 2px 10px 0 0;
+        font-family: "Petrona", Georgia, serif;
+        font-size: 65px;
+        line-height: 62px;
+        color: #7F7F7F; }
+      .ave .content-container .case-writeup .section-container ul, .ave .content-container .case-writeup .section-container ol {
+        display: block;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%;
+        font-family: "Muli", Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: #7F7F7F; }
+        .ave .content-container .case-writeup .section-container ul::after, .ave .content-container .case-writeup .section-container ol::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .ave .content-container .case-writeup .section-container ul:last-child, .ave .content-container .case-writeup .section-container ol:last-child {
+          margin-right: 0; }
+      .ave .content-container .case-writeup .section-container ul {
+        list-style-type: disc; }
+        .ave .content-container .case-writeup .section-container ul ul {
+          list-style-type: circle; }
+      .ave .content-container .case-writeup .section-container ol {
+        list-style-type: decimal; }
+      .ave .content-container .case-writeup .section-container button {
+        width: 100%;
+        padding: 0.9375em 70px;
+        background: #E150A5;
+        border: 1px solid #E150A5;
+        border-radius: 4px;
+        font-family: "Muli", Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+        text-decoration: none; }
+        .ave .content-container .case-writeup .section-container button:hover {
+          background: #FFFFFF;
+          color: #E150A5;
+          cursor: pointer; }
+      @media screen and (min-width: 600px) {
+        .ave .content-container .case-writeup .section-container {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .ave .content-container .case-writeup .section-container:last-child {
+            margin-right: 0; }
+          .ave .content-container .case-writeup .section-container .writeup-description p, .ave .content-container .case-writeup .section-container .writeup-description ul {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-left: 25.58941%; }
+            .ave .content-container .case-writeup .section-container .writeup-description p:last-child, .ave .content-container .case-writeup .section-container .writeup-description ul:last-child {
+              margin-right: 0; }
+          .ave .content-container .case-writeup .section-container .writeup-description h2 {
+            line-height: 0; }
+          .ave .content-container .case-writeup .section-container .writeup-description img {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 82.94039%;
+            margin-left: 8.5298%;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 4px 0px #D7DBDE; }
+            .ave .content-container .case-writeup .section-container .writeup-description img:last-child {
+              margin-right: 0; }
+            .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v1, .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v2 {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 65.88078%;
+              margin-left: 17.05961%; }
+              .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v1:last-child, .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v2:last-child {
+                margin-right: 0; }
+          .ave .content-container .case-writeup .section-container button {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-left: 25.58941%;
+            padding: 15px 50px; }
+            .ave .content-container .case-writeup .section-container button:last-child {
+              margin-right: 0; } }
+    .ave .content-container .personas {
+      margin: -33px 0 70px 0; }
+    .ave .content-container .other-works {
+      display: block; }
+      .ave .content-container .other-works::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .ave .content-container .other-works .project {
+        margin-bottom: 60px; }
+        .ave .content-container .other-works .project .project-description button {
+          width: 100%;
+          padding: 15px 70px;
+          background: #E150A5;
+          border: 1px solid #E150A5;
+          border-radius: 4px;
+          font-family: "Muli", Helvetica, sans-serif;
+          font-size: 16px;
+          line-height: 17px;
+          letter-spacing: 0.1px;
+          color: #FFFFFF;
+          text-decoration: none; }
+          .ave .content-container .other-works .project .project-description button:hover {
+            background: #FFFFFF;
+            color: #E150A5;
+            cursor: pointer; }
+      @media screen and (min-width: 600px) {
+        .ave .content-container .other-works .other-works-container {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-right: 0; }
+          .ave .content-container .other-works .other-works-container:last-child {
+            margin-right: 0; }
+          .ave .content-container .other-works .other-works-container .project img {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%; }
+            .ave .content-container .other-works .other-works-container .project img:last-child {
+              margin-right: 0; }
+          .ave .content-container .other-works .other-works-container .project .project-description {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-left: 8.5298%; }
+            .ave .content-container .other-works .other-works-container .project .project-description:last-child {
+              margin-right: 0; }
+            .ave .content-container .other-works .other-works-container .project .project-description button:hover {
+              color: #2E3839; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,456 @@
+.ave {
+
+  /* Content */
+  .content-container {
+    h1 {
+      margin-bottom: 0;
+      font-family: $serif;
+      font-size: 38px;
+      font-weight: 100;
+      line-height: 43px;
+      color: $header-gray;
+    }
+
+    h2, h5, p {
+      font-family: $sans-serif;
+      font-weight: 100;
+    }
+
+    h2 {
+      margin: 20px 0 10px 0;
+      font-size: 21px;
+      line-height: 31px;
+      color: $black;
+    }
+
+    h5 {
+      margin: 30px 0 -5px 0;
+
+      font-size: 13px;
+      line-height: 16px;
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: $dark-gray;
+    }
+
+    a {
+      color: $magenta;
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    section {
+      margin-bottom: 100px;
+    }
+
+    .wrapper {
+      @include outer-container;
+    }
+
+    .border {
+      @include span-columns(12);
+      margin-bottom: 50px;
+
+      position: relative;
+      height: 65px;
+
+      font-family: $serif;
+      font-size: 21px;
+      line-height: 0px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: $teal;
+
+      .line {
+        position: absolute;
+        width: 100%;
+        top: 34%;
+      }
+
+      .box-container {
+        @include span-columns(6);
+        @include shift(3);
+        @include omega();
+
+        position: absolute;
+
+        .box-center {
+          position: absolute;
+          display: block;
+          z-index: 2;
+
+          height: 45px;
+          width: 95%;
+
+          background: $white;
+
+          line-height: 1.2em;
+          text-align: center;
+
+          span {
+            position: absolute;
+            margin: 0;
+            padding: 0.5em;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+
+            border: 1px solid $teal;
+          }
+        }
+
+        .box-left, .box-right {
+          display: none;
+        }
+
+      }
+
+      @include media ($desktop) {
+        font-size: 28px;
+
+        .line {
+          top: 50%;
+          height: 1px;
+
+          background: -webkit-gradient(linear, 0 0, 100% 0, from($lightest-gray), to($lightest-gray), color-stop(50%, $light-gray));
+
+          border-bottom: 0px solid $teal;
+        }
+
+        .box-container {
+          .box-left, .box-right {
+            position: absolute;
+            display: block;
+
+            height: 45px;
+            width: 95%;
+          }
+
+          .box-center {
+            top: 10px;
+            left: 10px;
+
+            width: 95%;
+
+            border: 1px solid $lightest_gray;
+
+            span {
+              border: 0px solid $teal;
+            }
+          }
+
+          .box-left, .box-right {
+            z-index: 1;
+
+            border: 1px solid $teal;
+            background: $white;
+          }
+
+          .box-left {
+            top: 0;
+          }
+
+          .box-right {
+            top: 20px;
+            left: 20px;
+          }
+        }
+      }
+    }
+
+    .project-tags {
+      margin-top: -5px;
+
+      font-family: $sans-serif;
+      font-size: 14px;
+      line-height: 10px;
+      letter-spacing: 0.1px;
+      color: $light-gray;
+
+      @include media ($desktop) {
+        line-height: 24px;
+      }
+    }
+
+    .coming-soon {
+      font-family: $sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      color: $dark-gray;
+    }
+
+    /* Sections */
+
+    .case-overview {
+      @include row();
+
+      padding: 20px 0 70px 0;
+      margin: 0 auto;
+      float: none;
+
+      background-image: none;
+
+      h1 {
+        font-family: $sans-serif;
+        text-align: center;
+      }
+
+      h5 {
+        color: $teal;
+      }
+
+      p {
+        color: $header-gray;
+      }
+
+      .feature-image {
+        box-shadow: 0px 0px 4px 0px #D7DBDE;
+      }
+
+      @include media ($desktop) {
+        .case-header {
+          padding-top: 60px;
+
+          .logo {
+            @include span-columns(2);
+            @include shift(5);
+          }
+
+          img {
+            @include span-columns(10);
+            @include shift(1);
+          }
+
+          .project-tags, .project-about, .read-time {
+            @include span-columns(8);
+            @include shift(2);
+
+            font-size: 18px;
+            text-align: center;
+          }
+
+          .project-tags {
+            margin-bottom: 0;
+            color: $light-gray;
+          }
+
+          .read-time {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: $header-gray;
+          }
+
+        }
+
+        .case-tldr {
+          @include span-columns(12);
+
+          .problem {
+            @include span-columns(4 of 12);
+          }
+
+          .my-role {
+            @include span-columns(4 of 12);
+            @include shift(1);
+          }
+
+          .toolbox {
+            @include span-columns(1 of 12);
+            @include shift(1);
+          }
+        }
+      }
+    }
+
+    .case-writeup {
+      @include row();
+
+      .section-container {
+        .writeup-description {
+          h2, h5 {
+            @include row();
+            @include span-columns(6 of 12);
+            @include shift(3);
+
+            text-align: left;
+          }
+        }
+
+        .drop-cap {
+          float: left;
+
+          padding: 2px 10px 0 0;
+
+          font-family: $serif;
+          font-size: 65px;
+          line-height: 62px;
+          color: $dark-gray;
+        }
+
+        ul, ol {
+          @include row();
+          @include span-columns(6 of 12);
+          @include shift(3);
+
+          font-family: $sans-serif;
+          font-size: 16px;
+          line-height: 32px;
+          letter-spacing: 0.1px;
+          color: $dark-gray;
+        }
+
+        ul {
+          list-style-type: disc;
+
+          ul {
+            list-style-type: circle;
+          }
+        }
+
+        ol {
+          list-style-type: decimal;
+        }
+
+        button {
+          width: 100%;
+          padding: em(15px) 70px;
+
+          background: $magenta;
+          border: 1px solid $magenta;
+          border-radius: 4px;
+
+          font-family: $sans-serif;
+          font-size: 16px;
+          line-height: 17px;
+          letter-spacing: 0.1px;
+          color: $white;
+          text-decoration: none;
+
+          &:hover {
+            background: $white;
+
+            color: $magenta;
+
+            cursor: pointer;
+          }
+        }
+      }
+
+      @include media ($desktop) {
+        .section-container {
+          @include span-columns(12);
+
+          .writeup-description {
+
+            p, ul {
+              @include span-columns(6 of 12);
+              @include shift(3);
+            }
+
+            h2 {
+              line-height: 0;
+            }
+
+            img {
+              @include span-columns(10 of 12);
+              @include shift(1);
+
+              margin-bottom: 40px;
+              box-shadow: 0px 0px 4px 0px #D7DBDE;
+
+              &.manager-email-v1, &.manager-email-v2 {
+                @include span-columns(8 of 12);
+                @include shift(2);
+              }
+            }
+          }
+
+          button {
+            @include span-columns(6 of 12);
+            @include shift(3);
+
+            padding: 15px 50px;
+          }
+        }
+      }
+    }
+
+    .personas {
+      margin: -33px 0 70px 0;
+    }
+
+    .other-works {
+      @include row();
+
+      .project {
+        margin-bottom: 60px;
+
+        .project-description {
+          button {
+            width: 100%;
+            padding: 15px 70px;
+
+            background: $magenta;
+            border: 1px solid $magenta;
+            border-radius: 4px;
+
+            font-family: $sans-serif;
+            font-size: 16px;
+            line-height: 17px;
+            letter-spacing: 0.1px;
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+              background: $white;
+
+              color: $magenta;
+
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      @include media ($desktop) {
+        .other-works-container {
+          @include span-columns(12);
+          @include omega();
+
+          .project {
+            img {
+              @include span-columns(5 of 12);
+            }
+
+            .project-description {
+              @include span-columns(6 of 12);
+              @include shift(1);
+
+              button {
+                &:hover {
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
