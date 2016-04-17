@@ -231,7 +231,7 @@
     p {
       font-size: 16px;
       line-height: 32px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: $dark-gray;
     }
 
@@ -368,7 +368,7 @@
       font-family: $sans-serif;
       font-size: 14px;
       line-height: 10px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: $light-gray;
 
       @include media ($desktop) {
@@ -379,7 +379,7 @@
     .coming-soon {
       font-family: $sans-serif;
       font-size: 16px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: $dark-gray;
     }
 
@@ -484,9 +484,13 @@
           font-family: $sans-serif;
           font-size: 16px;
           line-height: 32px;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.1px;
           color: $dark-gray;
 
+          list-style-type: disc;
+        }
+
+        ol {
           list-style-type: decimal;
         }
 
@@ -501,7 +505,7 @@
           font-family: $sans-serif;
           font-size: 16px;
           line-height: 17px;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.1px;
           color: $white;
           text-decoration: none;
 
@@ -604,7 +608,7 @@
             font-family: $sans-serif;
             font-size: 16px;
             line-height: 17px;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.1px;
             color: $white;
             text-decoration: none;
 
