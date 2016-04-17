@@ -3489,15 +3489,17 @@ you can use the generic selector below, but it's slower:
   .ave .content-container {
     /* Sections */ }
     .ave .content-container h1 {
+      margin-bottom: 0;
       font-family: "Petrona", Georgia, serif;
       font-size: 38px;
       font-weight: 100;
       line-height: 43px;
-      color: #E57F7F; }
+      color: #6C7074; }
     .ave .content-container h2, .ave .content-container h5, .ave .content-container p {
       font-family: "Muli", Helvetica, sans-serif;
       font-weight: 100; }
     .ave .content-container h2 {
+      margin: 20px 0 10px 0;
       font-size: 21px;
       line-height: 31px;
       color: #2E3839; }
@@ -3512,6 +3514,11 @@ you can use the generic selector below, but it's slower:
       line-height: 32px;
       letter-spacing: 0.1px;
       color: #7F7F7F; }
+    .ave .content-container a {
+      color: #E150A5;
+      text-decoration: none; }
+      .ave .content-container a:hover {
+        color: #2E3839; }
     .ave .content-container img {
       width: 100%; }
     .ave .content-container section {
@@ -3572,7 +3579,7 @@ you can use the generic selector below, but it's slower:
             margin-right: -50%;
             min-width: 100%;
             transform: translate(-50%, -50%);
-            border: 1px solid #E57F7F; }
+            border: 1px solid #0FA3B1; }
         .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
           display: none; }
       @media screen and (min-width: 600px) {
@@ -3582,7 +3589,7 @@ you can use the generic selector below, but it's slower:
             top: 50%;
             height: 1px;
             background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-            border-bottom: 0px solid #E57F7F; }
+            border-bottom: 0px solid #0FA3B1; }
           .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
             position: absolute;
             display: block;
@@ -3594,7 +3601,7 @@ you can use the generic selector below, but it's slower:
             width: 95%;
             border: 1px solid #EAEAEA; }
             .ave .content-container .border .box-container .box-center span {
-              border: 0px solid #E57F7F; }
+              border: 0px solid #0FA3B1; }
           .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
             z-index: 1;
             border: 1px solid #0FA3B1;
@@ -3624,7 +3631,7 @@ you can use the generic selector below, but it's slower:
       padding: 20px 0 70px 0;
       margin: 0 auto;
       float: none;
-      background-image: url("../images/nico/nico-bg.jpg"); }
+      background-image: none; }
       .ave .content-container .case-overview::after {
         clear: both;
         content: "";
@@ -3633,9 +3640,11 @@ you can use the generic selector below, but it's slower:
         font-family: "Muli", Helvetica, sans-serif;
         text-align: center; }
       .ave .content-container .case-overview h5 {
-        color: #E57F7F; }
+        color: #0FA3B1; }
       .ave .content-container .case-overview p {
-        color: #FFFFFF; }
+        color: #6C7074; }
+      .ave .content-container .case-overview .feature-image {
+        box-shadow: 0px 0px 4px 0px #D7DBDE; }
       @media screen and (min-width: 600px) {
         .ave .content-container .case-overview .case-header {
           padding-top: 60px; }
@@ -3643,8 +3652,8 @@ you can use the generic selector below, but it's slower:
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 31.76157%;
-            margin-left: 34.11922%; }
+            width: 14.70196%;
+            margin-left: 42.64902%; }
             .ave .content-container .case-overview .case-header .logo:last-child {
               margin-right: 0; }
           .ave .content-container .case-overview .case-header img {
@@ -3655,19 +3664,24 @@ you can use the generic selector below, but it's slower:
             margin-left: 8.5298%; }
             .ave .content-container .case-overview .case-header img:last-child {
               margin-right: 0; }
-          .ave .content-container .case-overview .case-header .project-tags, .ave .content-container .case-overview .case-header .project-about {
+          .ave .content-container .case-overview .case-header .project-tags, .ave .content-container .case-overview .case-header .project-about, .ave .content-container .case-overview .case-header .read-time {
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 48.82117%;
-            margin-left: 25.58941%;
+            width: 65.88078%;
+            margin-left: 17.05961%;
             font-size: 18px;
             text-align: center; }
-            .ave .content-container .case-overview .case-header .project-tags:last-child, .ave .content-container .case-overview .case-header .project-about:last-child {
+            .ave .content-container .case-overview .case-header .project-tags:last-child, .ave .content-container .case-overview .case-header .project-about:last-child, .ave .content-container .case-overview .case-header .read-time:last-child {
               margin-right: 0; }
           .ave .content-container .case-overview .case-header .project-tags {
-            margin-top: 1em;
+            margin-bottom: 0;
             color: #BABABA; }
+          .ave .content-container .case-overview .case-header .read-time {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #6C7074; }
         .ave .content-container .case-overview .case-tldr {
           float: left;
           display: block;
@@ -3725,13 +3739,28 @@ you can use the generic selector below, but it's slower:
         font-size: 65px;
         line-height: 62px;
         color: #7F7F7F; }
-      .ave .content-container .case-writeup .section-container ul {
+      .ave .content-container .case-writeup .section-container ul, .ave .content-container .case-writeup .section-container ol {
+        display: block;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%;
         font-family: "Muli", Helvetica, sans-serif;
         font-size: 16px;
         line-height: 32px;
         letter-spacing: 0.1px;
-        color: #7F7F7F;
+        color: #7F7F7F; }
+        .ave .content-container .case-writeup .section-container ul::after, .ave .content-container .case-writeup .section-container ol::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .ave .content-container .case-writeup .section-container ul:last-child, .ave .content-container .case-writeup .section-container ol:last-child {
+          margin-right: 0; }
+      .ave .content-container .case-writeup .section-container ul {
         list-style-type: disc; }
+        .ave .content-container .case-writeup .section-container ul ul {
+          list-style-type: circle; }
       .ave .content-container .case-writeup .section-container ol {
         list-style-type: decimal; }
       .ave .content-container .case-writeup .section-container button {
@@ -3772,10 +3801,20 @@ you can use the generic selector below, but it's slower:
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 65.88078%;
-            margin-left: 17.05961%; }
+            width: 82.94039%;
+            margin-left: 8.5298%;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 4px 0px #D7DBDE; }
             .ave .content-container .case-writeup .section-container .writeup-description img:last-child {
               margin-right: 0; }
+            .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v1, .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v2 {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 65.88078%;
+              margin-left: 17.05961%; }
+              .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v1:last-child, .ave .content-container .case-writeup .section-container .writeup-description img.manager-email-v2:last-child {
+                margin-right: 0; }
           .ave .content-container .case-writeup .section-container button {
             float: left;
             display: block;

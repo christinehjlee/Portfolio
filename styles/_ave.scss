@@ -3,11 +3,12 @@
   /* Content */
   .content-container {
     h1 {
+      margin-bottom: 0;
       font-family: $serif;
       font-size: 38px;
       font-weight: 100;
       line-height: 43px;
-      color: $nico;
+      color: $header-gray;
     }
 
     h2, h5, p {
@@ -16,6 +17,7 @@
     }
 
     h2 {
+      margin: 20px 0 10px 0;
       font-size: 21px;
       line-height: 31px;
       color: $black;
@@ -35,6 +37,15 @@
       line-height: 32px;
       letter-spacing: 0.1px;
       color: $dark-gray;
+    }
+
+    a {
+      color: $magenta;
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+      }
     }
 
     img {
@@ -99,7 +110,7 @@
             min-width: 100%;
             transform: translate(-50%, -50%);
 
-            border: 1px solid $nico;
+            border: 1px solid $teal;
           }
         }
 
@@ -118,7 +129,7 @@
 
           background: -webkit-gradient(linear, 0 0, 100% 0, from($lightest-gray), to($lightest-gray), color-stop(50%, $light-gray));
 
-          border-bottom: 0px solid $nico;
+          border-bottom: 0px solid $teal;
         }
 
         .box-container {
@@ -139,7 +150,7 @@
             border: 1px solid $lightest_gray;
 
             span {
-              border: 0px solid $nico;
+              border: 0px solid $teal;
             }
           }
 
@@ -192,7 +203,7 @@
       margin: 0 auto;
       float: none;
 
-      background-image: url("../images/nico/nico-bg.jpg");
+      background-image: none;
 
       h1 {
         font-family: $sans-serif;
@@ -200,11 +211,15 @@
       }
 
       h5 {
-        color: $nico;
+        color: $teal;
       }
 
       p {
-        color: $white;
+        color: $header-gray;
+      }
+
+      .feature-image {
+        box-shadow: 0px 0px 4px 0px #D7DBDE;
       }
 
       @include media ($desktop) {
@@ -212,8 +227,8 @@
           padding-top: 60px;
 
           .logo {
-            @include span-columns(4);
-            @include shift(4);
+            @include span-columns(2);
+            @include shift(5);
           }
 
           img {
@@ -221,18 +236,24 @@
             @include shift(1);
           }
 
-          .project-tags, .project-about {
-            @include span-columns(6);
-            @include shift(3);
+          .project-tags, .project-about, .read-time {
+            @include span-columns(8);
+            @include shift(2);
 
             font-size: 18px;
             text-align: center;
           }
 
           .project-tags {
-            margin-top: 1em;
-
+            margin-bottom: 0;
             color: $light-gray;
+          }
+
+          .read-time {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: $header-gray;
           }
 
         }
@@ -282,14 +303,24 @@
           color: $dark-gray;
         }
 
-        ul {
+        ul, ol {
+          @include row();
+          @include span-columns(6 of 12);
+          @include shift(3);
+
           font-family: $sans-serif;
           font-size: 16px;
           line-height: 32px;
           letter-spacing: 0.1px;
           color: $dark-gray;
+        }
 
+        ul {
           list-style-type: disc;
+
+          ul {
+            list-style-type: circle;
+          }
         }
 
         ol {
@@ -337,8 +368,16 @@
             }
 
             img {
-              @include span-columns(8 of 12);
-              @include shift(2);
+              @include span-columns(10 of 12);
+              @include shift(1);
+
+              margin-bottom: 40px;
+              box-shadow: 0px 0px 4px 0px #D7DBDE;
+
+              &.manager-email-v1, &.manager-email-v2 {
+                @include span-columns(8 of 12);
+                @include shift(2);
+              }
             }
           }
 
