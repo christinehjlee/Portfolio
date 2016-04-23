@@ -1903,7 +1903,7 @@ you can use the generic selector below, but it's slower:
           margin-left: 8.5298%; }
           .case-studies .content-container .case-overview .case-header img:last-child {
             margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header .project-tags, .case-studies .content-container .case-overview .case-header .read-time {
+        .case-studies .content-container .case-overview .case-header .project-tags {
           float: left;
           display: block;
           margin-right: 2.35765%;
@@ -1911,13 +1911,8 @@ you can use the generic selector below, but it's slower:
           margin-left: 25.58941%;
           font-size: 18px;
           text-align: center; }
-          .case-studies .content-container .case-overview .case-header .project-tags:last-child, .case-studies .content-container .case-overview .case-header .read-time:last-child {
+          .case-studies .content-container .case-overview .case-header .project-tags:last-child {
             margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header .read-time {
-          margin-top: 0;
-          margin-bottom: 0;
-          font-size: 14px;
-          color: #6C7074; }
         .case-studies .content-container .case-overview .case-header .project-about {
           float: left;
           display: block;
@@ -1930,9 +1925,6 @@ you can use the generic selector below, but it's slower:
             margin-right: 0; }
         .case-studies .content-container .case-overview .case-header .project-tags {
           margin-top: 1em;
-          margin-bottom: 0;
-          color: #BABABA; }
-        .case-studies .content-container .case-overview .case-header .read-time {
           color: #BABABA; }
       .case-studies .content-container .case-overview .case-tldr {
         float: left;
@@ -3522,18 +3514,11 @@ you can use the generic selector below, but it's slower:
       line-height: 32px;
       letter-spacing: 0.1px;
       color: #7F7F7F; }
-      .ave .content-container p.caption {
-        margin-top: -20px;
-        font-style: italic;
-        font-size: 14px;
-        color: #BABABA; }
     .ave .content-container a {
       color: #E150A5;
       text-decoration: none; }
       .ave .content-container a:hover {
         color: #2E3839; }
-    .ave .content-container em {
-      color: #636262; }
     .ave .content-container img {
       width: 100%; }
     .ave .content-container section {
