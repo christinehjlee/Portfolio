@@ -2318,7 +2318,7 @@ you can use the generic selector below, but it's slower:
   .about .content-container p {
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F; }
   .about .content-container img {
     width: 100%; }
@@ -2418,7 +2418,7 @@ you can use the generic selector below, but it's slower:
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 10px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #BABABA; }
     @media screen and (min-width: 600px) {
       .about .content-container .project-tags {
@@ -2515,7 +2515,7 @@ you can use the generic selector below, but it's slower:
       font-family: "Muli", Helvetica, sans-serif;
       font-size: 16px;
       line-height: 32px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: #7F7F7F;
       list-style-type: decimal; }
     .about .content-container .new-section .section-container button {
@@ -2709,7 +2709,7 @@ you can use the generic selector below, but it's slower:
 .perch .content-container p {
   font-size: 16px;
   line-height: 32px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1px;
   color: #7F7F7F; }
 .perch .content-container img {
   width: 100%; }
@@ -2808,7 +2808,7 @@ you can use the generic selector below, but it's slower:
   font-family: "Muli", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 10px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1px;
   color: #BABABA; }
   @media screen and (min-width: 600px) {
     .perch .content-container .project-tags {
@@ -2908,7 +2908,7 @@ you can use the generic selector below, but it's slower:
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F;
     list-style-type: decimal; }
   .perch .content-container .case-writeup .section-container button {
@@ -3256,14 +3256,14 @@ you can use the generic selector below, but it's slower:
   .resume .content-container p {
     font-size: 13px;
     line-height: 10px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #7F7F7F; }
   .resume .content-container ul {
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 100;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     color: #2E3839; }
   .resume .content-container img {
     width: 100%; }
