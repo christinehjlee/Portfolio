@@ -2921,7 +2921,7 @@ you can use the generic selector below, but it's slower:
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 16px;
     line-height: 17px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.5px;
     color: #FFFFFF;
     text-decoration: none; }
     .perch .content-container .case-writeup .section-container button:hover {
