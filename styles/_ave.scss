@@ -37,6 +37,13 @@
       line-height: 32px;
       letter-spacing: 0.1px;
       color: $dark-gray;
+
+      &.caption {
+        margin-top: -20px;
+        font-style: italic;
+        font-size: 14px;
+        color: $light-gray;
+      }
     }
 
     a {
@@ -46,6 +53,10 @@
       &:hover {
         color: $black;
       }
+    }
+
+    em {
+      color: $em-gray;
     }
 
     img {
