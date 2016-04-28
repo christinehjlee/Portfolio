@@ -15,13 +15,13 @@
   }
 
   header {
-    padding: 1em;
+    padding: 2.5em 3em;
 
     background: $white;
 
     .title {
       font-family: $serif;
-      font-size: 21px;
+      font-size: 3em;
       line-height: 24px;
       letter-spacing: 1.5px;
 
@@ -33,14 +33,18 @@
       .split {
         color: $teal;
       }
+
+      @include media ($desktop) {
+        font-size: 21px;
+
+      }
     }
 
     .hamburger {
       position: absolute;
-      top: 20px;
-      right: 5px;
-      width: 20px;
-      height: 24px;
+      top: 2.5em;
+      right: 3em;
+      width: 3em;
 
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -74,15 +78,15 @@
         transition: .25s ease-in-out;
 
         &:nth-child(1) {
-          top: 0px;
+          top: 0em;
         }
 
         &:nth-child(2), &:nth-child(3) {
-          top: 7px;
+          top: 1em;
         }
 
         &:nth-child(4) {
-          top: 14px;
+          top: 2em;
         }
       }
 
@@ -117,7 +121,7 @@
 
     .mobile-menu {
       display: none;
-      margin: 0 auto;
+      margin: 5em auto;
 
       ul {
         list-style-type: none;
@@ -127,8 +131,9 @@
 
           a {
             font-family: $serif;
-            font-size: 38px;
+            font-size: 6em;
             color: $teal;
+            line-height: 1.5em;
             text-decoration: none;
           }
         }
@@ -141,7 +146,7 @@
 
     .line {
       position: absolute;
-      top: 55px;
+      top: 7.5em;
       left: 0;
       right: 0;
 
@@ -152,6 +157,8 @@
 
     @include media ($desktop) {
       @include span-columns(12);
+
+      padding: 1em;
 
       .title {
         @include span-columns(4);
@@ -197,6 +204,10 @@
           }
         }
       }
+
+      .line {
+        top: 55px;
+      }
     }
   }
 
@@ -205,10 +216,14 @@
   .content-container {
     h1 {
       font-family: $serif;
-      font-size: 38px;
+      font-size: 5em;
       font-weight: 100;
       line-height: 43px;
       color: $teal;
+
+      @include media ($desktop) {
+        font-size: 38px;
+      }
     }
 
     h2, h5, p {
@@ -217,25 +232,40 @@
     }
 
     h2 {
-      font-size: 21px;
-      line-height: 31px;
+      font-size: 4em;
+      line-height: 1.25em;
       color: $black;
+
+      @include media ($desktop) {
+        margin-bottom: 0.5em;
+        font-size: 21px;
+        line-height: 31px;
+      }
     }
 
     h5 {
-      margin: 30px 0 -5px 0;
+      margin: 2em 0 -0.5em 0;
 
       font-size: 13px;
       line-height: 16px;
       color: $black;
       text-transform: uppercase;
+
+      @include media ($desktop) {
+        margin: 30px 0 -5px 0;
+      }
     }
 
     p {
-      font-size: 16px;
-      line-height: 32px;
+      font-size: 0.875em;
+      line-height: 1.75em;
       letter-spacing: 0.1px;
       color: $dark-gray;
+
+      @include media ($desktop) {
+        font-size: 16px;
+        line-height: 32px;
+      }
     }
 
     img {
@@ -243,11 +273,24 @@
     }
 
     section {
-      margin-bottom: 100px;
+      margin-bottom: 10em;
+
+      @include media ($desktop) {
+        margin-bottom: 100px;
+      }
     }
 
     .wrapper {
       @include outer-container;
+
+      @include media ($desktop) {
+        @include clearfix;
+        max-width: em(1024);
+        margin: {
+          left: auto;
+          right: auto;
+        }
+      }
     }
 
     .border {
@@ -258,7 +301,7 @@
       height: 65px;
 
       font-family: $serif;
-      font-size: 21px;
+      font-size: 4em;
       line-height: 0px;
       letter-spacing: 1px;
       text-align: center;
@@ -367,8 +410,6 @@
     }
 
     .project-tags {
-      margin-top: -5px;
-
       font-family: $sans-serif;
       font-size: 14px;
       line-height: 10px;
@@ -403,12 +444,17 @@
       .drop-cap {
         float: left;
 
-        padding: 2px 10px 0 0;
+        padding: 43px 20px 0 0;
 
         font-family: $serif;
-        font-size: 65px;
+        font-size: 10em;
         line-height: 62px;
         color: $dark-gray;
+
+        @include media ($desktop) {
+          padding: 2px 10px 0 0;
+          font-size: 65px;
+        }
       }
 
       @include media ($desktop) {
@@ -427,14 +473,15 @@
       .recent-project-container {
         button {
           width: 100%;
-          padding: em(15px) 70px;
+          margin-bottom: 2em;
+          padding: 1.25em 0;
 
           background: $magenta;
           border: 1px solid $magenta;
           border-radius: 4px;
 
           font-family: $sans-serif;
-          font-size: 16px;
+          font-size: 2.5em;
           line-height: 17px;
           letter-spacing: 0.1px;
           color: $white;
@@ -448,6 +495,10 @@
             cursor: pointer;
           }
         }
+
+        img {
+          margin-top: 3em;
+        }
       }
 
       @include media ($desktop) {
@@ -456,6 +507,7 @@
 
           img {
             @include span-columns(6 of 12);
+            margin-top: 0;
           }
 
           .recent-project-description, button {
@@ -468,8 +520,17 @@
             }
           }
 
+          .recent-project-description {
+            h2 {
+              margin-bottom: 1em;
+            }
+          }
+
           button {
+            margin-bottom: 0;
             padding: 15px 50px;
+
+            font-size: 16px;
           }
         }
       }
@@ -484,14 +545,15 @@
         .project-description {
           button {
             width: 100%;
-            padding: 15px 70px;
+            margin-bottom: 2em;
+            padding: 1.25em 0;
 
             background: $magenta;
             border: 1px solid $magenta;
             border-radius: 4px;
 
             font-family: $sans-serif;
-            font-size: 16px;
+            font-size: 2.5em;
             line-height: 17px;
             letter-spacing: 0.1px;
             color: $white;
@@ -518,11 +580,13 @@
 
             .project-description {
               button {
+                margin-bottom: 0;
                 padding: 0;
 
                 background: none;
                 border: 0px solid $magenta;
 
+                font-size: 16px;
                 color: $magenta;
                 text-align: left;
 
@@ -545,8 +609,12 @@
             text-align: center;
           }
 
+          h2 {
+            margin-top: 4em;
+          }
+
           h1 {
-            line-height: 0px;
+            line-height: 1em;
           }
         }
 
@@ -555,7 +623,7 @@
           margin: 3em auto 0 auto;
 
           a {
-            padding: 27px;
+            padding: 3.25em;
 
             text-decoration: none;
             text-align: center;
@@ -565,7 +633,7 @@
             @include omega();
 
             color: $light-gray;
-            font-size: 37px;
+            font-size: 4em;
 
             &:hover {
               color: $teal;
@@ -578,18 +646,30 @@
           @include span-columns(12);
 
           .contact-text {
-            @include span-columns(4 of 12);
+            @include span-columns(5 of 12);
             @include omega();
 
             h1, h2 {
               text-align: left;
             }
+
+            h1 {
+              line-height: 0;
+            }
           }
 
           .contact-methods {
             @include span-columns(6 of 12);
-            @include shift(2);
+            @include shift(1);
             @include omega();
+
+            a {
+              padding: 27px;
+            }
+
+            .contact-icon {
+              font-size: 37px;
+            }
           }
         }
       }

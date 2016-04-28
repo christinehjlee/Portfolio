@@ -1165,11 +1165,11 @@ you can use the generic selector below, but it's slower:
     height: 0.2em;
     background-color: #0FA3B1; }
   .homepage header {
-    padding: 1em;
+    padding: 2.5em 3em;
     background: #FFFFFF; }
     .homepage header .title {
       font-family: "Petrona", Georgia, serif;
-      font-size: 21px;
+      font-size: 3em;
       line-height: 24px;
       letter-spacing: 1.5px; }
       .homepage header .title a {
@@ -1177,12 +1177,14 @@ you can use the generic selector below, but it's slower:
         text-decoration: none; }
       .homepage header .title .split {
         color: #0FA3B1; }
+      @media screen and (min-width: 1000px) {
+        .homepage header .title {
+          font-size: 21px; } }
     .homepage header .hamburger {
       position: absolute;
-      top: 20px;
-      right: 5px;
-      width: 20px;
-      height: 24px;
+      top: 2.5em;
+      right: 3em;
+      width: 3em;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -1209,11 +1211,11 @@ you can use the generic selector below, but it's slower:
         -o-transition: .25s ease-in-out;
         transition: .25s ease-in-out; }
         .homepage header .hamburger span:nth-child(1) {
-          top: 0px; }
+          top: 0em; }
         .homepage header .hamburger span:nth-child(2), .homepage header .hamburger span:nth-child(3) {
-          top: 7px; }
+          top: 1em; }
         .homepage header .hamburger span:nth-child(4) {
-          top: 14px; }
+          top: 2em; }
       .homepage header .hamburger.open span:nth-child(1) {
         top: 7px;
         left: 50%;
@@ -1234,31 +1236,33 @@ you can use the generic selector below, but it's slower:
         width: 0%; }
     .homepage header .mobile-menu {
       display: none;
-      margin: 0 auto; }
+      margin: 5em auto; }
       .homepage header .mobile-menu ul {
         list-style-type: none; }
         .homepage header .mobile-menu ul li {
           padding: 20px; }
           .homepage header .mobile-menu ul li a {
             font-family: "Petrona", Georgia, serif;
-            font-size: 38px;
+            font-size: 6em;
             color: #0FA3B1;
+            line-height: 1.5em;
             text-decoration: none; }
     .homepage header nav {
       display: none; }
     .homepage header .line {
       position: absolute;
-      top: 55px;
+      top: 7.5em;
       left: 0;
       right: 0;
       height: 1px;
       background-color: #EAEAEA; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .homepage header {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        padding: 1em; }
         .homepage header:last-child {
           margin-right: 0; }
         .homepage header .title {
@@ -1289,43 +1293,72 @@ you can use the generic selector below, but it's slower:
                 color: #BABABA;
                 text-decoration: none; }
                 .homepage header nav ul li a:hover {
-                  color: #0FA3B1; } }
+                  color: #0FA3B1; }
+        .homepage header .line {
+          top: 55px; } }
   .homepage .content-container h1 {
     font-family: "Petrona", Georgia, serif;
-    font-size: 38px;
+    font-size: 5em;
     font-weight: 100;
     line-height: 43px;
     color: #0FA3B1; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container h1 {
+        font-size: 38px; } }
   .homepage .content-container h2, .homepage .content-container h5, .homepage .content-container p {
     font-family: "Muli", Helvetica, sans-serif;
     font-weight: 100; }
   .homepage .content-container h2 {
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 4em;
+    line-height: 1.25em;
     color: #2E3839; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container h2 {
+        margin-bottom: 0.5em;
+        font-size: 21px;
+        line-height: 31px; } }
   .homepage .content-container h5 {
-    margin: 30px 0 -5px 0;
+    margin: 2em 0 -0.5em 0;
     font-size: 13px;
     line-height: 16px;
     color: #2E3839;
     text-transform: uppercase; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container h5 {
+        margin: 30px 0 -5px 0; } }
   .homepage .content-container p {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 0.875em;
+    line-height: 1.75em;
     letter-spacing: 0.1px;
     color: #7F7F7F; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container p {
+        font-size: 16px;
+        line-height: 32px; } }
   .homepage .content-container img {
     width: 100%; }
   .homepage .content-container section {
-    margin-bottom: 100px; }
+    margin-bottom: 10em; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container section {
+        margin-bottom: 100px; } }
   .homepage .content-container .wrapper {
-    max-width: 64em;
+    max-width: 53.125em;
     margin-left: auto;
     margin-right: auto; }
     .homepage .content-container .wrapper::after {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .wrapper {
+        max-width: 64em;
+        margin-left: auto;
+        margin-right: auto; }
+        .homepage .content-container .wrapper::after {
+          clear: both;
+          content: "";
+          display: table; } }
   .homepage .content-container .border {
     float: left;
     display: block;
@@ -1335,7 +1368,7 @@ you can use the generic selector below, but it's slower:
     position: relative;
     height: 65px;
     font-family: "Petrona", Georgia, serif;
-    font-size: 21px;
+    font-size: 4em;
     line-height: 0px;
     letter-spacing: 1px;
     text-align: center;
@@ -1378,7 +1411,7 @@ you can use the generic selector below, but it's slower:
           border: 1px solid #0FA3B1; }
       .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
         display: none; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .homepage .content-container .border {
         font-size: 28px;
         line-height: 0px; }
@@ -1409,13 +1442,12 @@ you can use the generic selector below, but it's slower:
           top: 20px;
           left: 20px; } }
   .homepage .content-container .project-tags {
-    margin-top: -5px;
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 10px;
     letter-spacing: 0.1px;
     color: #BABABA; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .homepage .content-container .project-tags {
         line-height: 24px; } }
   .homepage .content-container .coming-soon {
@@ -1436,12 +1468,16 @@ you can use the generic selector below, but it's slower:
       text-align: center; }
     .homepage .content-container .intro .drop-cap {
       float: left;
-      padding: 2px 10px 0 0;
+      padding: 43px 20px 0 0;
       font-family: "Petrona", Georgia, serif;
-      font-size: 65px;
+      font-size: 10em;
       line-height: 62px;
       color: #7F7F7F; }
-    @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
+        .homepage .content-container .intro .drop-cap {
+          padding: 2px 10px 0 0;
+          font-size: 65px; } }
+    @media screen and (min-width: 1000px) {
       .homepage .content-container .intro .intro-container {
         float: left;
         display: block;
@@ -1459,12 +1495,13 @@ you can use the generic selector below, but it's slower:
       display: table; }
     .homepage .content-container .recent-work .recent-project-container button {
       width: 100%;
-      padding: 0.9375em 70px;
+      margin-bottom: 2em;
+      padding: 1.25em 0;
       background: #E150A5;
       border: 1px solid #E150A5;
       border-radius: 4px;
       font-family: "Muli", Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 2.5em;
       line-height: 17px;
       letter-spacing: 0.1px;
       color: #FFFFFF;
@@ -1473,7 +1510,9 @@ you can use the generic selector below, but it's slower:
         background: #FFFFFF;
         color: #E150A5;
         cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    .homepage .content-container .recent-work .recent-project-container img {
+      margin-top: 3em; }
+    @media screen and (min-width: 1000px) {
       .homepage .content-container .recent-work .recent-project-container {
         float: left;
         display: block;
@@ -1485,7 +1524,8 @@ you can use the generic selector below, but it's slower:
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 48.82117%; }
+          width: 48.82117%;
+          margin-top: 0; }
           .homepage .content-container .recent-work .recent-project-container img:last-child {
             margin-right: 0; }
         .homepage .content-container .recent-work .recent-project-container .recent-project-description, .homepage .content-container .recent-work .recent-project-container button {
@@ -1499,8 +1539,12 @@ you can use the generic selector below, but it's slower:
             margin-right: 0; }
           .homepage .content-container .recent-work .recent-project-container .recent-project-description h2, .homepage .content-container .recent-work .recent-project-container button h2 {
             line-height: 0; }
+        .homepage .content-container .recent-work .recent-project-container .recent-project-description h2 {
+          margin-bottom: 1em; }
         .homepage .content-container .recent-work .recent-project-container button {
-          padding: 15px 50px; } }
+          margin-bottom: 0;
+          padding: 15px 50px;
+          font-size: 16px; } }
   .homepage .content-container .other-works {
     display: block; }
     .homepage .content-container .other-works::after {
@@ -1511,12 +1555,13 @@ you can use the generic selector below, but it's slower:
       margin-bottom: 60px; }
       .homepage .content-container .other-works .project .project-description button {
         width: 100%;
-        padding: 15px 70px;
+        margin-bottom: 2em;
+        padding: 1.25em 0;
         background: #E150A5;
         border: 1px solid #E150A5;
         border-radius: 4px;
         font-family: "Muli", Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 2.5em;
         line-height: 17px;
         letter-spacing: 0.1px;
         color: #FFFFFF;
@@ -1525,7 +1570,7 @@ you can use the generic selector below, but it's slower:
           background: #FFFFFF;
           color: #E150A5;
           cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .homepage .content-container .other-works .other-works-container {
         float: left;
         display: block;
@@ -1542,9 +1587,11 @@ you can use the generic selector below, but it's slower:
           .homepage .content-container .other-works .other-works-container .project:last-child {
             margin-right: 0; }
           .homepage .content-container .other-works .other-works-container .project .project-description button {
+            margin-bottom: 0;
             padding: 0;
             background: none;
             border: 0px solid #E150A5;
+            font-size: 16px;
             color: #E150A5;
             text-align: left; }
             .homepage .content-container .other-works .other-works-container .project .project-description button:hover {
@@ -1557,23 +1604,25 @@ you can use the generic selector below, but it's slower:
       display: table; }
     .homepage .content-container .contact .contact-container .contact-text h1, .homepage .content-container .contact .contact-container .contact-text h2 {
       text-align: center; }
+    .homepage .content-container .contact .contact-container .contact-text h2 {
+      margin-top: 4em; }
     .homepage .content-container .contact .contact-container .contact-text h1 {
-      line-height: 0px; }
+      line-height: 1em; }
     .homepage .content-container .contact .contact-container .contact-methods {
       width: 100%;
       margin: 3em auto 0 auto; }
       .homepage .content-container .contact .contact-container .contact-methods a {
-        padding: 27px;
+        padding: 3.25em;
         text-decoration: none;
         text-align: center; }
       .homepage .content-container .contact .contact-container .contact-methods .contact-icon {
         margin-right: 0;
         color: #BABABA;
-        font-size: 37px; }
+        font-size: 4em; }
         .homepage .content-container .contact .contact-container .contact-methods .contact-icon:hover {
           color: #0FA3B1;
           cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .homepage .content-container .contact .contact-container {
         float: left;
         display: block;
@@ -1585,21 +1634,27 @@ you can use the generic selector below, but it's slower:
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 31.76157%;
+          width: 40.29137%;
           margin-right: 0; }
           .homepage .content-container .contact .contact-container .contact-text:last-child {
             margin-right: 0; }
           .homepage .content-container .contact .contact-container .contact-text h1, .homepage .content-container .contact .contact-container .contact-text h2 {
             text-align: left; }
+          .homepage .content-container .contact .contact-container .contact-text h1 {
+            line-height: 0; }
         .homepage .content-container .contact .contact-container .contact-methods {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 48.82117%;
-          margin-left: 17.05961%;
+          margin-left: 8.5298%;
           margin-right: 0; }
           .homepage .content-container .contact .contact-container .contact-methods:last-child {
-            margin-right: 0; } }
+            margin-right: 0; }
+          .homepage .content-container .contact .contact-container .contact-methods a {
+            padding: 27px; }
+          .homepage .content-container .contact .contact-container .contact-methods .contact-icon {
+            font-size: 37px; } }
 
 .case-studies {
   margin: 0 0; }
@@ -1698,7 +1753,7 @@ you can use the generic selector below, but it's slower:
       right: 0;
       height: 1px;
       background-color: #6C7074; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .case-studies header {
         float: left;
         display: block;
@@ -1765,7 +1820,7 @@ you can use the generic selector below, but it's slower:
   .case-studies .content-container section {
     margin-bottom: 100px; }
   .case-studies .content-container .wrapper {
-    max-width: 64em;
+    max-width: 53.125em;
     margin-left: auto;
     margin-right: auto; }
     .case-studies .content-container .wrapper::after {
@@ -1824,7 +1879,7 @@ you can use the generic selector below, but it's slower:
           border: 1px solid #0FA3B1; }
       .case-studies .content-container .border .box-container .box-left, .case-studies .content-container .border .box-container .box-right {
         display: none; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .case-studies .content-container .border {
         font-size: 28px; }
         .case-studies .content-container .border .line {
@@ -1860,7 +1915,7 @@ you can use the generic selector below, but it's slower:
     line-height: 10px;
     letter-spacing: 0.1px;
     color: #BABABA; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .case-studies .content-container .project-tags {
         line-height: 24px; } }
   .case-studies .content-container .coming-soon {
@@ -1884,7 +1939,7 @@ you can use the generic selector below, but it's slower:
       color: #E57F7F; }
     .case-studies .content-container .case-overview p {
       color: #FFFFFF; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .case-studies .content-container .case-overview .case-header {
         padding-top: 60px; }
         .case-studies .content-container .case-overview .case-header .logo {
@@ -2000,7 +2055,7 @@ you can use the generic selector below, but it's slower:
         background: #FFFFFF;
         color: #E150A5;
         cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .case-studies .content-container .case-writeup .section-container {
         float: left;
         display: block;
@@ -2096,7 +2151,7 @@ you can use the generic selector below, but it's slower:
           background: #FFFFFF;
           color: #E150A5;
           cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .case-studies .content-container .other-works .other-works-container {
         float: left;
         display: block;
@@ -2140,7 +2195,7 @@ you can use the generic selector below, but it's slower:
       font-size: 37px; }
       .case-studies .content-container .contact .contact-container .contact-methods .contact-icon:hover {
         color: #0FA3B1; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .case-studies .content-container .contact .contact-container {
       float: left;
       display: block;
@@ -2152,7 +2207,7 @@ you can use the generic selector below, but it's slower:
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 40.29137%;
         margin-right: 0; }
         .case-studies .content-container .contact .contact-container .contact-text:last-child {
           margin-right: 0; }
@@ -2163,7 +2218,7 @@ you can use the generic selector below, but it's slower:
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-left: 17.05961%;
+        margin-left: 8.5298%;
         margin-right: 0; }
         .case-studies .content-container .contact .contact-container .contact-methods:last-child {
           margin-right: 0; } }
@@ -2266,7 +2321,7 @@ you can use the generic selector below, but it's slower:
       right: 0;
       height: 1px;
       background-color: #EAEAEA; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .about header {
         float: left;
         display: block;
@@ -2332,7 +2387,7 @@ you can use the generic selector below, but it's slower:
   .about .content-container section {
     margin-bottom: 100px; }
   .about .content-container .wrapper {
-    max-width: 64em;
+    max-width: 53.125em;
     margin-left: auto;
     margin-right: auto; }
     .about .content-container .wrapper::after {
@@ -2391,7 +2446,7 @@ you can use the generic selector below, but it's slower:
           border: 1px solid #0FA3B1; }
       .about .content-container .border .box-container .box-left, .about .content-container .border .box-container .box-right {
         display: none; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .about .content-container .border {
         font-size: 28px; }
         .about .content-container .border .line {
@@ -2427,7 +2482,7 @@ you can use the generic selector below, but it's slower:
     line-height: 10px;
     letter-spacing: 0.1px;
     color: #BABABA; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .about .content-container .project-tags {
         line-height: 24px; } }
   .about .content-container .intro-container {
@@ -2448,7 +2503,7 @@ you can use the generic selector below, but it's slower:
     .about .content-container .intro-container a {
       text-decoration: none;
       color: #0FA3B1; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .about .content-container .intro-container .intro-header {
         padding-top: 60px; }
         .about .content-container .intro-container .intro-header img {
@@ -2541,7 +2596,7 @@ you can use the generic selector below, but it's slower:
         background: #FFFFFF;
         color: #E150A5;
         cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .about .content-container .new-section .section-container {
         float: left;
         display: block;
@@ -2618,7 +2673,7 @@ you can use the generic selector below, but it's slower:
     border: 0px solid white; }
   .about .content-container .story .event-container:last-child h6 {
     margin: 0 0 2.4em 0; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .about .content-container .story {
       float: left;
       display: block;
@@ -2666,7 +2721,7 @@ you can use the generic selector below, but it's slower:
         font-size: 37px; }
         .about .content-container .contact .contact-container .contact-methods .contact-icon:hover {
           color: #0FA3B1; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .about .content-container .contact .contact-container {
         float: left;
         display: block;
@@ -2678,7 +2733,7 @@ you can use the generic selector below, but it's slower:
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 31.76157%;
+          width: 40.29137%;
           margin-right: 0; }
           .about .content-container .contact .contact-container .contact-text:last-child {
             margin-right: 0; }
@@ -2689,7 +2744,7 @@ you can use the generic selector below, but it's slower:
           display: block;
           margin-right: 2.35765%;
           width: 48.82117%;
-          margin-left: 17.05961%;
+          margin-left: 8.5298%;
           margin-right: 0; }
           .about .content-container .contact .contact-container .contact-methods:last-child {
             margin-right: 0; } }
@@ -2723,7 +2778,7 @@ you can use the generic selector below, but it's slower:
 .perch .content-container section {
   margin-bottom: 100px; }
 .perch .content-container .wrapper {
-  max-width: 64em;
+  max-width: 53.125em;
   margin-left: auto;
   margin-right: auto; }
   .perch .content-container .wrapper::after {
@@ -2781,7 +2836,7 @@ you can use the generic selector below, but it's slower:
         transform: translate(-50%, -50%); }
     .perch .content-container .border .box-container .box-left, .perch .content-container .border .box-container .box-right {
       display: none; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .perch .content-container .border {
       font-size: 28px; }
       .perch .content-container .border .line {
@@ -2817,7 +2872,7 @@ you can use the generic selector below, but it's slower:
   line-height: 10px;
   letter-spacing: 0.1px;
   color: #BABABA; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .perch .content-container .project-tags {
       line-height: 24px; } }
 .perch .content-container .case-overview {
@@ -2836,7 +2891,7 @@ you can use the generic selector below, but it's slower:
     color: #48B3D1; }
   .perch .content-container .case-overview p {
     color: #FFFFFF; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .perch .content-container .case-overview .case-header {
       padding-top: 110px; }
       .perch .content-container .case-overview .case-header .logo {
@@ -2934,7 +2989,7 @@ you can use the generic selector below, but it's slower:
       background: #FFFFFF;
       color: #E150A5;
       cursor: pointer; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .perch .content-container .case-writeup .section-container {
       float: left;
       display: block;
@@ -3024,7 +3079,7 @@ you can use the generic selector below, but it's slower:
         background: #FFFFFF;
         color: #E150A5;
         cursor: pointer; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .perch .content-container .other-works .other-works-container {
       float: left;
       display: block;
@@ -3067,7 +3122,7 @@ you can use the generic selector below, but it's slower:
     font-size: 37px; }
     .perch .content-container .contact .contact-container .contact-methods .contact-icon:hover {
       color: #0FA3B1; }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .perch .content-container .contact .contact-container {
     float: left;
     display: block;
@@ -3193,7 +3248,7 @@ you can use the generic selector below, but it's slower:
       right: 0;
       height: 1px;
       background-color: #EAEAEA; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .resume header {
         float: left;
         display: block;
@@ -3277,7 +3332,7 @@ you can use the generic selector below, but it's slower:
   .resume .content-container section {
     margin-bottom: 100px; }
   .resume .content-container .wrapper {
-    max-width: 64em;
+    max-width: 53.125em;
     margin-left: auto;
     margin-right: auto; }
     .resume .content-container .wrapper::after {
@@ -3336,7 +3391,7 @@ you can use the generic selector below, but it's slower:
           border: 1px solid #0FA3B1; }
       .resume .content-container .border .box-container .box-left, .resume .content-container .border .box-container .box-right {
         display: none; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .resume .content-container .border {
         font-size: 28px;
         line-height: 0px; }
@@ -3377,7 +3432,7 @@ you can use the generic selector below, but it's slower:
       display: table; }
     .resume .content-container .intro h1 {
       text-align: center; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .resume .content-container .intro .intro-container {
         float: left;
         display: block;
@@ -3413,7 +3468,7 @@ you can use the generic selector below, but it's slower:
         background: #FFFFFF;
         color: #E150A5;
         cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       .resume .content-container .resume-content .main-container {
         float: left;
         display: block;
@@ -3462,7 +3517,7 @@ you can use the generic selector below, but it's slower:
       font-size: 37px; }
       .resume .content-container .contact .contact-container .contact-methods .contact-icon:hover {
         color: #0FA3B1; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .resume .content-container .contact .contact-container {
       float: left;
       display: block;
@@ -3474,7 +3529,7 @@ you can use the generic selector below, but it's slower:
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 40.29137%;
         margin-right: 0; }
         .resume .content-container .contact .contact-container .contact-text:last-child {
           margin-right: 0; }
@@ -3485,7 +3540,7 @@ you can use the generic selector below, but it's slower:
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-left: 17.05961%;
+        margin-left: 8.5298%;
         margin-right: 0; }
         .resume .content-container .contact .contact-container .contact-methods:last-child {
           margin-right: 0; } }
@@ -3537,7 +3592,7 @@ you can use the generic selector below, but it's slower:
     .ave .content-container section {
       margin-bottom: 100px; }
     .ave .content-container .wrapper {
-      max-width: 64em;
+      max-width: 53.125em;
       margin-left: auto;
       margin-right: auto; }
       .ave .content-container .wrapper::after {
@@ -3595,7 +3650,7 @@ you can use the generic selector below, but it's slower:
             border: 1px solid #0FA3B1; }
         .ave .content-container .border .box-container .box-left, .ave .content-container .border .box-container .box-right {
           display: none; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .ave .content-container .border {
           font-size: 28px; }
           .ave .content-container .border .line {
@@ -3631,7 +3686,7 @@ you can use the generic selector below, but it's slower:
       line-height: 10px;
       letter-spacing: 0.1px;
       color: #BABABA; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .ave .content-container .project-tags {
           line-height: 24px; } }
     .ave .content-container .coming-soon {
@@ -3658,7 +3713,7 @@ you can use the generic selector below, but it's slower:
         color: #6C7074; }
       .ave .content-container .case-overview .feature-image {
         box-shadow: 0px 0px 4px 0px #D7DBDE; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .ave .content-container .case-overview .case-header {
           padding-top: 60px; }
           .ave .content-container .case-overview .case-header .logo {
@@ -3792,7 +3847,7 @@ you can use the generic selector below, but it's slower:
           background: #FFFFFF;
           color: #E150A5;
           cursor: pointer; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .ave .content-container .case-writeup .section-container {
           float: left;
           display: block;
@@ -3863,7 +3918,7 @@ you can use the generic selector below, but it's slower:
             background: #FFFFFF;
             color: #E150A5;
             cursor: pointer; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .ave .content-container .other-works .other-works-container {
           float: left;
           display: block;
@@ -3934,7 +3989,7 @@ you can use the generic selector below, but it's slower:
     .managed-package .content-container section {
       margin-bottom: 100px; }
     .managed-package .content-container .wrapper {
-      max-width: 64em;
+      max-width: 53.125em;
       margin-left: auto;
       margin-right: auto; }
       .managed-package .content-container .wrapper::after {
@@ -3992,7 +4047,7 @@ you can use the generic selector below, but it's slower:
             border: 1px solid #0FA3B1; }
         .managed-package .content-container .border .box-container .box-left, .managed-package .content-container .border .box-container .box-right {
           display: none; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .managed-package .content-container .border {
           font-size: 28px; }
           .managed-package .content-container .border .line {
@@ -4028,7 +4083,7 @@ you can use the generic selector below, but it's slower:
       line-height: 10px;
       letter-spacing: 0.1px;
       color: #BABABA; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .managed-package .content-container .project-tags {
           line-height: 24px; } }
     .managed-package .content-container .coming-soon {
@@ -4055,7 +4110,7 @@ you can use the generic selector below, but it's slower:
         color: #6C7074; }
       .managed-package .content-container .case-overview .feature-image {
         box-shadow: 0px 0px 4px 0px #D7DBDE; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .managed-package .content-container .case-overview .case-header {
           padding-top: 60px; }
           .managed-package .content-container .case-overview .case-header .logo {
@@ -4189,7 +4244,7 @@ you can use the generic selector below, but it's slower:
           background: #FFFFFF;
           color: #E150A5;
           cursor: pointer; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .managed-package .content-container .case-writeup .section-container {
           float: left;
           display: block;
@@ -4252,7 +4307,7 @@ you can use the generic selector below, but it's slower:
             background: #FFFFFF;
             color: #E150A5;
             cursor: pointer; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1000px) {
         .managed-package .content-container .other-works .other-works-container {
           float: left;
           display: block;

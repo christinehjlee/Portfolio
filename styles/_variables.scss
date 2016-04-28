@@ -1,12 +1,12 @@
 @import "neat/neat-helpers";
 
 //overrides Neat's default
-$max-width: em(1024);
+$max-width: em(850);
 
 $visual-grid-color: lighten(#FFF0E8, 3%);
 
 //breakpoints
-$desktop: new-breakpoint(min-width 600px 12);
+$desktop: new-breakpoint(min-width 1000px 12);
 
 //typography
 $serif: 'Petrona', Georgia, serif;
