@@ -15,12 +15,15 @@ $mobile: new-breakpoint(max-width 500px 4);
 //reused components
 @import 'header';
 @import 'contact';
-@import 'case-studies';
+@import 'content';
 
 //pages
 @import 'pages/homepage';
 @import 'pages/about';
-@import 'pages/perch';
 @import 'pages/resume';
+
+//case studies
+@import 'case-studies';
+@import 'pages/nico';
 @import 'pages/ave';
 @import 'pages/managed-package';

@@ -1359,588 +1359,265 @@ header {
         .contact .contact-container .contact-methods .contact-icon {
           font-size: 37px; } }
 
-.case-studies {
-  margin: 0 0; }
-  .case-studies header {
-    background: transparent; }
-    .case-studies header .line {
-      display: none; }
-  .case-studies .content-container h1 {
-    font-family: "Petrona", Georgia, serif;
-    font-size: 5em;
-    font-weight: 100;
-    line-height: 43px;
-    color: #0FA3B1; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container h1 {
-        font-size: 38px; } }
-  .case-studies .content-container h2, .case-studies .content-container h5, .case-studies .content-container p {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-weight: 100; }
-  .case-studies .content-container h2 {
-    font-size: 4em;
-    line-height: 1.25em;
-    color: #2E3839;
-    text-align: center; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container h2 {
-        margin-bottom: 0.5em;
-        font-size: 21px;
-        line-height: 31px; } }
-  .case-studies .content-container h5 {
-    margin: 2em 0 -0.5em 0;
-    font-size: 13px;
-    line-height: 16px;
-    color: #2E3839;
-    text-transform: uppercase; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container h5 {
-        margin: 30px 0 -5px 0; } }
-  .case-studies .content-container p {
-    font-size: 0.875em;
-    line-height: 1.75em;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container p {
-        font-size: 16px;
-        line-height: 32px; } }
-  .case-studies .content-container img {
-    width: 100%; }
-  .case-studies .content-container section {
-    margin-bottom: 10em; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container section {
-        margin-bottom: 100px; } }
-  .case-studies .content-container .wrapper {
-    max-width: 53.125em;
-    margin-left: auto;
-    margin-right: auto; }
-    .case-studies .content-container .wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container .wrapper {
-        max-width: 64em;
-        margin-left: auto;
-        margin-right: auto; }
-        .case-studies .content-container .wrapper::after {
-          clear: both;
-          content: "";
-          display: table; } }
-  .case-studies .content-container .border {
+.content-container h1 {
+  font-family: "Petrona", Georgia, serif;
+  font-size: 5em;
+  font-weight: 100;
+  line-height: 43px;
+  color: #0FA3B1; }
+  @media screen and (min-width: 1000px) {
+    .content-container h1 {
+      font-size: 38px; } }
+.content-container h2, .content-container h5, .content-container p {
+  font-family: "Muli", Helvetica, sans-serif;
+  font-weight: 100; }
+.content-container h2 {
+  font-size: 4em;
+  line-height: 1.25em;
+  color: #2E3839; }
+  @media screen and (min-width: 1000px) {
+    .content-container h2 {
+      margin-bottom: 0.5em;
+      font-size: 21px;
+      line-height: 31px; } }
+.content-container h5 {
+  margin: 2em 0 -0.5em 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2E3839;
+  text-transform: uppercase; }
+  @media screen and (min-width: 1000px) {
+    .content-container h5 {
+      margin: 30px 0 -5px 0; } }
+.content-container p, .content-container ul, .content-container ol {
+  font-size: 0.875em;
+  line-height: 1.75em;
+  letter-spacing: 0.1px;
+  color: #7F7F7F; }
+  @media screen and (min-width: 1000px) {
+    .content-container p, .content-container ul, .content-container ol {
+      font-size: 16px;
+      line-height: 32px; } }
+.content-container ul, .content-container ol {
+  line-height: 6em; }
+  .content-container ul li, .content-container ol li {
+    line-height: 2em; }
+  @media screen and (min-width: 1000px) {
+    .content-container ul, .content-container ol {
+      line-height: 32px; } }
+.content-container ul {
+  font-family: "Muli", Helvetica, sans-serif;
+  list-style-type: disc; }
+.content-container ol {
+  list-style-type: decimal; }
+.content-container .drop-cap {
+  float: left;
+  padding: 44px 15px 0 0;
+  font-family: "Petrona", Georgia, serif;
+  font-size: 10em;
+  line-height: 62px;
+  color: #7F7F7F; }
+  @media screen and (min-width: 1000px) {
+    .content-container .drop-cap {
+      padding: 2px 8px 0 0;
+      font-size: 65px; } }
+.content-container img {
+  width: 100%; }
+.content-container section {
+  margin-bottom: 10em; }
+  @media screen and (min-width: 1000px) {
+    .content-container section {
+      margin-bottom: 100px; } }
+.content-container .wrapper {
+  max-width: 53.125em;
+  margin-left: auto;
+  margin-right: auto; }
+  .content-container .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 1000px) {
+    .content-container .wrapper {
+      max-width: 64em;
+      margin-left: auto;
+      margin-right: auto; }
+      .content-container .wrapper::after {
+        clear: both;
+        content: "";
+        display: table; } }
+.content-container .border {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 2em;
+  position: relative;
+  height: 65px;
+  font-family: "Petrona", Georgia, serif;
+  font-size: 4em;
+  line-height: 0px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #0FA3B1; }
+  .content-container .border:last-child {
+    margin-right: 0; }
+  .content-container .border .line {
+    position: absolute;
+    width: 100%;
+    top: 34%;
+    border-bottom: 1px solid #0FA3B1; }
+  .content-container .border .box-container {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 50px;
-    position: relative;
-    height: 65px;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 4em;
-    line-height: 0px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #0FA3B1; }
-    .case-studies .content-container .border:last-child {
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    margin-right: 0;
+    position: absolute; }
+    .content-container .border .box-container:last-child {
       margin-right: 0; }
-    .case-studies .content-container .border .line {
+    .content-container .border .box-container .box-center {
       position: absolute;
-      width: 100%;
-      top: 34%;
-      border-bottom: 1px solid #0FA3B1; }
-    .case-studies .content-container .border .box-container {
-      float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%;
-      margin-right: 0;
-      position: absolute; }
-      .case-studies .content-container .border .box-container:last-child {
-        margin-right: 0; }
-      .case-studies .content-container .border .box-container .box-center {
+      z-index: 2;
+      height: 45px;
+      width: 100%;
+      background: #FFFFFF;
+      line-height: 1.2em;
+      text-align: center; }
+      .content-container .border .box-container .box-center span {
         position: absolute;
+        margin: 0;
+        padding: 0.5em;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        min-width: 100%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #0FA3B1;
+        background: #FFFFFF; }
+    .content-container .border .box-container .box-left, .content-container .border .box-container .box-right {
+      display: none; }
+  @media screen and (min-width: 1000px) {
+    .content-container .border {
+      font-size: 28px;
+      line-height: 0px; }
+      .content-container .border .line {
+        top: 50%;
+        height: 1px;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
+        border-bottom: 0px solid #0FA3B1; }
+      .content-container .border .border {
+        margin-bottom: 50px; }
+      .content-container .border .box-container {
+        float: left;
         display: block;
-        z-index: 2;
-        height: 45px;
-        width: 95%;
-        background: #FFFFFF;
-        line-height: 1.2em;
-        text-align: center; }
-        .case-studies .content-container .border .box-container .box-center span {
-          position: absolute;
-          margin: 0;
-          padding: 0.5em;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          min-width: 100%;
-          transform: translate(-50%, -50%);
-          border: 1px solid #0FA3B1; }
-      .case-studies .content-container .border .box-container .box-left, .case-studies .content-container .border .box-container .box-right {
-        display: none; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container .border {
-        font-size: 28px; }
-        .case-studies .content-container .border .line {
-          top: 50%;
-          height: 1px;
-          background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-          border-bottom: 0px solid #0FA3B1; }
-        .case-studies .content-container .border .box-container .box-left, .case-studies .content-container .border .box-container .box-right {
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%;
+        margin-right: 0; }
+        .content-container .border .box-container:last-child {
+          margin-right: 0; }
+        .content-container .border .box-container .box-left, .content-container .border .box-container .box-right {
           position: absolute;
           display: block;
           height: 45px;
           width: 95%; }
-        .case-studies .content-container .border .box-container .box-center {
+        .content-container .border .box-container .box-center {
           top: 10px;
           left: 10px;
           width: 95%;
           border: 1px solid #EAEAEA; }
-          .case-studies .content-container .border .box-container .box-center span {
-            border: 0px solid #0FA3B1; }
-        .case-studies .content-container .border .box-container .box-left, .case-studies .content-container .border .box-container .box-right {
+          .content-container .border .box-container .box-center span {
+            border: 0px solid #0FA3B1;
+            background: none; }
+        .content-container .border .box-container .box-left, .content-container .border .box-container .box-right {
           z-index: 1;
           border: 1px solid #0FA3B1;
           background: #FFFFFF; }
-        .case-studies .content-container .border .box-container .box-left {
+        .content-container .border .box-container .box-left {
           top: 0; }
-        .case-studies .content-container .border .box-container .box-right {
+        .content-container .border .box-container .box-right {
           top: 20px;
           left: 20px; } }
-  .case-studies .content-container .project-tags {
-    margin-top: -5px;
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 10px;
-    letter-spacing: 0.1px;
-    color: #BABABA; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container .project-tags {
-        line-height: 24px; } }
-  .case-studies .content-container .coming-soon {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
-  .case-studies .content-container .case-overview {
-    display: block;
-    padding: 20px 0 70px 0;
-    margin: 0 auto;
-    float: none;
-    background-image: url("../images/nico/nico-bg.jpg"); }
-    .case-studies .content-container .case-overview::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .case-studies .content-container .case-overview h1 {
-      text-align: center; }
-    .case-studies .content-container .case-overview h5 {
-      color: #E57F7F; }
-    .case-studies .content-container .case-overview p {
-      color: #FFFFFF; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container .case-overview .case-header {
-        padding-top: 60px; }
-        .case-studies .content-container .case-overview .case-header .logo {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          margin-left: 34.11922%; }
-          .case-studies .content-container .case-overview .case-header .logo:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header img {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 82.94039%;
-          margin-left: 8.5298%; }
-          .case-studies .content-container .case-overview .case-header img:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header .project-tags, .case-studies .content-container .case-overview .case-header .read-time {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 25.58941%;
-          font-size: 18px;
-          text-align: center; }
-          .case-studies .content-container .case-overview .case-header .project-tags:last-child, .case-studies .content-container .case-overview .case-header .read-time:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header .project-about {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 65.88078%;
-          margin-left: 17.05961%;
-          font-size: 21px;
-          text-align: center; }
-          .case-studies .content-container .case-overview .case-header .project-about:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-overview .case-header .project-tags {
-          margin-top: 1em;
-          margin-bottom: 0;
-          color: #BABABA; }
-        .case-studies .content-container .case-overview .case-header .read-time {
-          margin-top: 0;
-          margin-bottom: 0;
-          font-size: 14px;
-          color: #BABABA; }
-      .case-studies .content-container .case-overview .case-tldr {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .case-studies .content-container .case-overview .case-tldr:last-child {
-          margin-right: 0; }
-        .case-studies .content-container .case-overview .case-tldr .problem {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .case-studies .content-container .case-overview .case-tldr .problem:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-overview .case-tldr .my-role {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          margin-left: 8.5298%; }
-          .case-studies .content-container .case-overview .case-tldr .my-role:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-overview .case-tldr .toolbox {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 6.17215%;
-          margin-left: 8.5298%; }
-          .case-studies .content-container .case-overview .case-tldr .toolbox:last-child {
-            margin-right: 0; } }
-  .case-studies .content-container .case-writeup {
-    display: block; }
-    .case-studies .content-container .case-writeup::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .case-studies .content-container .case-writeup .section-container .drop-cap {
-      float: left;
-      padding: 2px 10px 0 0;
-      font-family: "Petrona", Georgia, serif;
-      font-size: 65px;
-      line-height: 62px;
-      color: #7F7F7F; }
-    .case-studies .content-container .case-writeup .section-container ul {
-      font-family: "Muli", Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 32px;
-      letter-spacing: 0.1px;
-      color: #7F7F7F;
-      list-style-type: disc; }
-    .case-studies .content-container .case-writeup .section-container ol {
-      list-style-type: decimal; }
-    .case-studies .content-container .case-writeup .section-container button {
+.content-container .project-tags {
+  font-family: "Muli", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.1px;
+  color: #BABABA; }
+  @media screen and (min-width: 1000px) {
+    .content-container .project-tags {
+      line-height: 24px; } }
+.content-container .coming-soon {
+  font-family: "Muli", Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  color: #7F7F7F; }
+.content-container .other-works {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  .content-container .other-works::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .content-container .other-works:last-child {
+    margin-right: 0; }
+  .content-container .other-works .project {
+    margin-bottom: 60px; }
+    .content-container .other-works .project img {
+      box-shadow: 0px 0px 4px 0px #D7DBDE; }
+    .content-container .other-works .project .project-description button {
       width: 100%;
-      padding: 0.9375em 70px;
+      margin-bottom: 2em;
+      padding: 1.25em 0;
       background: #E150A5;
       border: 1px solid #E150A5;
       border-radius: 4px;
       font-family: "Muli", Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 2.5em;
       line-height: 17px;
       letter-spacing: 0.1px;
       color: #FFFFFF;
       text-decoration: none; }
-      .case-studies .content-container .case-writeup .section-container button:hover {
+      .content-container .other-works .project .project-description button:hover {
         background: #FFFFFF;
         color: #E150A5;
         cursor: pointer; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container .case-writeup .section-container {
+  @media screen and (min-width: 1000px) {
+    .content-container .other-works .other-works-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      .content-container .other-works .other-works-container:last-child {
+        margin-right: 0; }
+      .content-container .other-works .other-works-container .project {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .case-studies .content-container .case-writeup .section-container:last-child {
+        .content-container .other-works .other-works-container .project:last-child {
           margin-right: 0; }
-        .case-studies .content-container .case-writeup .section-container .writeup-description p, .case-studies .content-container .case-writeup .section-container .writeup-description ul {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 25.58941%; }
-          .case-studies .content-container .case-writeup .section-container .writeup-description p:last-child, .case-studies .content-container .case-writeup .section-container .writeup-description ul:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-writeup .section-container .writeup-description h2 {
-          line-height: 0; }
-        .case-studies .content-container .case-writeup .section-container .writeup-description img {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 65.88078%;
-          margin-left: 17.05961%; }
-          .case-studies .content-container .case-writeup .section-container .writeup-description img:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-writeup .section-container button {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 25.58941%;
-          padding: 15px 50px; }
-          .case-studies .content-container .case-writeup .section-container button:last-child {
-            margin-right: 0; }
-      .case-studies .content-container .case-writeup .personas {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 6.39735%; }
-        .case-studies .content-container .case-writeup .personas:last-child {
-          margin-right: 0; }
-        .case-studies .content-container .case-writeup .personas .persona-image {
-          text-align: center; }
-          .case-studies .content-container .case-writeup .personas .persona-image img {
-            display: inline-block;
-            width: 50%;
-            margin: 0 auto; }
-        .case-studies .content-container .case-writeup .personas .persona-tldr {
-          margin-bottom: 40px; }
-          .case-studies .content-container .case-writeup .personas .persona-tldr p {
-            line-height: 26px; }
-        .case-studies .content-container .case-writeup .personas .catarina {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%; }
-          .case-studies .content-container .case-writeup .personas .catarina:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .case-writeup .personas .brandon {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-left: 4.2649%; }
-          .case-studies .content-container .case-writeup .personas .brandon:last-child {
-            margin-right: 0; } }
-  .case-studies .content-container .personas {
-    margin: -33px 0 70px 0; }
-  .case-studies .content-container .other-works {
-    display: block; }
-    .case-studies .content-container .other-works::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .case-studies .content-container .other-works .project {
-      margin-bottom: 60px; }
-      .case-studies .content-container .other-works .project .project-description h2 {
-        text-align: left; }
-      .case-studies .content-container .other-works .project .project-description button {
-        width: 100%;
-        padding: 15px 70px;
-        background: #E150A5;
-        border: 1px solid #E150A5;
-        border-radius: 4px;
-        font-family: "Muli", Helvetica, sans-serif;
-        font-size: 16px;
-        line-height: 17px;
-        letter-spacing: 0.1px;
-        color: #FFFFFF;
-        text-decoration: none; }
-        .case-studies .content-container .other-works .project .project-description button:hover {
-          background: #FFFFFF;
+        .content-container .other-works .other-works-container .project .project-description button {
+          margin-bottom: 0;
+          padding: 0;
+          background: none;
+          border: 0px solid #E150A5;
+          font-size: 16px;
           color: #E150A5;
-          cursor: pointer; }
-    @media screen and (min-width: 1000px) {
-      .case-studies .content-container .other-works .other-works-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-right: 0; }
-        .case-studies .content-container .other-works .other-works-container:last-child {
-          margin-right: 0; }
-        .case-studies .content-container .other-works .other-works-container .project img {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%; }
-          .case-studies .content-container .other-works .other-works-container .project img:last-child {
-            margin-right: 0; }
-        .case-studies .content-container .other-works .other-works-container .project .project-description {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 8.5298%; }
-          .case-studies .content-container .other-works .other-works-container .project .project-description:last-child {
-            margin-right: 0; }
-          .case-studies .content-container .other-works .other-works-container .project .project-description button:hover {
+          text-align: left; }
+          .content-container .other-works .other-works-container .project .project-description button:hover {
             color: #2E3839; } }
 
 .homepage {
-  margin: 0 0; }
-  .homepage .content-container h1 {
-    font-family: "Petrona", Georgia, serif;
-    font-size: 5em;
-    font-weight: 100;
-    line-height: 43px;
-    color: #0FA3B1; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container h1 {
-        font-size: 38px; } }
-  .homepage .content-container h2, .homepage .content-container h5, .homepage .content-container p {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-weight: 100; }
-  .homepage .content-container h2 {
-    font-size: 4em;
-    line-height: 1.25em;
-    color: #2E3839; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container h2 {
-        margin-bottom: 0.5em;
-        font-size: 21px;
-        line-height: 31px; } }
-  .homepage .content-container h5 {
-    margin: 2em 0 -0.5em 0;
-    font-size: 13px;
-    line-height: 16px;
-    color: #2E3839;
-    text-transform: uppercase; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container h5 {
-        margin: 30px 0 -5px 0; } }
-  .homepage .content-container p {
-    font-size: 0.875em;
-    line-height: 1.75em;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container p {
-        font-size: 16px;
-        line-height: 32px; } }
-  .homepage .content-container img {
-    width: 100%; }
-  .homepage .content-container section {
-    margin-bottom: 10em; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container section {
-        margin-bottom: 100px; } }
-  .homepage .content-container .wrapper {
-    max-width: 53.125em;
-    margin-left: auto;
-    margin-right: auto; }
-    .homepage .content-container .wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .wrapper {
-        max-width: 64em;
-        margin-left: auto;
-        margin-right: auto; }
-        .homepage .content-container .wrapper::after {
-          clear: both;
-          content: "";
-          display: table; } }
-  .homepage .content-container .border {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 50px;
-    position: relative;
-    height: 65px;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 4em;
-    line-height: 0px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #0FA3B1; }
-    .homepage .content-container .border:last-child {
-      margin-right: 0; }
-    .homepage .content-container .border .line {
-      position: absolute;
-      width: 100%;
-      top: 34%;
-      border-bottom: 1px solid #0FA3B1; }
-    .homepage .content-container .border .box-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%;
-      margin-right: 0;
-      position: absolute; }
-      .homepage .content-container .border .box-container:last-child {
-        margin-right: 0; }
-      .homepage .content-container .border .box-container .box-center {
-        position: absolute;
-        display: block;
-        z-index: 2;
-        height: 45px;
-        width: 95%;
-        background: #FFFFFF;
-        line-height: 1.2em;
-        text-align: center; }
-        .homepage .content-container .border .box-container .box-center span {
-          position: absolute;
-          margin: 0;
-          padding: 0.5em;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          min-width: 100%;
-          transform: translate(-50%, -50%);
-          border: 1px solid #0FA3B1; }
-      .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
-        display: none; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .border {
-        font-size: 28px;
-        line-height: 0px; }
-        .homepage .content-container .border .line {
-          top: 50%;
-          height: 1px;
-          background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-          border-bottom: 0px solid #0FA3B1; }
-        .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
-          position: absolute;
-          display: block;
-          height: 45px;
-          width: 95%; }
-        .homepage .content-container .border .box-container .box-center {
-          top: 10px;
-          left: 10px;
-          width: 95%;
-          border: 1px solid #EAEAEA; }
-          .homepage .content-container .border .box-container .box-center span {
-            border: 0px solid #0FA3B1; }
-        .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
-          z-index: 1;
-          border: 1px solid #0FA3B1;
-          background: #FFFFFF; }
-        .homepage .content-container .border .box-container .box-left {
-          top: 0; }
-        .homepage .content-container .border .box-container .box-right {
-          top: 20px;
-          left: 20px; } }
-  .homepage .content-container .project-tags {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 10px;
-    letter-spacing: 0.1px;
-    color: #BABABA; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .project-tags {
-        line-height: 24px; } }
-  .homepage .content-container .coming-soon {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
+  margin: 0 0;
+  /* Content */ }
   .homepage .content-container .intro {
     display: block;
     padding: 20px 0;
@@ -2031,57 +1708,6 @@ header {
           margin-bottom: 0;
           padding: 15px 50px;
           font-size: 16px; } }
-  .homepage .content-container .other-works {
-    display: block; }
-    .homepage .content-container .other-works::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .homepage .content-container .other-works .project {
-      margin-bottom: 60px; }
-      .homepage .content-container .other-works .project .project-description button {
-        width: 100%;
-        margin-bottom: 2em;
-        padding: 1.25em 0;
-        background: #E150A5;
-        border: 1px solid #E150A5;
-        border-radius: 4px;
-        font-family: "Muli", Helvetica, sans-serif;
-        font-size: 2.5em;
-        line-height: 17px;
-        letter-spacing: 0.1px;
-        color: #FFFFFF;
-        text-decoration: none; }
-        .homepage .content-container .other-works .project .project-description button:hover {
-          background: #FFFFFF;
-          color: #E150A5;
-          cursor: pointer; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .other-works .other-works-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-right: 0; }
-        .homepage .content-container .other-works .other-works-container:last-child {
-          margin-right: 0; }
-        .homepage .content-container .other-works .other-works-container .project {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .homepage .content-container .other-works .other-works-container .project:last-child {
-            margin-right: 0; }
-          .homepage .content-container .other-works .other-works-container .project .project-description button {
-            margin-bottom: 0;
-            padding: 0;
-            background: none;
-            border: 0px solid #E150A5;
-            font-size: 16px;
-            color: #E150A5;
-            text-align: left; }
-            .homepage .content-container .other-works .other-works-container .project .project-description button:hover {
-              color: #2E3839; } }
 
 .about {
   margin: 0 0; }
@@ -2425,407 +2051,6 @@ header {
         .about .content-container .story .event:last-child {
           margin-right: 0; } }
 
-.perch .content-container h1 {
-  font-family: "Petrona", Georgia, serif;
-  font-size: 38px;
-  font-weight: 100;
-  line-height: 43px;
-  color: #48B3D1; }
-.perch .content-container h2, .perch .content-container h5, .perch .content-container p {
-  font-family: "Muli", Helvetica, sans-serif;
-  font-weight: 100; }
-.perch .content-container h2 {
-  font-size: 21px;
-  line-height: 31px;
-  color: #2E3839; }
-.perch .content-container h5 {
-  margin: 30px 0 -5px 0;
-  font-size: 13px;
-  line-height: 16px;
-  color: #2E3839;
-  text-transform: uppercase; }
-.perch .content-container p {
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
-  color: #7F7F7F; }
-.perch .content-container img {
-  width: 100%; }
-.perch .content-container section {
-  margin-bottom: 100px; }
-.perch .content-container .wrapper {
-  max-width: 53.125em;
-  margin-left: auto;
-  margin-right: auto; }
-  .perch .content-container .wrapper::after {
-    clear: both;
-    content: "";
-    display: table; }
-.perch .content-container .border {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-bottom: 50px;
-  position: relative;
-  height: 65px;
-  font-family: "Petrona", Georgia, serif;
-  font-size: 21px;
-  line-height: 0px;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #48B3D1; }
-  .perch .content-container .border:last-child {
-    margin-right: 0; }
-  .perch .content-container .border .line {
-    position: absolute;
-    width: 100%;
-    top: 34%;
-    border-bottom: 1px solid #48B3D1; }
-  .perch .content-container .border .box-container {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 25.58941%;
-    margin-right: 0;
-    position: absolute; }
-    .perch .content-container .border .box-container:last-child {
-      margin-right: 0; }
-    .perch .content-container .border .box-container .box-center {
-      position: absolute;
-      display: block;
-      z-index: 2;
-      height: 45px;
-      width: 95%;
-      background: #FFFFFF;
-      line-height: 1.2em;
-      text-align: center; }
-      .perch .content-container .border .box-container .box-center span {
-        position: absolute;
-        margin: 0;
-        padding: 0.5em;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        min-width: 100%;
-        transform: translate(-50%, -50%); }
-    .perch .content-container .border .box-container .box-left, .perch .content-container .border .box-container .box-right {
-      display: none; }
-  @media screen and (min-width: 1000px) {
-    .perch .content-container .border {
-      font-size: 28px; }
-      .perch .content-container .border .line {
-        top: 50%;
-        height: 1px;
-        background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-        border-bottom: 0px solid #48B3D1; }
-      .perch .content-container .border .box-container .box-left, .perch .content-container .border .box-container .box-right {
-        position: absolute;
-        display: block;
-        height: 45px;
-        width: 95%; }
-      .perch .content-container .border .box-container .box-center {
-        top: 10px;
-        left: 10px;
-        width: 95%;
-        border: 1px solid #EAEAEA; }
-        .perch .content-container .border .box-container .box-center span {
-          border: 0px solid #48B3D1; }
-      .perch .content-container .border .box-container .box-left, .perch .content-container .border .box-container .box-right {
-        z-index: 1;
-        border: 1px solid #48B3D1;
-        background: #FFFFFF; }
-      .perch .content-container .border .box-container .box-left {
-        top: 0; }
-      .perch .content-container .border .box-container .box-right {
-        top: 20px;
-        left: 20px; } }
-.perch .content-container .project-tags {
-  margin-top: -5px;
-  font-family: "Muli", Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 10px;
-  letter-spacing: 0.1px;
-  color: #BABABA; }
-  @media screen and (min-width: 1000px) {
-    .perch .content-container .project-tags {
-      line-height: 24px; } }
-.perch .content-container .case-overview {
-  display: block;
-  padding: 20px 0 70px 0;
-  margin: 0 auto;
-  float: none;
-  background-image: url("../images/perch/bg.png"); }
-  .perch .content-container .case-overview::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .perch .content-container .case-overview h1 {
-    text-align: center; }
-  .perch .content-container .case-overview h5 {
-    color: #48B3D1; }
-  .perch .content-container .case-overview p {
-    color: #FFFFFF; }
-  @media screen and (min-width: 1000px) {
-    .perch .content-container .case-overview .case-header {
-      padding-top: 110px; }
-      .perch .content-container .case-overview .case-header .logo {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        margin-left: 34.11922%; }
-        .perch .content-container .case-overview .case-header .logo:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-overview .case-header img {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        .perch .content-container .case-overview .case-header img:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-overview .case-header .project-tags, .perch .content-container .case-overview .case-header .project-about {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 25.58941%;
-        font-size: 18px;
-        text-align: center; }
-        .perch .content-container .case-overview .case-header .project-tags:last-child, .perch .content-container .case-overview .case-header .project-about:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-overview .case-header .project-tags {
-        margin-top: 1em;
-        color: #BABABA; }
-    .perch .content-container .case-overview .case-tldr {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .perch .content-container .case-overview .case-tldr:last-child {
-        margin-right: 0; }
-      .perch .content-container .case-overview .case-tldr .problem {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .perch .content-container .case-overview .case-tldr .problem:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-overview .case-tldr .my-role {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        margin-left: 8.5298%; }
-        .perch .content-container .case-overview .case-tldr .my-role:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-overview .case-tldr .toolbox {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 6.17215%;
-        margin-left: 8.5298%; }
-        .perch .content-container .case-overview .case-tldr .toolbox:last-child {
-          margin-right: 0; } }
-.perch .content-container .case-writeup {
-  display: block; }
-  .perch .content-container .case-writeup::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .perch .content-container .case-writeup .section-container .drop-cap {
-    float: left;
-    padding: 2px 10px 0 0;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 65px;
-    line-height: 62px;
-    color: #7F7F7F; }
-  .perch .content-container .case-writeup .section-container ul {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F;
-    list-style-type: decimal; }
-  .perch .content-container .case-writeup .section-container button {
-    width: 100%;
-    padding: 0.9375em 70px;
-    background: #E150A5;
-    border: 1px solid #E150A5;
-    border-radius: 4px;
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 17px;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
-    text-decoration: none; }
-    .perch .content-container .case-writeup .section-container button:hover {
-      background: #FFFFFF;
-      color: #E150A5;
-      cursor: pointer; }
-  @media screen and (min-width: 1000px) {
-    .perch .content-container .case-writeup .section-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .perch .content-container .case-writeup .section-container:last-child {
-        margin-right: 0; }
-      .perch .content-container .case-writeup .section-container .writeup-description p, .perch .content-container .case-writeup .section-container .writeup-description ul {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 25.58941%; }
-        .perch .content-container .case-writeup .section-container .writeup-description p:last-child, .perch .content-container .case-writeup .section-container .writeup-description ul:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-writeup .section-container .writeup-description h2 {
-        line-height: 0; }
-      .perch .content-container .case-writeup .section-container .writeup-description img {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-left: 17.05961%; }
-        .perch .content-container .case-writeup .section-container .writeup-description img:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-writeup .section-container button {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 25.58941%;
-        padding: 15px 50px; }
-        .perch .content-container .case-writeup .section-container button:last-child {
-          margin-right: 0; }
-    .perch .content-container .case-writeup .personas {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-left: 6.39735%; }
-      .perch .content-container .case-writeup .personas:last-child {
-        margin-right: 0; }
-      .perch .content-container .case-writeup .personas .persona-image {
-        text-align: center; }
-        .perch .content-container .case-writeup .personas .persona-image img {
-          display: inline-block;
-          width: 50%;
-          margin: 0 auto; }
-      .perch .content-container .case-writeup .personas .catarina {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 40.29137%; }
-        .perch .content-container .case-writeup .personas .catarina:last-child {
-          margin-right: 0; }
-      .perch .content-container .case-writeup .personas .brandon {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 40.29137%;
-        margin-left: 4.2649%; }
-        .perch .content-container .case-writeup .personas .brandon:last-child {
-          margin-right: 0; } }
-.perch .content-container .personas {
-  margin: -33px 0 70px 0; }
-.perch .content-container .other-works {
-  display: block; }
-  .perch .content-container .other-works::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .perch .content-container .other-works .project {
-    margin-bottom: 60px; }
-    .perch .content-container .other-works .project .project-description button {
-      width: 100%;
-      padding: 15px 70px;
-      background: #E150A5;
-      border: 1px solid #E150A5;
-      border-radius: 4px;
-      font-family: "Muli", Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 17px;
-      letter-spacing: 0.5px;
-      color: #FFFFFF;
-      text-decoration: none; }
-      .perch .content-container .other-works .project .project-description button:hover {
-        background: #FFFFFF;
-        color: #E150A5;
-        cursor: pointer; }
-  @media screen and (min-width: 1000px) {
-    .perch .content-container .other-works .other-works-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-right: 0; }
-      .perch .content-container .other-works .other-works-container:last-child {
-        margin-right: 0; }
-      .perch .content-container .other-works .other-works-container .project img {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 40.29137%; }
-        .perch .content-container .other-works .other-works-container .project img:last-child {
-          margin-right: 0; }
-      .perch .content-container .other-works .other-works-container .project .project-description {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 8.5298%; }
-        .perch .content-container .other-works .other-works-container .project .project-description:last-child {
-          margin-right: 0; }
-        .perch .content-container .other-works .other-works-container .project .project-description button:hover {
-          color: #E150A5; } }
-.perch .content-container .contact .contact-container .contact-text h1, .perch .content-container .contact .contact-container .contact-text h2 {
-  text-align: center; }
-.perch .content-container .contact .contact-container .contact-text h1 {
-  line-height: 0px; }
-.perch .content-container .contact .contact-container .contact-methods {
-  width: 100%;
-  margin: 3em auto 0 auto; }
-  .perch .content-container .contact .contact-container .contact-methods a {
-    padding: 27px;
-    text-decoration: none;
-    text-align: center; }
-  .perch .content-container .contact .contact-container .contact-methods .contact-icon {
-    margin-right: 0;
-    color: #BABABA;
-    font-size: 37px; }
-    .perch .content-container .contact .contact-container .contact-methods .contact-icon:hover {
-      color: #0FA3B1; }
-@media screen and (min-width: 1000px) {
-  .perch .content-container .contact .contact-container {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .perch .content-container .contact .contact-container:last-child {
-      margin-right: 0; }
-    .perch .content-container .contact .contact-container .contact-text {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      margin-right: 0; }
-      .perch .content-container .contact .contact-container .contact-text:last-child {
-        margin-right: 0; }
-      .perch .content-container .contact .contact-container .contact-text h1, .perch .content-container .contact .contact-container .contact-text h2 {
-        text-align: left; }
-    .perch .content-container .contact .contact-container .contact-methods {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      margin-left: 34.11922%;
-      margin-right: 0; }
-      .perch .content-container .contact .contact-container .contact-methods:last-child {
-        margin-right: 0; } }
-
 .resume {
   margin: 0 0; }
   .resume .content-container h1 {
@@ -3043,6 +2268,268 @@ header {
         margin-left: 25.58941%; }
         .resume .content-container .resume-content button:last-child {
           margin-right: 0; } }
+
+.case-studies {
+  margin: 0 0; }
+  .case-studies header {
+    background: transparent; }
+    .case-studies header .line {
+      display: none; }
+  .case-studies .content-container {
+    /* Sections */ }
+    .case-studies .content-container .case-overview {
+      display: block;
+      padding: 3em 0 10em 0;
+      margin: 0 auto;
+      float: none; }
+      .case-studies .content-container .case-overview::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .case-studies .content-container .case-overview h1 {
+        text-align: center; }
+      .case-studies .content-container .case-overview p {
+        color: #FFFFFF; }
+      .case-studies .content-container .case-overview .logo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%;
+        margin-bottom: 3em; }
+        .case-studies .content-container .case-overview .logo:last-child {
+          margin-right: 0; }
+      .case-studies .content-container .case-overview .project-tags, .case-studies .content-container .case-overview .read-time {
+        color: #BABABA;
+        text-align: center; }
+      .case-studies .content-container .case-overview .read-time {
+        font-size: 12px;
+        line-height: 0.25em; }
+      .case-studies .content-container .case-overview .project-about {
+        font-size: 1em; }
+      @media screen and (min-width: 1000px) {
+        .case-studies .content-container .case-overview {
+          padding: 20px 0 70px 0; }
+          .case-studies .content-container .case-overview .case-header {
+            padding-top: 60px; }
+            .case-studies .content-container .case-overview .case-header .logo {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 31.76157%;
+              margin-left: 34.11922%;
+              margin-bottom: 0; }
+              .case-studies .content-container .case-overview .case-header .logo:last-child {
+                margin-right: 0; }
+            .case-studies .content-container .case-overview .case-header img {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 82.94039%;
+              margin-left: 8.5298%; }
+              .case-studies .content-container .case-overview .case-header img:last-child {
+                margin-right: 0; }
+            .case-studies .content-container .case-overview .case-header .project-tags, .case-studies .content-container .case-overview .case-header .read-time {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 48.82117%;
+              margin-left: 25.58941%;
+              font-size: 18px;
+              text-align: center; }
+              .case-studies .content-container .case-overview .case-header .project-tags:last-child, .case-studies .content-container .case-overview .case-header .read-time:last-child {
+                margin-right: 0; }
+            .case-studies .content-container .case-overview .case-header .project-about {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 65.88078%;
+              margin-left: 17.05961%;
+              font-size: 21px;
+              text-align: center; }
+              .case-studies .content-container .case-overview .case-header .project-about:last-child {
+                margin-right: 0; }
+            .case-studies .content-container .case-overview .case-header .project-tags {
+              margin-top: 1em;
+              margin-bottom: 0;
+              color: #BABABA; }
+            .case-studies .content-container .case-overview .case-header .read-time {
+              margin-top: 0;
+              margin-bottom: 0;
+              font-size: 14px;
+              color: #BABABA;
+              line-height: 2em; }
+          .case-studies .content-container .case-overview .case-tldr {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            .case-studies .content-container .case-overview .case-tldr:last-child {
+              margin-right: 0; }
+            .case-studies .content-container .case-overview .case-tldr .problem {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 31.76157%; }
+              .case-studies .content-container .case-overview .case-tldr .problem:last-child {
+                margin-right: 0; }
+            .case-studies .content-container .case-overview .case-tldr .my-role {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 31.76157%;
+              margin-left: 8.5298%; }
+              .case-studies .content-container .case-overview .case-tldr .my-role:last-child {
+                margin-right: 0; }
+            .case-studies .content-container .case-overview .case-tldr .toolbox {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 6.17215%;
+              margin-left: 8.5298%; }
+              .case-studies .content-container .case-overview .case-tldr .toolbox:last-child {
+                margin-right: 0; } }
+    .case-studies .content-container .case-writeup {
+      display: block; }
+      .case-studies .content-container .case-writeup::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .case-studies .content-container .case-writeup .section-container ul {
+        font-family: "Muli", Helvetica, sans-serif;
+        list-style-type: disc; }
+      .case-studies .content-container .case-writeup .section-container ol {
+        list-style-type: decimal; }
+      .case-studies .content-container .case-writeup .section-container button {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 1.25em 0;
+        background: #E150A5;
+        border: 1px solid #E150A5;
+        border-radius: 4px;
+        font-family: "Muli", Helvetica, sans-serif;
+        font-size: 2.5em;
+        line-height: 17px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+        text-decoration: none; }
+        .case-studies .content-container .case-writeup .section-container button:hover {
+          background: #FFFFFF;
+          color: #E150A5;
+          cursor: pointer; }
+      @media screen and (min-width: 1000px) {
+        .case-studies .content-container .case-writeup .section-container {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .case-studies .content-container .case-writeup .section-container:last-child {
+            margin-right: 0; }
+          .case-studies .content-container .case-writeup .section-container .writeup-description p, .case-studies .content-container .case-writeup .section-container .writeup-description ul {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-left: 25.58941%; }
+            .case-studies .content-container .case-writeup .section-container .writeup-description p:last-child, .case-studies .content-container .case-writeup .section-container .writeup-description ul:last-child {
+              margin-right: 0; }
+          .case-studies .content-container .case-writeup .section-container .writeup-description h2 {
+            line-height: 0; }
+          .case-studies .content-container .case-writeup .section-container .writeup-description img {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 65.88078%;
+            margin-left: 17.05961%; }
+            .case-studies .content-container .case-writeup .section-container .writeup-description img:last-child {
+              margin-right: 0; }
+          .case-studies .content-container .case-writeup .section-container button {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-left: 25.58941%;
+            font-size: 16px; }
+            .case-studies .content-container .case-writeup .section-container button:last-child {
+              margin-right: 0; }
+        .case-studies .content-container .case-writeup .personas {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-left: 6.39735%; }
+          .case-studies .content-container .case-writeup .personas:last-child {
+            margin-right: 0; }
+          .case-studies .content-container .case-writeup .personas .persona-image {
+            text-align: center; }
+            .case-studies .content-container .case-writeup .personas .persona-image img {
+              display: inline-block;
+              width: 50%;
+              margin: 0 auto; }
+          .case-studies .content-container .case-writeup .personas .persona-tldr {
+            margin-bottom: 40px; }
+            .case-studies .content-container .case-writeup .personas .persona-tldr p {
+              line-height: 26px; }
+          .case-studies .content-container .case-writeup .personas .catarina {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%; }
+            .case-studies .content-container .case-writeup .personas .catarina:last-child {
+              margin-right: 0; }
+          .case-studies .content-container .case-writeup .personas .brandon {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%;
+            margin-left: 4.2649%; }
+            .case-studies .content-container .case-writeup .personas .brandon:last-child {
+              margin-right: 0; } }
+    .case-studies .content-container .personas {
+      margin: -33px 0 70px 0; }
+    @media screen and (min-width: 1000px) {
+      .case-studies .content-container .other-works .other-works-container .project img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%; }
+        .case-studies .content-container .other-works .other-works-container .project img:last-child {
+          margin-right: 0; }
+      .case-studies .content-container .other-works .other-works-container .project .project-description {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-left: 8.5298%; }
+        .case-studies .content-container .other-works .other-works-container .project .project-description:last-child {
+          margin-right: 0; } }
+
+.nico .content-container .case-overview {
+  background-image: url("../images/nico/nico-bg.jpg"); }
+  .nico .content-container .case-overview h5 {
+    color: #E57F7F; }
+  .nico .content-container .case-overview .project-tags, .nico .content-container .case-overview .read-time {
+    color: #EAEAEA; }
+@media screen and (min-width: 1000px) {
+  .nico .content-container .case-writeup .personas .catarina, .nico .content-container .case-writeup .personas .brandon {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .nico .content-container .case-writeup .personas .catarina:last-child, .nico .content-container .case-writeup .personas .brandon:last-child {
+      margin-right: 0; }
+    .nico .content-container .case-writeup .personas .catarina h2, .nico .content-container .case-writeup .personas .brandon h2 {
+      text-align: center; }
+  .nico .content-container .case-writeup .personas .brandon {
+    margin-left: 4.2649%; } }
+.nico .content-container .personas {
+  margin: -5em 0 5em 0; }
+  @media screen and (min-width: 1000px) {
+    .nico .content-container .personas {
+      margin: -33px 0 70px 0; } }
+@media screen and (min-width: 1000px) {
+  .nico .content-container .other-works img {
+    margin-top: 10px; } }
 
 .ave {
   /* Content */ }
