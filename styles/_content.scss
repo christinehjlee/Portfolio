@@ -3,11 +3,12 @@
     font-family: $serif;
     font-size: 5em;
     font-weight: 100;
-    line-height: 43px;
+    line-height: 0.5em;
     color: $teal;
 
     @include media ($desktop) {
-      font-size: 38px;
+      font-size: em(38);
+      line-height: 1em;
     }
   }
 
@@ -23,41 +24,41 @@
 
     @include media ($desktop) {
       margin-bottom: 0.5em;
-      font-size: 21px;
-      line-height: 31px;
+      font-size: em(21);
+      line-height: em(31);
     }
   }
 
   h5 {
     margin: 2em 0 -0.5em 0;
 
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 1em;
+    line-height: 1em;
     color: $black;
     text-transform: uppercase;
 
     @include media ($desktop) {
-      margin: 30px 0 -5px 0;
+      margin: em(30) 0 em(-5) 0;
+
+      font-size: em(13);
     }
   }
 
   p, ul, ol {
-    clear: both;
-
-    font-size: 0.875em;
-    line-height: 1.75em;
-    letter-spacing: 0.1px;
+    font-size: 1.5em;
+    line-height: 2em;
+    letter-spacing: em(0.1);
     color: $dark-gray;
 
     &.caption {
-      margin-top: -20px;
+      margin-top: em(-20);
       font-style: italic;
       color: $light-gray;
     }
 
     @include media ($desktop) {
-      font-size: 16px;
-      line-height: 32px;
+      font-size: 1em;
+      line-height: em(32);
     }
   }
 
@@ -69,7 +70,7 @@
     }
 
     @include media ($desktop) {
-      line-height: 32px;
+      line-height: em(32);
     }
   }
 
@@ -86,16 +87,14 @@
   .drop-cap {
     float: left;
 
-    padding: 44px 15px 0 0;
+    padding: 0.25em 0.125em 0 0;
 
     font-family: $serif;
-    font-size: 10em;
-    line-height: 62px;
+    font-size: 8.5em;
     color: $dark-gray;
 
     @include media ($desktop) {
-      padding: 2px 8px 0 0;
-      font-size: 65px;
+      font-size: 4.25em;
     }
   }
 
@@ -107,7 +106,7 @@
     margin-bottom: 10em;
 
     @include media ($desktop) {
-      margin-bottom: 100px;
+      margin-bottom: em(100);
     }
   }
 
@@ -130,12 +129,12 @@
     margin-bottom: 2em;
 
     position: relative;
-    height: 65px;
+    height: em(65);
 
     font-family: $serif;
     font-size: 4em;
-    line-height: 0px;
-    letter-spacing: 1px;
+    line-height: 0;
+    letter-spacing: em(1);
     text-align: center;
     color: $teal;
 
@@ -159,7 +158,7 @@
         display: block;
         z-index: 2;
 
-        height: 45px;
+        height: em(45);
         width: 100%;
 
         background: $white;
@@ -189,8 +188,8 @@
     }
 
     @include media ($desktop) {
-      font-size: 28px;
-      line-height: 0px;
+      font-size: 1.5em;
+      line-height: 0;
 
       .line {
         top: 50%;
@@ -198,11 +197,11 @@
 
         background: -webkit-gradient(linear, 0 0, 100% 0, from($lightest-gray), to($lightest-gray), color-stop(50%, $light-gray));
 
-        border-bottom: 0px solid $teal;
+        border-bottom: 0 solid $teal;
       }
 
       .border {
-        margin-bottom: 50px;
+        margin-bottom: em(50);
       }
 
       .box-container {
@@ -214,20 +213,20 @@
           position: absolute;
           display: block;
 
-          height: 45px;
+          height: em(45);
           width: 95%;
         }
 
         .box-center {
-          top: 10px;
-          left: 10px;
+          top: em(10);
+          left: em(10);
 
           width: 95%;
 
-          border: 1px solid $lightest_gray;
+          border: em(1) solid $lightest_gray;
 
           span {
-            border: 0px solid $teal;
+            border: 0 solid $teal;
             background: none;
           }
         }
@@ -235,7 +234,7 @@
         .box-left, .box-right {
           z-index: 1;
 
-          border: 1px solid $teal;
+          border: em(1) solid $teal;
           background: $white;
         }
 
@@ -244,8 +243,8 @@
         }
 
         .box-right {
-          top: 20px;
-          left: 20px;
+          top: em(20);
+          left: em(20);
         }
       }
     }
@@ -253,21 +252,21 @@
 
   .project-tags {
     font-family: $sans-serif;
-    font-size: 0.875em;
-    line-height: 10px;
-    letter-spacing: 0.1px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: em(0.1);
     color: $light-gray;
 
     @include media ($desktop) {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: em(14);
+      line-height: em(24);
     }
   }
 
   .coming-soon {
     font-family: $sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1px;
+    font-size: 1.5em;
+    letter-spacing: em(0.1);
     color: $dark-gray;
   }
 
@@ -277,10 +276,10 @@
     @include omega();
 
     .project {
-      margin-bottom: 60px;
+      margin-bottom: em(60);
 
       img {
-        box-shadow: 0px 0px 4px 0px #D7DBDE;
+        box-shadow: 0 0 em(4) 0 $box-shadow-gray;
       }
 
       .project-description {
@@ -290,13 +289,13 @@
           padding: 1.25em 0;
 
           background: $magenta;
-          border: 1px solid $magenta;
-          border-radius: 4px;
+          border: em(1) solid $magenta;
+          border-radius: em(4);
 
           font-family: $sans-serif;
           font-size: 2.5em;
-          line-height: 17px;
-          letter-spacing: 0.1px;
+          line-height: em(17);
+          letter-spacing: em(0.1);
           color: $white;
           text-decoration: none;
 
@@ -323,9 +322,9 @@
               padding: 0;
 
               background: none;
-              border: 0px solid $magenta;
+              border: 0 solid $magenta;
 
-              font-size: 16px;
+              font-size: 1em;
               color: $magenta;
               text-align: left;
 

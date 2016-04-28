@@ -35,14 +35,14 @@
       margin: -5em 0 5em 0;
 
       @include media ($desktop) {
-        margin: -33px 0 70px 0;
+        margin: -3.0625em 0 em(70) 0;
       }
     }
 
     .other-works {
       @include media ($desktop) {
         img {
-          margin-top: 10px;
+          margin-top: em(10);
         }
       }
     }
