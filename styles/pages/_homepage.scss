@@ -111,5 +111,19 @@
         }
       }
     }
+
+    .other-works {
+      @include span-columns(12);
+
+      img {
+        box-shadow: none;
+      }
+
+      @include media ($desktop) {
+        .project {
+          @include span-columns(4 of 12);
+        }
+      }
+    }
   }
 }

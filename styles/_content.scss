@@ -42,10 +42,18 @@
   }
 
   p, ul, ol {
+    clear: both;
+
     font-size: 0.875em;
     line-height: 1.75em;
     letter-spacing: 0.1px;
     color: $dark-gray;
+
+    &.caption {
+      margin-top: -20px;
+      font-style: italic;
+      color: $light-gray;
+    }
 
     @include media ($desktop) {
       font-size: 16px;
@@ -245,12 +253,13 @@
 
   .project-tags {
     font-family: $sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 10px;
     letter-spacing: 0.1px;
     color: $light-gray;
 
     @include media ($desktop) {
+      font-size: 14px;
       line-height: 24px;
     }
   }
@@ -308,8 +317,6 @@
         @include omega();
 
         .project {
-          @include span-columns(12 of 12);
-
           .project-description {
             button {
               margin-bottom: 0;
