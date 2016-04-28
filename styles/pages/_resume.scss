@@ -12,11 +12,11 @@
       font-family: $serif;
       font-size: 3em;
       font-weight: 100;
-      letter-spacing: 1px;
+      letter-spacing: em(1);
       color: $teal;
 
       @include media ($desktop) {
-        font-size: 21px;
+        font-size: em(21);
       }
     }
 
@@ -29,33 +29,41 @@
     h4 {
       margin: 0.5em 0;
 
-      font-size: 1em;
-      line-height: 1.5em;
+      font-size: 2em;
+      line-height: 2em;
 
       @include media ($desktop) {
-        margin: 20px 0 10px 0;
-        font-size: 16px;
-        line-height: 16px;
+        margin: em(20) 0 em(10) 0;
+        font-size: 1em;
+        line-height: 1em;
       }
     }
 
     h6 {
       margin: 0 0;
-      font-size: 14px;
+      font-size: 1em;
+
+      @include media ($desktop) {
+        font-size: em(14);
+      }
     }
 
     p {
-      font-size: 13px;
-      line-height: 10px;
+      font-size: em(13);
+      line-height: em(10);
     }
 
     ul {
       font-family: $sans-serif;
-      font-size: 14px;
-      line-height: 26px;
+      font-size: 1.5em;
       font-weight: 100;
-      letter-spacing: 0.1px;
+      letter-spacing: em(0.1);
       color: $black;
+
+      @include media ($desktop) {
+        font-size: em(14);
+        line-height: em(26);
+      }
     }
 
     .role-1, .role-2 {
@@ -67,10 +75,10 @@
     }
 
     .role-2 {
-      margin-top: 5em;
+      margin-top: 3em;
 
       @include media ($desktop) {
-        margin-top: 10px;
+        margin-top: em(10);
       }
     }
 
@@ -79,7 +87,7 @@
     .intro {
       @include row();
 
-      padding: 20px 0;
+      padding: em(20) 0;
       margin: 0 auto;
       float: none;
 
@@ -103,7 +111,7 @@
       .right-container {
         ul {
           list-style-type: none;
-          margin: 0 -40px;
+          margin: 0 -1.75em;
         }
       }
 
@@ -114,12 +122,12 @@
 
         background: $magenta;
         border: 1px solid $magenta;
-        border-radius: 4px;
+        border-radius: em(4);
 
         font-family: $sans-serif;
         font-size: 2.5em;
-        line-height: 17px;
-        letter-spacing: 0.1px;
+        line-height: em(17);
+        letter-spacing: em(0.1);
         color: $white;
         text-decoration: none;
 
@@ -144,6 +152,9 @@
 
           .right-container {
             @include span-columns(2 of 10);
+            ul {
+              margin: 0 -2.75em;
+            }
           }
         }
 
@@ -151,7 +162,7 @@
           @include span-columns(6);
           @include shift(3);
 
-          font-size: 16px;
+          font-size: 1em;
         }
       }
     }
