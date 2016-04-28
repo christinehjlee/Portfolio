@@ -2070,40 +2070,35 @@ header {
 .resume {
   margin: 0 0; }
   .resume .content-container h1 {
-    margin: 6.4% 0% 0% 0%;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 38px;
-    font-weight: 100;
-    line-height: 43px;
-    color: #0FA3B1; }
-  .resume .content-container h2, .resume .content-container h5, .resume .content-container p {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-weight: 100; }
-  .resume .content-container h2 {
-    font-size: 21px;
-    line-height: 31px;
-    color: #2E3839; }
+    margin: 6.4% 0% 0% 0%; }
   .resume .content-container h3 {
     font-family: "Petrona", Georgia, serif;
-    font-size: 21px;
+    font-size: 3em;
     font-weight: 100;
     letter-spacing: 1px;
     color: #0FA3B1; }
+    @media screen and (min-width: 1000px) {
+      .resume .content-container h3 {
+        font-size: 21px; } }
   .resume .content-container h4, .resume .content-container h6 {
     font-family: "Muli", Helvetica, sans-serif;
     font-weight: 100;
     color: #2E3839; }
   .resume .content-container h4 {
-    margin: 20px 0 10px 0;
-    font-size: 16px; }
+    margin: 0.5em 0;
+    font-size: 1em;
+    line-height: 1.5em; }
+    @media screen and (min-width: 1000px) {
+      .resume .content-container h4 {
+        margin: 20px 0 10px 0;
+        font-size: 16px;
+        line-height: 16px; } }
   .resume .content-container h6 {
     margin: 0 0;
     font-size: 14px; }
   .resume .content-container p {
     font-size: 13px;
-    line-height: 10px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
+    line-height: 10px; }
   .resume .content-container ul {
     font-family: "Muli", Helvetica, sans-serif;
     font-size: 14px;
@@ -2111,100 +2106,16 @@ header {
     font-weight: 100;
     letter-spacing: 0.1px;
     color: #2E3839; }
-  .resume .content-container img {
-    width: 100%; }
-  .resume .content-container section {
-    margin-bottom: 100px; }
-  .resume .content-container .wrapper {
-    max-width: 53.125em;
-    margin-left: auto;
-    margin-right: auto; }
-    .resume .content-container .wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-  .resume .content-container .border {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 50px;
-    position: relative;
-    height: 65px;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 21px;
-    line-height: 0px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #0FA3B1; }
-    .resume .content-container .border:last-child {
-      margin-right: 0; }
-    .resume .content-container .border .line {
-      position: absolute;
-      width: 100%;
-      top: 34%;
-      border-bottom: 1px solid #0FA3B1; }
-    .resume .content-container .border .box-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%;
-      margin-right: 0;
-      position: absolute; }
-      .resume .content-container .border .box-container:last-child {
-        margin-right: 0; }
-      .resume .content-container .border .box-container .box-center {
-        position: absolute;
-        display: block;
-        z-index: 2;
-        height: 45px;
-        width: 95%;
-        background: #FFFFFF;
-        line-height: 1.2em;
-        text-align: center; }
-        .resume .content-container .border .box-container .box-center span {
-          position: absolute;
-          margin: 0;
-          padding: 0.5em;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          min-width: 100%;
-          transform: translate(-50%, -50%);
-          border: 1px solid #0FA3B1; }
-      .resume .content-container .border .box-container .box-left, .resume .content-container .border .box-container .box-right {
-        display: none; }
+  .resume .content-container .role-1, .resume .content-container .role-2 {
+    margin-bottom: 3em; }
     @media screen and (min-width: 1000px) {
-      .resume .content-container .border {
-        font-size: 28px;
-        line-height: 0px; }
-        .resume .content-container .border .line {
-          top: 50%;
-          height: 1px;
-          background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-          border-bottom: 0px solid #0FA3B1; }
-        .resume .content-container .border .box-container .box-left, .resume .content-container .border .box-container .box-right {
-          position: absolute;
-          display: block;
-          height: 45px;
-          width: 95%; }
-        .resume .content-container .border .box-container .box-center {
-          top: 10px;
-          left: 10px;
-          width: 95%;
-          border: 1px solid #EAEAEA; }
-          .resume .content-container .border .box-container .box-center span {
-            border: 0px solid #0FA3B1; }
-        .resume .content-container .border .box-container .box-left, .resume .content-container .border .box-container .box-right {
-          z-index: 1;
-          border: 1px solid #0FA3B1;
-          background: #FFFFFF; }
-        .resume .content-container .border .box-container .box-left {
-          top: 0; }
-        .resume .content-container .border .box-container .box-right {
-          top: 20px;
-          left: 20px; } }
+      .resume .content-container .role-1, .resume .content-container .role-2 {
+        margin-bottom: 0; } }
+  .resume .content-container .role-2 {
+    margin-top: 5em; }
+    @media screen and (min-width: 1000px) {
+      .resume .content-container .role-2 {
+        margin-top: 10px; } }
   .resume .content-container .intro {
     display: block;
     padding: 20px 0;
@@ -2237,15 +2148,15 @@ header {
       margin: 0 -40px; }
     .resume .content-container .resume-content button {
       width: 100%;
-      padding: 0.9375em 70px;
-      margin-top: 4em;
+      margin-top: 2em;
+      padding: 1.25em 0;
       background: #E150A5;
       border: 1px solid #E150A5;
       border-radius: 4px;
       font-family: "Muli", Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 2.5em;
       line-height: 17px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1px;
       color: #FFFFFF;
       text-decoration: none; }
       .resume .content-container .resume-content button:hover {
@@ -2281,7 +2192,8 @@ header {
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-left: 25.58941%; }
+        margin-left: 25.58941%;
+        font-size: 16px; }
         .resume .content-container .resume-content button:last-child {
           margin-right: 0; } }
 
