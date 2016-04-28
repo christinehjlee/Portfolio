@@ -1,14 +1,26 @@
 .case-studies {
   margin: 0 0;
 
+  header {
+    background: transparent;
+
+    .line {
+      display: none;
+    }
+  }
+
   /////* CONTENT */////
   .content-container {
     h1 {
       font-family: $serif;
-      font-size: 38px;
+      font-size: 5em;
       font-weight: 100;
       line-height: 43px;
       color: $teal;
+
+      @include media ($desktop) {
+        font-size: 38px;
+      }
     }
 
     h2, h5, p {
@@ -17,26 +29,41 @@
     }
 
     h2 {
-      font-size: 21px;
-      line-height: 31px;
+      font-size: 4em;
+      line-height: 1.25em;
       color: $black;
       text-align: center;
+
+      @include media ($desktop) {
+        margin-bottom: 0.5em;
+        font-size: 21px;
+        line-height: 31px;
+      }
     }
 
     h5 {
-      margin: 30px 0 -5px 0;
+      margin: 2em 0 -0.5em 0;
 
       font-size: 13px;
       line-height: 16px;
       color: $black;
       text-transform: uppercase;
+
+      @include media ($desktop) {
+        margin: 30px 0 -5px 0;
+      }
     }
 
     p {
-      font-size: 16px;
-      line-height: 32px;
+      font-size: 0.875em;
+      line-height: 1.75em;
       letter-spacing: 0.1px;
       color: $dark-gray;
+
+      @include media ($desktop) {
+        font-size: 16px;
+        line-height: 32px;
+      }
     }
 
     img {
@@ -44,11 +71,24 @@
     }
 
     section {
-      margin-bottom: 100px;
+      margin-bottom: 10em;
+
+      @include media ($desktop) {
+        margin-bottom: 100px;
+      }
     }
 
     .wrapper {
       @include outer-container;
+
+      @include media ($desktop) {
+        @include clearfix;
+        max-width: em(1024);
+        margin: {
+          left: auto;
+          right: auto;
+        }
+      }
     }
 
     .border {
@@ -59,7 +99,7 @@
       height: 65px;
 
       font-family: $serif;
-      font-size: 21px;
+      font-size: 4em;
       line-height: 0px;
       letter-spacing: 1px;
       text-align: center;
@@ -455,63 +495,6 @@
                 }
               }
             }
-          }
-        }
-      }
-    }
-
-    .contact {
-      .contact-container {
-        .contact-text {
-          h1, h2 {
-            text-align: center;
-          }
-
-          h1 {
-            line-height: 0px;
-            color: $teal;
-          }
-        }
-
-        .contact-methods {
-          width: 100%;
-          margin: 3em auto 0 auto;
-
-          a {
-            padding: 27px;
-
-            text-decoration: none;
-            text-align: center;
-          }
-
-          .contact-icon {
-            @include omega();
-
-            color: $light-gray;
-            font-size: 37px;
-
-            &:hover {
-              color: $teal;
-            }
-          }
-        }
-
-        @include media ($desktop) {
-          @include span-columns(12);
-
-          .contact-text {
-            @include span-columns(5 of 12);
-            @include omega();
-
-            h1, h2 {
-              text-align: left;
-            }
-          }
-
-          .contact-methods {
-            @include span-columns(6 of 12);
-            @include shift(1);
-            @include omega();
           }
         }
       }

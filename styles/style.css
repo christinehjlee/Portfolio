@@ -1296,399 +1296,122 @@ header {
       header .line {
         top: 55px; } }
 
-.homepage {
+.contact {
+  display: block; }
+  .contact::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .contact .contact-container .contact-text h1, .contact .contact-container .contact-text h2 {
+    text-align: center; }
+  .contact .contact-container .contact-text h1 {
+    line-height: 1em;
+    color: #0FA3B1; }
+  .contact .contact-container .contact-text h2 {
+    margin-top: 4em; }
+  .contact .contact-container .contact-methods {
+    width: 100%;
+    margin: 3em auto 0 auto; }
+    .contact .contact-container .contact-methods a {
+      padding: 3.25em;
+      text-decoration: none;
+      text-align: center; }
+    .contact .contact-container .contact-methods .contact-icon {
+      margin-right: 0;
+      color: #BABABA;
+      font-size: 4em; }
+      .contact .contact-container .contact-methods .contact-icon:hover {
+        color: #0FA3B1;
+        cursor: pointer; }
+  @media screen and (min-width: 1000px) {
+    .contact .contact-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .contact .contact-container:last-child {
+        margin-right: 0; }
+      .contact .contact-container .contact-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%;
+        margin-right: 0; }
+        .contact .contact-container .contact-text:last-child {
+          margin-right: 0; }
+        .contact .contact-container .contact-text h1, .contact .contact-container .contact-text h2 {
+          text-align: left; }
+        .contact .contact-container .contact-text h1 {
+          line-height: 0; }
+        .contact .contact-container .contact-text h2 {
+          margin-top: 10px; }
+      .contact .contact-container .contact-methods {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 8.5298%;
+        margin-right: 0; }
+        .contact .contact-container .contact-methods:last-child {
+          margin-right: 0; }
+        .contact .contact-container .contact-methods a {
+          padding: 27px; }
+        .contact .contact-container .contact-methods .contact-icon {
+          font-size: 37px; } }
+
+.case-studies {
   margin: 0 0; }
-  .homepage .content-container h1 {
+  .case-studies header {
+    background: transparent; }
+    .case-studies header .line {
+      display: none; }
+  .case-studies .content-container h1 {
     font-family: "Petrona", Georgia, serif;
     font-size: 5em;
     font-weight: 100;
     line-height: 43px;
     color: #0FA3B1; }
     @media screen and (min-width: 1000px) {
-      .homepage .content-container h1 {
+      .case-studies .content-container h1 {
         font-size: 38px; } }
-  .homepage .content-container h2, .homepage .content-container h5, .homepage .content-container p {
+  .case-studies .content-container h2, .case-studies .content-container h5, .case-studies .content-container p {
     font-family: "Muli", Helvetica, sans-serif;
     font-weight: 100; }
-  .homepage .content-container h2 {
+  .case-studies .content-container h2 {
     font-size: 4em;
     line-height: 1.25em;
-    color: #2E3839; }
+    color: #2E3839;
+    text-align: center; }
     @media screen and (min-width: 1000px) {
-      .homepage .content-container h2 {
+      .case-studies .content-container h2 {
         margin-bottom: 0.5em;
         font-size: 21px;
         line-height: 31px; } }
-  .homepage .content-container h5 {
+  .case-studies .content-container h5 {
     margin: 2em 0 -0.5em 0;
     font-size: 13px;
     line-height: 16px;
     color: #2E3839;
     text-transform: uppercase; }
     @media screen and (min-width: 1000px) {
-      .homepage .content-container h5 {
+      .case-studies .content-container h5 {
         margin: 30px 0 -5px 0; } }
-  .homepage .content-container p {
+  .case-studies .content-container p {
     font-size: 0.875em;
     line-height: 1.75em;
     letter-spacing: 0.1px;
     color: #7F7F7F; }
     @media screen and (min-width: 1000px) {
-      .homepage .content-container p {
+      .case-studies .content-container p {
         font-size: 16px;
         line-height: 32px; } }
-  .homepage .content-container img {
-    width: 100%; }
-  .homepage .content-container section {
-    margin-bottom: 10em; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container section {
-        margin-bottom: 100px; } }
-  .homepage .content-container .wrapper {
-    max-width: 53.125em;
-    margin-left: auto;
-    margin-right: auto; }
-    .homepage .content-container .wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .wrapper {
-        max-width: 64em;
-        margin-left: auto;
-        margin-right: auto; }
-        .homepage .content-container .wrapper::after {
-          clear: both;
-          content: "";
-          display: table; } }
-  .homepage .content-container .border {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 50px;
-    position: relative;
-    height: 65px;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 4em;
-    line-height: 0px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #0FA3B1; }
-    .homepage .content-container .border:last-child {
-      margin-right: 0; }
-    .homepage .content-container .border .line {
-      position: absolute;
-      width: 100%;
-      top: 34%;
-      border-bottom: 1px solid #0FA3B1; }
-    .homepage .content-container .border .box-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%;
-      margin-right: 0;
-      position: absolute; }
-      .homepage .content-container .border .box-container:last-child {
-        margin-right: 0; }
-      .homepage .content-container .border .box-container .box-center {
-        position: absolute;
-        display: block;
-        z-index: 2;
-        height: 45px;
-        width: 95%;
-        background: #FFFFFF;
-        line-height: 1.2em;
-        text-align: center; }
-        .homepage .content-container .border .box-container .box-center span {
-          position: absolute;
-          margin: 0;
-          padding: 0.5em;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          min-width: 100%;
-          transform: translate(-50%, -50%);
-          border: 1px solid #0FA3B1; }
-      .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
-        display: none; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .border {
-        font-size: 28px;
-        line-height: 0px; }
-        .homepage .content-container .border .line {
-          top: 50%;
-          height: 1px;
-          background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-          border-bottom: 0px solid #0FA3B1; }
-        .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
-          position: absolute;
-          display: block;
-          height: 45px;
-          width: 95%; }
-        .homepage .content-container .border .box-container .box-center {
-          top: 10px;
-          left: 10px;
-          width: 95%;
-          border: 1px solid #EAEAEA; }
-          .homepage .content-container .border .box-container .box-center span {
-            border: 0px solid #0FA3B1; }
-        .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
-          z-index: 1;
-          border: 1px solid #0FA3B1;
-          background: #FFFFFF; }
-        .homepage .content-container .border .box-container .box-left {
-          top: 0; }
-        .homepage .content-container .border .box-container .box-right {
-          top: 20px;
-          left: 20px; } }
-  .homepage .content-container .project-tags {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 10px;
-    letter-spacing: 0.1px;
-    color: #BABABA; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .project-tags {
-        line-height: 24px; } }
-  .homepage .content-container .coming-soon {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
-  .homepage .content-container .intro {
-    display: block;
-    padding: 20px 0;
-    margin: 0 auto 100px auto;
-    float: none; }
-    .homepage .content-container .intro::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .homepage .content-container .intro h1 {
-      text-align: center; }
-    .homepage .content-container .intro .drop-cap {
-      float: left;
-      padding: 43px 20px 0 0;
-      font-family: "Petrona", Georgia, serif;
-      font-size: 10em;
-      line-height: 62px;
-      color: #7F7F7F; }
-      @media screen and (min-width: 1000px) {
-        .homepage .content-container .intro .drop-cap {
-          padding: 2px 10px 0 0;
-          font-size: 65px; } }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .intro .intro-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 25.58941%;
-        margin-top: 1.2em; }
-        .homepage .content-container .intro .intro-container:last-child {
-          margin-right: 0; } }
-  .homepage .content-container .recent-work {
-    display: block; }
-    .homepage .content-container .recent-work::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .homepage .content-container .recent-work .recent-project-container button {
-      width: 100%;
-      margin-bottom: 2em;
-      padding: 1.25em 0;
-      background: #E150A5;
-      border: 1px solid #E150A5;
-      border-radius: 4px;
-      font-family: "Muli", Helvetica, sans-serif;
-      font-size: 2.5em;
-      line-height: 17px;
-      letter-spacing: 0.1px;
-      color: #FFFFFF;
-      text-decoration: none; }
-      .homepage .content-container .recent-work .recent-project-container button:hover {
-        background: #FFFFFF;
-        color: #E150A5;
-        cursor: pointer; }
-    .homepage .content-container .recent-work .recent-project-container img {
-      margin-top: 3em; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .recent-work .recent-project-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .homepage .content-container .recent-work .recent-project-container:last-child {
-          margin-right: 0; }
-        .homepage .content-container .recent-work .recent-project-container img {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-top: 0; }
-          .homepage .content-container .recent-work .recent-project-container img:last-child {
-            margin-right: 0; }
-        .homepage .content-container .recent-work .recent-project-container .recent-project-description, .homepage .content-container .recent-work .recent-project-container button {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-right: 0;
-          margin-left: 8.5298%; }
-          .homepage .content-container .recent-work .recent-project-container .recent-project-description:last-child, .homepage .content-container .recent-work .recent-project-container button:last-child {
-            margin-right: 0; }
-          .homepage .content-container .recent-work .recent-project-container .recent-project-description h2, .homepage .content-container .recent-work .recent-project-container button h2 {
-            line-height: 0; }
-        .homepage .content-container .recent-work .recent-project-container .recent-project-description h2 {
-          margin-bottom: 1em; }
-        .homepage .content-container .recent-work .recent-project-container button {
-          margin-bottom: 0;
-          padding: 15px 50px;
-          font-size: 16px; } }
-  .homepage .content-container .other-works {
-    display: block; }
-    .homepage .content-container .other-works::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .homepage .content-container .other-works .project {
-      margin-bottom: 60px; }
-      .homepage .content-container .other-works .project .project-description button {
-        width: 100%;
-        margin-bottom: 2em;
-        padding: 1.25em 0;
-        background: #E150A5;
-        border: 1px solid #E150A5;
-        border-radius: 4px;
-        font-family: "Muli", Helvetica, sans-serif;
-        font-size: 2.5em;
-        line-height: 17px;
-        letter-spacing: 0.1px;
-        color: #FFFFFF;
-        text-decoration: none; }
-        .homepage .content-container .other-works .project .project-description button:hover {
-          background: #FFFFFF;
-          color: #E150A5;
-          cursor: pointer; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .other-works .other-works-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-right: 0; }
-        .homepage .content-container .other-works .other-works-container:last-child {
-          margin-right: 0; }
-        .homepage .content-container .other-works .other-works-container .project {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .homepage .content-container .other-works .other-works-container .project:last-child {
-            margin-right: 0; }
-          .homepage .content-container .other-works .other-works-container .project .project-description button {
-            margin-bottom: 0;
-            padding: 0;
-            background: none;
-            border: 0px solid #E150A5;
-            font-size: 16px;
-            color: #E150A5;
-            text-align: left; }
-            .homepage .content-container .other-works .other-works-container .project .project-description button:hover {
-              color: #2E3839; } }
-  .homepage .content-container .contact {
-    display: block; }
-    .homepage .content-container .contact::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .homepage .content-container .contact .contact-container .contact-text h1, .homepage .content-container .contact .contact-container .contact-text h2 {
-      text-align: center; }
-    .homepage .content-container .contact .contact-container .contact-text h2 {
-      margin-top: 4em; }
-    .homepage .content-container .contact .contact-container .contact-text h1 {
-      line-height: 1em; }
-    .homepage .content-container .contact .contact-container .contact-methods {
-      width: 100%;
-      margin: 3em auto 0 auto; }
-      .homepage .content-container .contact .contact-container .contact-methods a {
-        padding: 3.25em;
-        text-decoration: none;
-        text-align: center; }
-      .homepage .content-container .contact .contact-container .contact-methods .contact-icon {
-        margin-right: 0;
-        color: #BABABA;
-        font-size: 4em; }
-        .homepage .content-container .contact .contact-container .contact-methods .contact-icon:hover {
-          color: #0FA3B1;
-          cursor: pointer; }
-    @media screen and (min-width: 1000px) {
-      .homepage .content-container .contact .contact-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .homepage .content-container .contact .contact-container:last-child {
-          margin-right: 0; }
-        .homepage .content-container .contact .contact-container .contact-text {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-right: 0; }
-          .homepage .content-container .contact .contact-container .contact-text:last-child {
-            margin-right: 0; }
-          .homepage .content-container .contact .contact-container .contact-text h1, .homepage .content-container .contact .contact-container .contact-text h2 {
-            text-align: left; }
-          .homepage .content-container .contact .contact-container .contact-text h1 {
-            line-height: 0; }
-        .homepage .content-container .contact .contact-container .contact-methods {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 8.5298%;
-          margin-right: 0; }
-          .homepage .content-container .contact .contact-container .contact-methods:last-child {
-            margin-right: 0; }
-          .homepage .content-container .contact .contact-container .contact-methods a {
-            padding: 27px; }
-          .homepage .content-container .contact .contact-container .contact-methods .contact-icon {
-            font-size: 37px; } }
-
-.case-studies {
-  margin: 0 0; }
-  .case-studies .content-container h1 {
-    font-family: "Petrona", Georgia, serif;
-    font-size: 38px;
-    font-weight: 100;
-    line-height: 43px;
-    color: #0FA3B1; }
-  .case-studies .content-container h2, .case-studies .content-container h5, .case-studies .content-container p {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-weight: 100; }
-  .case-studies .content-container h2 {
-    font-size: 21px;
-    line-height: 31px;
-    color: #2E3839;
-    text-align: center; }
-  .case-studies .content-container h5 {
-    margin: 30px 0 -5px 0;
-    font-size: 13px;
-    line-height: 16px;
-    color: #2E3839;
-    text-transform: uppercase; }
-  .case-studies .content-container p {
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
   .case-studies .content-container img {
     width: 100%; }
   .case-studies .content-container section {
-    margin-bottom: 100px; }
+    margin-bottom: 10em; }
+    @media screen and (min-width: 1000px) {
+      .case-studies .content-container section {
+        margin-bottom: 100px; } }
   .case-studies .content-container .wrapper {
     max-width: 53.125em;
     margin-left: auto;
@@ -1697,6 +1420,15 @@ header {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 1000px) {
+      .case-studies .content-container .wrapper {
+        max-width: 64em;
+        margin-left: auto;
+        margin-right: auto; }
+        .case-studies .content-container .wrapper::after {
+          clear: both;
+          content: "";
+          display: table; } }
   .case-studies .content-container .border {
     float: left;
     display: block;
@@ -1706,7 +1438,7 @@ header {
     position: relative;
     height: 65px;
     font-family: "Petrona", Georgia, serif;
-    font-size: 21px;
+    font-size: 4em;
     line-height: 0px;
     letter-spacing: 1px;
     text-align: center;
@@ -2047,51 +1779,309 @@ header {
             margin-right: 0; }
           .case-studies .content-container .other-works .other-works-container .project .project-description button:hover {
             color: #2E3839; } }
-  .case-studies .content-container .contact .contact-container .contact-text h1, .case-studies .content-container .contact .contact-container .contact-text h2 {
-    text-align: center; }
-  .case-studies .content-container .contact .contact-container .contact-text h1 {
-    line-height: 0px;
+
+.homepage {
+  margin: 0 0; }
+  .homepage .content-container h1 {
+    font-family: "Petrona", Georgia, serif;
+    font-size: 5em;
+    font-weight: 100;
+    line-height: 43px;
     color: #0FA3B1; }
-  .case-studies .content-container .contact .contact-container .contact-methods {
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container h1 {
+        font-size: 38px; } }
+  .homepage .content-container h2, .homepage .content-container h5, .homepage .content-container p {
+    font-family: "Muli", Helvetica, sans-serif;
+    font-weight: 100; }
+  .homepage .content-container h2 {
+    font-size: 4em;
+    line-height: 1.25em;
+    color: #2E3839; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container h2 {
+        margin-bottom: 0.5em;
+        font-size: 21px;
+        line-height: 31px; } }
+  .homepage .content-container h5 {
+    margin: 2em 0 -0.5em 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2E3839;
+    text-transform: uppercase; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container h5 {
+        margin: 30px 0 -5px 0; } }
+  .homepage .content-container p {
+    font-size: 0.875em;
+    line-height: 1.75em;
+    letter-spacing: 0.1px;
+    color: #7F7F7F; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container p {
+        font-size: 16px;
+        line-height: 32px; } }
+  .homepage .content-container img {
+    width: 100%; }
+  .homepage .content-container section {
+    margin-bottom: 10em; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container section {
+        margin-bottom: 100px; } }
+  .homepage .content-container .wrapper {
+    max-width: 53.125em;
+    margin-left: auto;
+    margin-right: auto; }
+    .homepage .content-container .wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .wrapper {
+        max-width: 64em;
+        margin-left: auto;
+        margin-right: auto; }
+        .homepage .content-container .wrapper::after {
+          clear: both;
+          content: "";
+          display: table; } }
+  .homepage .content-container .border {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 100%;
-    margin: 3em auto 0 auto; }
-    .case-studies .content-container .contact .contact-container .contact-methods a {
-      padding: 27px;
-      text-decoration: none;
-      text-align: center; }
-    .case-studies .content-container .contact .contact-container .contact-methods .contact-icon {
-      margin-right: 0;
-      color: #BABABA;
-      font-size: 37px; }
-      .case-studies .content-container .contact .contact-container .contact-methods .contact-icon:hover {
-        color: #0FA3B1; }
-  @media screen and (min-width: 1000px) {
-    .case-studies .content-container .contact .contact-container {
+    margin-bottom: 50px;
+    position: relative;
+    height: 65px;
+    font-family: "Petrona", Georgia, serif;
+    font-size: 4em;
+    line-height: 0px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #0FA3B1; }
+    .homepage .content-container .border:last-child {
+      margin-right: 0; }
+    .homepage .content-container .border .line {
+      position: absolute;
+      width: 100%;
+      top: 34%;
+      border-bottom: 1px solid #0FA3B1; }
+    .homepage .content-container .border .box-container {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
-      .case-studies .content-container .contact .contact-container:last-child {
+      width: 48.82117%;
+      margin-left: 25.58941%;
+      margin-right: 0;
+      position: absolute; }
+      .homepage .content-container .border .box-container:last-child {
         margin-right: 0; }
-      .case-studies .content-container .contact .contact-container .contact-text {
-        float: left;
+      .homepage .content-container .border .box-container .box-center {
+        position: absolute;
         display: block;
-        margin-right: 2.35765%;
-        width: 40.29137%;
-        margin-right: 0; }
-        .case-studies .content-container .contact .contact-container .contact-text:last-child {
-          margin-right: 0; }
-        .case-studies .content-container .contact .contact-container .contact-text h1, .case-studies .content-container .contact .contact-container .contact-text h2 {
-          text-align: left; }
-      .case-studies .content-container .contact .contact-container .contact-methods {
+        z-index: 2;
+        height: 45px;
+        width: 95%;
+        background: #FFFFFF;
+        line-height: 1.2em;
+        text-align: center; }
+        .homepage .content-container .border .box-container .box-center span {
+          position: absolute;
+          margin: 0;
+          padding: 0.5em;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          min-width: 100%;
+          transform: translate(-50%, -50%);
+          border: 1px solid #0FA3B1; }
+      .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
+        display: none; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .border {
+        font-size: 28px;
+        line-height: 0px; }
+        .homepage .content-container .border .line {
+          top: 50%;
+          height: 1px;
+          background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
+          border-bottom: 0px solid #0FA3B1; }
+        .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
+          position: absolute;
+          display: block;
+          height: 45px;
+          width: 95%; }
+        .homepage .content-container .border .box-container .box-center {
+          top: 10px;
+          left: 10px;
+          width: 95%;
+          border: 1px solid #EAEAEA; }
+          .homepage .content-container .border .box-container .box-center span {
+            border: 0px solid #0FA3B1; }
+        .homepage .content-container .border .box-container .box-left, .homepage .content-container .border .box-container .box-right {
+          z-index: 1;
+          border: 1px solid #0FA3B1;
+          background: #FFFFFF; }
+        .homepage .content-container .border .box-container .box-left {
+          top: 0; }
+        .homepage .content-container .border .box-container .box-right {
+          top: 20px;
+          left: 20px; } }
+  .homepage .content-container .project-tags {
+    font-family: "Muli", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.1px;
+    color: #BABABA; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .project-tags {
+        line-height: 24px; } }
+  .homepage .content-container .coming-soon {
+    font-family: "Muli", Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #7F7F7F; }
+  .homepage .content-container .intro {
+    display: block;
+    padding: 20px 0;
+    margin: 0 auto 100px auto;
+    float: none; }
+    .homepage .content-container .intro::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .homepage .content-container .intro h1 {
+      text-align: center; }
+    .homepage .content-container .intro .drop-cap {
+      float: left;
+      padding: 43px 20px 0 0;
+      font-family: "Petrona", Georgia, serif;
+      font-size: 10em;
+      line-height: 62px;
+      color: #7F7F7F; }
+      @media screen and (min-width: 1000px) {
+        .homepage .content-container .intro .drop-cap {
+          padding: 2px 10px 0 0;
+          font-size: 65px; } }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .intro .intro-container {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-left: 8.5298%;
-        margin-right: 0; }
-        .case-studies .content-container .contact .contact-container .contact-methods:last-child {
+        margin-left: 25.58941%;
+        margin-top: 1.2em; }
+        .homepage .content-container .intro .intro-container:last-child {
           margin-right: 0; } }
+  .homepage .content-container .recent-work {
+    display: block; }
+    .homepage .content-container .recent-work::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .homepage .content-container .recent-work .recent-project-container button {
+      width: 100%;
+      margin-bottom: 2em;
+      padding: 1.25em 0;
+      background: #E150A5;
+      border: 1px solid #E150A5;
+      border-radius: 4px;
+      font-family: "Muli", Helvetica, sans-serif;
+      font-size: 2.5em;
+      line-height: 17px;
+      letter-spacing: 0.1px;
+      color: #FFFFFF;
+      text-decoration: none; }
+      .homepage .content-container .recent-work .recent-project-container button:hover {
+        background: #FFFFFF;
+        color: #E150A5;
+        cursor: pointer; }
+    .homepage .content-container .recent-work .recent-project-container img {
+      margin-top: 3em; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .recent-work .recent-project-container {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .homepage .content-container .recent-work .recent-project-container:last-child {
+          margin-right: 0; }
+        .homepage .content-container .recent-work .recent-project-container img {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-top: 0; }
+          .homepage .content-container .recent-work .recent-project-container img:last-child {
+            margin-right: 0; }
+        .homepage .content-container .recent-work .recent-project-container .recent-project-description, .homepage .content-container .recent-work .recent-project-container button {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 40.29137%;
+          margin-right: 0;
+          margin-left: 8.5298%; }
+          .homepage .content-container .recent-work .recent-project-container .recent-project-description:last-child, .homepage .content-container .recent-work .recent-project-container button:last-child {
+            margin-right: 0; }
+          .homepage .content-container .recent-work .recent-project-container .recent-project-description h2, .homepage .content-container .recent-work .recent-project-container button h2 {
+            line-height: 0; }
+        .homepage .content-container .recent-work .recent-project-container .recent-project-description h2 {
+          margin-bottom: 1em; }
+        .homepage .content-container .recent-work .recent-project-container button {
+          margin-bottom: 0;
+          padding: 15px 50px;
+          font-size: 16px; } }
+  .homepage .content-container .other-works {
+    display: block; }
+    .homepage .content-container .other-works::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .homepage .content-container .other-works .project {
+      margin-bottom: 60px; }
+      .homepage .content-container .other-works .project .project-description button {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 1.25em 0;
+        background: #E150A5;
+        border: 1px solid #E150A5;
+        border-radius: 4px;
+        font-family: "Muli", Helvetica, sans-serif;
+        font-size: 2.5em;
+        line-height: 17px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+        text-decoration: none; }
+        .homepage .content-container .other-works .project .project-description button:hover {
+          background: #FFFFFF;
+          color: #E150A5;
+          cursor: pointer; }
+    @media screen and (min-width: 1000px) {
+      .homepage .content-container .other-works .other-works-container {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-right: 0; }
+        .homepage .content-container .other-works .other-works-container:last-child {
+          margin-right: 0; }
+        .homepage .content-container .other-works .other-works-container .project {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .homepage .content-container .other-works .other-works-container .project:last-child {
+            margin-right: 0; }
+          .homepage .content-container .other-works .other-works-container .project .project-description button {
+            margin-bottom: 0;
+            padding: 0;
+            background: none;
+            border: 0px solid #E150A5;
+            font-size: 16px;
+            color: #E150A5;
+            text-align: left; }
+            .homepage .content-container .other-works .other-works-container .project .project-description button:hover {
+              color: #2E3839; } }
 
 .about {
   margin: 0 0; }
@@ -2434,57 +2424,6 @@ header {
         width: 48.82117%; }
         .about .content-container .story .event:last-child {
           margin-right: 0; } }
-  .about .content-container .contact {
-    display: block;
-    clear: both; }
-    .about .content-container .contact::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .about .content-container .contact .contact-container .contact-text h1, .about .content-container .contact .contact-container .contact-text h2 {
-      text-align: center; }
-    .about .content-container .contact .contact-container .contact-text h1 {
-      line-height: 0px; }
-    .about .content-container .contact .contact-container .contact-methods {
-      width: 100%;
-      margin: 3em auto 0 auto; }
-      .about .content-container .contact .contact-container .contact-methods a {
-        padding: 27px;
-        text-decoration: none;
-        text-align: center; }
-      .about .content-container .contact .contact-container .contact-methods .contact-icon {
-        margin-right: 0;
-        color: #BABABA;
-        font-size: 37px; }
-        .about .content-container .contact .contact-container .contact-methods .contact-icon:hover {
-          color: #0FA3B1; }
-    @media screen and (min-width: 1000px) {
-      .about .content-container .contact .contact-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .about .content-container .contact .contact-container:last-child {
-          margin-right: 0; }
-        .about .content-container .contact .contact-container .contact-text {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-right: 0; }
-          .about .content-container .contact .contact-container .contact-text:last-child {
-            margin-right: 0; }
-          .about .content-container .contact .contact-container .contact-text h1, .about .content-container .contact .contact-container .contact-text h2 {
-            text-align: left; }
-        .about .content-container .contact .contact-container .contact-methods {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 8.5298%;
-          margin-right: 0; }
-          .about .content-container .contact .contact-container .contact-methods:last-child {
-            margin-right: 0; } }
 
 .perch .content-container h1 {
   font-family: "Petrona", Georgia, serif;
@@ -3103,50 +3042,6 @@ header {
         width: 48.82117%;
         margin-left: 25.58941%; }
         .resume .content-container .resume-content button:last-child {
-          margin-right: 0; } }
-  .resume .content-container .contact .contact-container .contact-text h1, .resume .content-container .contact .contact-container .contact-text h2 {
-    text-align: center; }
-  .resume .content-container .contact .contact-container .contact-text h1 {
-    line-height: 0px; }
-  .resume .content-container .contact .contact-container .contact-methods {
-    width: 100%;
-    margin: 3em auto 0 auto; }
-    .resume .content-container .contact .contact-container .contact-methods a {
-      padding: 27px;
-      text-decoration: none;
-      text-align: center; }
-    .resume .content-container .contact .contact-container .contact-methods .contact-icon {
-      margin-right: 0;
-      color: #BABABA;
-      font-size: 37px; }
-      .resume .content-container .contact .contact-container .contact-methods .contact-icon:hover {
-        color: #0FA3B1; }
-  @media screen and (min-width: 1000px) {
-    .resume .content-container .contact .contact-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .resume .content-container .contact .contact-container:last-child {
-        margin-right: 0; }
-      .resume .content-container .contact .contact-container .contact-text {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 40.29137%;
-        margin-right: 0; }
-        .resume .content-container .contact .contact-container .contact-text:last-child {
-          margin-right: 0; }
-        .resume .content-container .contact .contact-container .contact-text h1, .resume .content-container .contact .contact-container .contact-text h2 {
-          text-align: left; }
-      .resume .content-container .contact .contact-container .contact-methods {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 8.5298%;
-        margin-right: 0; }
-        .resume .content-container .contact .contact-container .contact-methods:last-child {
           margin-right: 0; } }
 
 .ave {
