@@ -5,7 +5,7 @@
     .intro-container {
       @include row();
 
-      padding: 20px 0 70px 0;
+      padding: em(20) 0 em(70) 0;
       margin: 0 auto;
       float: none;
 
@@ -14,7 +14,7 @@
       }
 
       h5 {
-        font-size: 0.875em;
+        font-size: 1em;
         color: $black;
       }
 
@@ -25,7 +25,7 @@
 
       @include media ($desktop) {
         .intro-header {
-          padding-top: 60px;
+          padding-top: em(60);
 
           img {
             @include span-columns(10);
@@ -36,7 +36,7 @@
             @include span-columns(6);
             @include shift(3);
 
-            font-size: 18px;
+            font-size: em(18);
             text-align: center;
           }
 
@@ -64,8 +64,8 @@
               @include span-columns(1.5 of 10);
 
               text-align: right;
-              font-size: 13px;
-              line-height: 2px;
+              font-size: em(13);
+              line-height: 1.125em;
             }
 
             p {
@@ -85,9 +85,9 @@
       .section-container {
         ul {
           font-family: $sans-serif;
-          font-size: 16px;
-          line-height: 32px;
-          letter-spacing: 0.1px;
+          font-size: 1em;
+          line-height: em(32);
+          letter-spacing: em(0.1);
           color: $dark-gray;
 
           list-style-type: decimal;
@@ -121,7 +121,7 @@
             @include span-columns(5 of 12);
             @include shift(7);
 
-            padding: 15px 50px;
+            padding: em(15) em(50);
           }
         }
       }
@@ -134,8 +134,8 @@
         .circle {
           position: relative;
           z-index: 1000;
-          width: 15px;
-          height: 15px;
+          width: em(15);
+          height: em(15);
 
           border: 1px solid $teal;
           border-radius: 50%;
@@ -149,13 +149,13 @@
 
           h6 {
             font-family: $sans-serif;
-            font-size: 14px;
+            font-size: 1em;
             color: $black;
-            letter-spacing: 0.5px;
+            letter-spacing: em(0.5);
           }
 
           p {
-            margin-top: -27px;
+            margin-top: em(-27);
           }
 
           a {
@@ -211,6 +211,10 @@
 
         .event {
           @include span-columns(6 of 12);
+
+          h6 {
+            font-size: em(14);
+          }
         }
       }
     }

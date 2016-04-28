@@ -96,8 +96,8 @@
               @include span-columns(10 of 12);
               @include shift(1);
 
-              margin-bottom: 20px;
-              box-shadow: 0px 0px 4px 0px #D7DBDE;
+              margin-bottom: em(20);
+              box-shadow: 0 0 em(4) 0 $box-shadow-gray;
             }
           }
         }
@@ -105,19 +105,15 @@
     }
 
     .other-works {
-      p, .project-tags {
-        font-size: 1.3em;
-      }
-
       @include media ($desktop) {
         .project-tags {
-          font-size: 14px;
-          line-height: 10px;
+          font-size: em(14);
+          line-height: em(10);
         }
 
         p {
-          font-size: 16px;
-          line-height: 32px;
+          font-size: 1em;
+          line-height: em(32);
         }
       }
     }
