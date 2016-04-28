@@ -1,0 +1,129 @@
+.homepage {
+  margin: 0 0;
+
+  /* Content */
+
+  .content-container {
+    /////* SECTIONS */////
+
+    .intro {
+      @include row();
+
+      padding: 20px 0;
+      margin: 0 auto 100px auto;
+      float: none;
+
+      h1 {
+        text-align: center;
+      }
+
+      .drop-cap {
+        float: left;
+
+        padding: 43px 20px 0 0;
+
+        font-family: $serif;
+        font-size: 10em;
+        line-height: 62px;
+        color: $dark-gray;
+
+        @include media ($desktop) {
+          padding: 2px 10px 0 0;
+          font-size: 65px;
+        }
+      }
+
+      @include media ($desktop) {
+        .intro-container {
+          @include span-columns(6);
+          @include shift (3);
+
+          margin-top: 1.2em;
+        }
+      }
+    }
+
+    .recent-work {
+      @include row();
+
+      .recent-project-container {
+        button {
+          width: 100%;
+          margin-bottom: 2em;
+          padding: 1.25em 0;
+
+          background: $magenta;
+          border: 1px solid $magenta;
+          border-radius: 4px;
+
+          font-family: $sans-serif;
+          font-size: 2.5em;
+          line-height: 17px;
+          letter-spacing: 0.1px;
+          color: $white;
+          text-decoration: none;
+
+          &:hover {
+            background: $white;
+
+            color: $magenta;
+
+            cursor: pointer;
+          }
+        }
+
+        img {
+          margin-top: 3em;
+        }
+      }
+
+      @include media ($desktop) {
+        .recent-project-container {
+          @include span-columns(12);
+
+          img {
+            @include span-columns(6 of 12);
+            margin-top: 0;
+          }
+
+          .recent-project-description, button {
+            @include span-columns(5 of 12);
+            @include omega();
+            @include shift(1);
+
+            h2 {
+              line-height: 0;
+            }
+          }
+
+          .recent-project-description {
+            h2 {
+              margin-bottom: 1em;
+            }
+          }
+
+          button {
+            margin-bottom: 0;
+            padding: 15px 50px;
+
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .other-works {
+      @include span-columns(12);
+
+      img {
+        box-shadow: none;
+      }
+
+      @include media ($desktop) {
+        .project {
+          @include span-columns(4 of 12);
+        }
+      }
+    }
+  }
+}

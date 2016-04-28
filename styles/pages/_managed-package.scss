@@ -1,0 +1,125 @@
+.managed-package {
+  .content-container {
+    h1 {
+      margin-bottom: 0;
+      color: $header-gray;
+    }
+
+    a {
+      color: $magenta;
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    /* Sections */
+
+    .case-overview {
+      h1 {
+        margin-bottom: 0.75em;
+
+        font-family: $sans-serif;
+        text-align: center;
+        line-height: 1.25em;
+      }
+
+      p {
+        color: $header-gray;
+      }
+
+      .logo {
+        @include span-columns(5);
+        @include shift(3.5);
+      }
+
+      .read-time {
+        color: $header-gray;
+      }
+
+      @include media ($desktop) {
+        h1 {
+          margin-bottom: 0;
+        }
+
+        .case-header {
+          .logo {
+            @include span-columns(2);
+            @include shift(5);
+          }
+
+          .read-time {
+            color: $header-gray;
+          }
+        }
+      }
+    }
+
+    .case-writeup {
+      .section-container {
+        .writeup-description {
+          h2, h5 {
+            @include row();
+          }
+        }
+
+        ul, ol {
+          @include row();
+          font-family: $sans-serif;
+        }
+
+        ul {
+          list-style-type: disc;
+
+          ul {
+            list-style-type: circle;
+          }
+        }
+      }
+
+      @include media ($desktop) {
+        .section-container {
+          @include span-columns(12);
+
+          .writeup-description {
+            p, ul, ol {
+              @include span-columns(6 of 12);
+              @include shift(3);
+            }
+
+            h2 {
+              line-height: 0;
+            }
+
+            img {
+              @include span-columns(10 of 12);
+              @include shift(1);
+
+              margin-bottom: 20px;
+              box-shadow: 0px 0px 4px 0px #D7DBDE;
+            }
+          }
+        }
+      }
+    }
+
+    .other-works {
+      p, .project-tags {
+        font-size: 1.3em;
+      }
+
+      @include media ($desktop) {
+        .project-tags {
+          font-size: 14px;
+          line-height: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}

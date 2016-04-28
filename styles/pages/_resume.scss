@@ -1,0 +1,159 @@
+.resume {
+  margin: 0 0;
+
+  /////* CONTENT */////
+
+  .content-container {
+    h1 {
+      margin: 6.4% 0% 0% 0%;
+    }
+
+    h3 {
+      font-family: $serif;
+      font-size: 3em;
+      font-weight: 100;
+      letter-spacing: 1px;
+      color: $teal;
+
+      @include media ($desktop) {
+        font-size: 21px;
+      }
+    }
+
+    h4, h6 {
+      font-family: $sans-serif;
+      font-weight: 100;
+      color: $black;
+    }
+
+    h4 {
+      margin: 0.5em 0;
+
+      font-size: 1em;
+      line-height: 1.5em;
+
+      @include media ($desktop) {
+        margin: 20px 0 10px 0;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+
+    h6 {
+      margin: 0 0;
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 10px;
+    }
+
+    ul {
+      font-family: $sans-serif;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 100;
+      letter-spacing: 0.1px;
+      color: $black;
+    }
+
+    .role-1, .role-2 {
+      margin-bottom: 3em;
+
+      @include media ($desktop) {
+        margin-bottom: 0;
+      }
+    }
+
+    .role-2 {
+      margin-top: 5em;
+
+      @include media ($desktop) {
+        margin-top: 10px;
+      }
+    }
+
+    /////* SECTIONS */////
+
+    .intro {
+      @include row();
+
+      padding: 20px 0;
+      margin: 0 auto;
+      float: none;
+
+      h1 {
+        text-align: center;
+      }
+
+      @include media ($desktop) {
+        .intro-container {
+          @include span-columns(6);
+          @include shift (3);
+
+          margin-top: 1.2em;
+        }
+      }
+    }
+
+    .resume-content {
+      @include row();
+
+      .right-container {
+        ul {
+          list-style-type: none;
+          margin: 0 -40px;
+        }
+      }
+
+      button {
+        width: 100%;
+        margin-top: 2em;
+        padding: 1.25em 0;
+
+        background: $magenta;
+        border: 1px solid $magenta;
+        border-radius: 4px;
+
+        font-family: $sans-serif;
+        font-size: 2.5em;
+        line-height: 17px;
+        letter-spacing: 0.1px;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          background: $white;
+
+          color: $magenta;
+
+          cursor: pointer;
+        }
+      }
+
+      @include media ($desktop) {
+        .main-container {
+          @include span-columns(10);
+          @include shift(1);
+
+          .left-container {
+            @include span-columns(6 of 10);
+            @include shift(1);
+          }
+
+          .right-container {
+            @include span-columns(2 of 10);
+          }
+        }
+
+        button {
+          @include span-columns(6);
+          @include shift(3);
+
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
