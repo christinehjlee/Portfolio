@@ -1649,7 +1649,9 @@ header {
         margin-left: 25.58941%;
         margin-top: 1.2em; }
         .homepage .content-container .intro .intro-container:last-child {
-          margin-right: 0; } }
+          margin-right: 0; }
+        .homepage .content-container .intro .intro-container h1 {
+          font-size: 2.375em; } }
   .homepage .content-container .project-tags {
     line-height: 3em; }
     @media screen and (min-width: 1000px) {
