@@ -1,186 +1,7 @@
 .about {
   margin: 0 0;
 
-  /////* CONTENT */////
   .content-container {
-    h1 {
-      font-family: $serif;
-      font-size: 38px;
-      font-weight: 100;
-      line-height: 43px;
-      color: $teal;
-    }
-
-    h2, h5, p {
-      font-family: $sans-serif;
-      font-weight: 100;
-    }
-
-    h2 {
-      font-size: 21px;
-      line-height: 31px;
-      color: $black;
-    }
-
-    h5 {
-      margin: 30px 0 -5px 0;
-
-      font-size: 13px;
-      line-height: 16px;
-      color: $black;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 32px;
-      letter-spacing: 0.1px;
-      color: $dark-gray;
-    }
-
-    img {
-      width: 100%;
-    }
-
-    section {
-      margin-bottom: 100px;
-    }
-
-    .wrapper {
-      @include outer-container;
-    }
-
-    .border {
-      @include span-columns(12);
-      margin-bottom: 50px;
-
-      position: relative;
-      height: 65px;
-
-      font-family: $serif;
-      font-size: 21px;
-      line-height: 0px;
-      letter-spacing: 1px;
-      text-align: center;
-      color: $teal;
-
-      .line {
-        position: absolute;
-        width: 100%;
-        top: 34%;
-
-        border-bottom: 1px solid $teal;
-      }
-
-      .box-container {
-        @include span-columns(6);
-        @include shift(3);
-        @include omega();
-
-        position: absolute;
-
-        .box-center {
-          position: absolute;
-          display: block;
-          z-index: 2;
-
-          height: 45px;
-          width: 95%;
-
-          background: $white;
-
-          line-height: 1.2em;
-          text-align: center;
-
-          span {
-            position: absolute;
-            margin: 0;
-            padding: 0.5em;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            min-width: 100%;
-            transform: translate(-50%, -50%);
-
-            border: 1px solid $teal;
-          }
-        }
-
-        .box-left, .box-right {
-          display: none;
-        }
-
-      }
-
-      @include media ($desktop) {
-        font-size: 28px;
-
-        .line {
-          top: 50%;
-          height: 1px;
-
-          background: -webkit-gradient(linear, 0 0, 100% 0, from($lightest-gray), to($lightest-gray), color-stop(50%, $light-gray));
-
-          border-bottom: 0px solid $teal;
-        }
-
-        .box-container {
-          .box-left, .box-right {
-            position: absolute;
-            display: block;
-
-            height: 45px;
-            width: 95%;
-          }
-
-          .box-center {
-            top: 10px;
-            left: 10px;
-
-            width: 95%;
-
-            border: 1px solid $lightest_gray;
-
-            span {
-              border: 0px solid $teal;
-            }
-          }
-
-          .box-left, .box-right {
-            z-index: 1;
-
-            border: 1px solid $teal;
-            background: $white;
-          }
-
-          .box-left {
-            top: 0;
-          }
-
-          .box-right {
-            top: 20px;
-            left: 20px;
-          }
-        }
-      }
-    }
-
-    .project-tags {
-      margin-top: -5px;
-
-      font-family: $sans-serif;
-      font-size: 14px;
-      line-height: 10px;
-      letter-spacing: 0.1px;
-      color: $light-gray;
-
-      @include media ($desktop) {
-        line-height: 24px;
-      }
-    }
-
-    /////* SECTIONS */////
-
     .intro-container {
       @include row();
 
@@ -193,16 +14,13 @@
       }
 
       h5 {
+        font-size: 0.875em;
         color: $black;
-      }
-
-      p {
-        color: $dark-gray;
       }
 
       a {
         text-decoration: none;
-        color: $teal;
+        color: $magenta;
       }
 
       @include media ($desktop) {
@@ -246,11 +64,13 @@
               @include span-columns(1.5 of 10);
 
               text-align: right;
+              font-size: 13px;
               line-height: 2px;
             }
 
             p {
               @include span-columns(5.5 of 10);
+              clear: none;
             }
           }
         }
@@ -260,19 +80,9 @@
     .new-section {
       @include row();
 
+      margin-top: 5em;
+
       .section-container {
-
-        .drop-cap {
-          float: left;
-
-          padding: 2px 10px 0 0;
-
-          font-family: $serif;
-          font-size: 65px;
-          line-height: 62px;
-          color: $dark-gray;
-        }
-
         ul {
           font-family: $sans-serif;
           font-size: 16px;
@@ -282,33 +92,11 @@
 
           list-style-type: decimal;
         }
-
-        button {
-          width: 100%;
-          padding: em(15px) 70px;
-
-          background: $magenta;
-          border: 1px solid $magenta;
-          border-radius: 4px;
-
-          font-family: $sans-serif;
-          font-size: 16px;
-          line-height: 17px;
-          letter-spacing: 0.5px;
-          color: $white;
-          text-decoration: none;
-
-          &:hover {
-            background: $white;
-
-            color: $magenta;
-
-            cursor: pointer;
-          }
-        }
       }
 
       @include media ($desktop) {
+        margin-top: 0;
+
         .section-container {
           @include span-columns(12);
 

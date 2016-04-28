@@ -1727,133 +1727,6 @@ header {
 
 .about {
   margin: 0 0; }
-  .about .content-container h1 {
-    font-family: "Petrona", Georgia, serif;
-    font-size: 38px;
-    font-weight: 100;
-    line-height: 43px;
-    color: #0FA3B1; }
-  .about .content-container h2, .about .content-container h5, .about .content-container p {
-    font-family: "Muli", Helvetica, sans-serif;
-    font-weight: 100; }
-  .about .content-container h2 {
-    font-size: 21px;
-    line-height: 31px;
-    color: #2E3839; }
-  .about .content-container h5 {
-    margin: 30px 0 -5px 0;
-    font-size: 13px;
-    line-height: 16px;
-    color: #2E3839;
-    text-transform: uppercase; }
-  .about .content-container p {
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: #7F7F7F; }
-  .about .content-container img {
-    width: 100%; }
-  .about .content-container section {
-    margin-bottom: 100px; }
-  .about .content-container .wrapper {
-    max-width: 53.125em;
-    margin-left: auto;
-    margin-right: auto; }
-    .about .content-container .wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-  .about .content-container .border {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 50px;
-    position: relative;
-    height: 65px;
-    font-family: "Petrona", Georgia, serif;
-    font-size: 21px;
-    line-height: 0px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #0FA3B1; }
-    .about .content-container .border:last-child {
-      margin-right: 0; }
-    .about .content-container .border .line {
-      position: absolute;
-      width: 100%;
-      top: 34%;
-      border-bottom: 1px solid #0FA3B1; }
-    .about .content-container .border .box-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%;
-      margin-right: 0;
-      position: absolute; }
-      .about .content-container .border .box-container:last-child {
-        margin-right: 0; }
-      .about .content-container .border .box-container .box-center {
-        position: absolute;
-        display: block;
-        z-index: 2;
-        height: 45px;
-        width: 95%;
-        background: #FFFFFF;
-        line-height: 1.2em;
-        text-align: center; }
-        .about .content-container .border .box-container .box-center span {
-          position: absolute;
-          margin: 0;
-          padding: 0.5em;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          min-width: 100%;
-          transform: translate(-50%, -50%);
-          border: 1px solid #0FA3B1; }
-      .about .content-container .border .box-container .box-left, .about .content-container .border .box-container .box-right {
-        display: none; }
-    @media screen and (min-width: 1000px) {
-      .about .content-container .border {
-        font-size: 28px; }
-        .about .content-container .border .line {
-          top: 50%;
-          height: 1px;
-          background: -webkit-gradient(linear, 0 0, 100% 0, from(#EAEAEA), to(#EAEAEA), color-stop(50%, #BABABA));
-          border-bottom: 0px solid #0FA3B1; }
-        .about .content-container .border .box-container .box-left, .about .content-container .border .box-container .box-right {
-          position: absolute;
-          display: block;
-          height: 45px;
-          width: 95%; }
-        .about .content-container .border .box-container .box-center {
-          top: 10px;
-          left: 10px;
-          width: 95%;
-          border: 1px solid #EAEAEA; }
-          .about .content-container .border .box-container .box-center span {
-            border: 0px solid #0FA3B1; }
-        .about .content-container .border .box-container .box-left, .about .content-container .border .box-container .box-right {
-          z-index: 1;
-          border: 1px solid #0FA3B1;
-          background: #FFFFFF; }
-        .about .content-container .border .box-container .box-left {
-          top: 0; }
-        .about .content-container .border .box-container .box-right {
-          top: 20px;
-          left: 20px; } }
-  .about .content-container .project-tags {
-    margin-top: -5px;
-    font-family: "Muli", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 10px;
-    letter-spacing: 0.1px;
-    color: #BABABA; }
-    @media screen and (min-width: 1000px) {
-      .about .content-container .project-tags {
-        line-height: 24px; } }
   .about .content-container .intro-container {
     display: block;
     padding: 20px 0 70px 0;
@@ -1866,12 +1739,11 @@ header {
     .about .content-container .intro-container h1, .about .content-container .intro-container h2 {
       text-align: center; }
     .about .content-container .intro-container h5 {
+      font-size: 0.875em;
       color: #2E3839; }
-    .about .content-container .intro-container p {
-      color: #7F7F7F; }
     .about .content-container .intro-container a {
       text-decoration: none;
-      color: #0FA3B1; }
+      color: #E150A5; }
     @media screen and (min-width: 1000px) {
       .about .content-container .intro-container .intro-header {
         padding-top: 60px; }
@@ -1919,6 +1791,7 @@ header {
           margin-right: 2.84259%;
           width: 12.5838%;
           text-align: right;
+          font-size: 13px;
           line-height: 2px; }
           .about .content-container .intro-container .bio-container .bio-tldr h5:last-child {
             margin-right: 0; }
@@ -1926,22 +1799,17 @@ header {
           float: left;
           display: block;
           margin-right: 2.84259%;
-          width: 53.72084%; }
+          width: 53.72084%;
+          clear: none; }
           .about .content-container .intro-container .bio-container .bio-tldr p:last-child {
             margin-right: 0; } }
   .about .content-container .new-section {
-    display: block; }
+    display: block;
+    margin-top: 5em; }
     .about .content-container .new-section::after {
       clear: both;
       content: "";
       display: table; }
-    .about .content-container .new-section .section-container .drop-cap {
-      float: left;
-      padding: 2px 10px 0 0;
-      font-family: "Petrona", Georgia, serif;
-      font-size: 65px;
-      line-height: 62px;
-      color: #7F7F7F; }
     .about .content-container .new-section .section-container ul {
       font-family: "Muli", Helvetica, sans-serif;
       font-size: 16px;
@@ -1949,57 +1817,43 @@ header {
       letter-spacing: 0.1px;
       color: #7F7F7F;
       list-style-type: decimal; }
-    .about .content-container .new-section .section-container button {
-      width: 100%;
-      padding: 0.9375em 70px;
-      background: #E150A5;
-      border: 1px solid #E150A5;
-      border-radius: 4px;
-      font-family: "Muli", Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 17px;
-      letter-spacing: 0.5px;
-      color: #FFFFFF;
-      text-decoration: none; }
-      .about .content-container .new-section .section-container button:hover {
-        background: #FFFFFF;
-        color: #E150A5;
-        cursor: pointer; }
     @media screen and (min-width: 1000px) {
-      .about .content-container .new-section .section-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .about .content-container .new-section .section-container:last-child {
-          margin-right: 0; }
-        .about .content-container .new-section .section-container .writeup-description p, .about .content-container .new-section .section-container .writeup-description ul {
+      .about .content-container .new-section {
+        margin-top: 0; }
+        .about .content-container .new-section .section-container {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 48.82117%;
-          margin-left: 25.58941%; }
-          .about .content-container .new-section .section-container .writeup-description p:last-child, .about .content-container .new-section .section-container .writeup-description ul:last-child {
+          width: 100%; }
+          .about .content-container .new-section .section-container:last-child {
             margin-right: 0; }
-        .about .content-container .new-section .section-container .writeup-description h2 {
-          line-height: 0; }
-        .about .content-container .new-section .section-container .writeup-description img {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 65.88078%;
-          margin-left: 17.05961%; }
-          .about .content-container .new-section .section-container .writeup-description img:last-child {
-            margin-right: 0; }
-        .about .content-container .new-section .section-container button {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-left: 59.70863%;
-          padding: 15px 50px; }
-          .about .content-container .new-section .section-container button:last-child {
-            margin-right: 0; } }
+          .about .content-container .new-section .section-container .writeup-description p, .about .content-container .new-section .section-container .writeup-description ul {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-left: 25.58941%; }
+            .about .content-container .new-section .section-container .writeup-description p:last-child, .about .content-container .new-section .section-container .writeup-description ul:last-child {
+              margin-right: 0; }
+          .about .content-container .new-section .section-container .writeup-description h2 {
+            line-height: 0; }
+          .about .content-container .new-section .section-container .writeup-description img {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 65.88078%;
+            margin-left: 17.05961%; }
+            .about .content-container .new-section .section-container .writeup-description img:last-child {
+              margin-right: 0; }
+          .about .content-container .new-section .section-container button {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%;
+            margin-left: 59.70863%;
+            padding: 15px 50px; }
+            .about .content-container .new-section .section-container button:last-child {
+              margin-right: 0; } }
   .about .content-container .story .event-container {
     display: block; }
     .about .content-container .story .event-container::after {
