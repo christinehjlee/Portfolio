@@ -1,0 +1,50 @@
+.nico {
+  .content-container {
+    .case-overview {
+      background-image: url("../images/nico/nico-bg.jpg");
+
+      h5 {
+        color: $nico;
+      }
+
+      .project-tags, .read-time {
+        color: $lightest-gray;
+      }
+    }
+
+    .case-writeup {
+      @include media ($desktop) {
+
+        .personas {
+          .catarina, .brandon {
+            @include span-columns(5 of 12);
+
+            h2 {
+              text-align: center;
+            }
+          }
+
+          .brandon {
+            @include shift(0.5);
+          }
+        }
+      }
+    }
+
+    .personas {
+      margin: -5em 0 5em 0;
+
+      @include media ($desktop) {
+        margin: -33px 0 70px 0;
+      }
+    }
+
+    .other-works {
+      @include media ($desktop) {
+        img {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

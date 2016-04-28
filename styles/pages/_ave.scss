@@ -1,0 +1,135 @@
+.ave {
+  .content-container {
+    h1 {
+      margin-bottom: 0;
+      color: $header-gray;
+    }
+
+    a {
+      color: $magenta;
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    em {
+      color: $em-gray;
+    }
+
+    /* Sections */
+
+    .case-overview {
+      h1 {
+        margin-bottom: 0.75em;
+
+        font-family: $sans-serif;
+        text-align: center;
+      }
+
+      p {
+        color: $header-gray;
+      }
+
+      .logo {
+        @include span-columns(5);
+        @include shift(3.5);
+      }
+
+      .read-time {
+        color: $header-gray;
+      }
+
+      @include media ($desktop) {
+        h1 {
+          margin-bottom: 0;
+        }
+
+        .case-header {
+          .logo {
+            @include span-columns(2);
+            @include shift(5);
+          }
+
+          .read-time {
+            color: $header-gray;
+          }
+        }
+      }
+    }
+
+    .case-writeup {
+      .section-container {
+        h2 {
+          margin-top: 1.5em;
+          font-size: 2em;
+        }
+
+        ul, ol {
+          @include row();
+          font-family: $sans-serif;
+        }
+
+        ul {
+          list-style-type: disc;
+
+          ul {
+            list-style-type: circle;
+          }
+        }
+      }
+
+      @include media ($desktop) {
+        .section-container {
+          .writeup-description {
+            h2 {
+              @include span-columns(6 of 12);
+              @include shift(3);
+
+              margin-top: 20px;
+              font-size: 21px;
+              line-height: 0;
+            }
+
+            ul, ol {
+              @include span-columns(6 of 12);
+              @include shift(3);
+            }
+
+            img {
+              @include span-columns(10 of 12);
+              @include shift(1);
+
+              margin-bottom: 40px;
+              box-shadow: 0px 0px 4px 0px #D7DBDE;
+
+              &.manager-email-v1, &.manager-email-v2 {
+                @include span-columns(8 of 12);
+                @include shift(2);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .other-works {
+      p, .project-tags {
+        font-size: 1.3em;
+      }
+
+      @include media ($desktop) {
+        .project-tags {
+          font-size: 14px;
+          line-height: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}
