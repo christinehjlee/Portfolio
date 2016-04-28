@@ -1155,147 +1155,149 @@ you can use the generic selector below, but it's slower:
 .glyph .fs1 {
   font-size: 2em; }
 
-.homepage {
-  margin: 0 0; }
-  .homepage .top-bar {
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.2em;
+  background-color: #0FA3B1; }
+
+header {
+  padding: 2.5em 3em;
+  background: #FFFFFF; }
+  header .title {
+    font-family: "Petrona", Georgia, serif;
+    font-size: 3em;
+    line-height: 24px;
+    letter-spacing: 1.5px; }
+    header .title a {
+      color: #BABABA;
+      text-decoration: none; }
+    header .title .split {
+      color: #0FA3B1; }
+    @media screen and (min-width: 1000px) {
+      header .title {
+        font-size: 21px; } }
+  header .hamburger {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0.2em;
-    background-color: #0FA3B1; }
-  .homepage header {
-    padding: 2.5em 3em;
-    background: #FFFFFF; }
-    .homepage header .title {
-      font-family: "Petrona", Georgia, serif;
-      font-size: 3em;
-      line-height: 24px;
-      letter-spacing: 1.5px; }
-      .homepage header .title a {
-        color: #BABABA;
-        text-decoration: none; }
-      .homepage header .title .split {
-        color: #0FA3B1; }
-      @media screen and (min-width: 1000px) {
-        .homepage header .title {
-          font-size: 21px; } }
-    .homepage header .hamburger {
+    top: 2.5em;
+    right: 3em;
+    width: 3em;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    header .hamburger span {
+      display: block;
       position: absolute;
-      top: 2.5em;
-      right: 3em;
-      width: 3em;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      background: #0FA3B1;
+      opacity: 1;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer; }
-      .homepage header .hamburger span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        background: #0FA3B1;
-        opacity: 1;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out; }
-        .homepage header .hamburger span:nth-child(1) {
-          top: 0em; }
-        .homepage header .hamburger span:nth-child(2), .homepage header .hamburger span:nth-child(3) {
-          top: 1em; }
-        .homepage header .hamburger span:nth-child(4) {
-          top: 2em; }
-      .homepage header .hamburger.open span:nth-child(1) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-      .homepage header .hamburger.open span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
-      .homepage header .hamburger.open span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      .homepage header .hamburger.open span:nth-child(4) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-    .homepage header .mobile-menu {
-      display: none;
-      margin: 5em auto; }
-      .homepage header .mobile-menu ul {
-        list-style-type: none; }
-        .homepage header .mobile-menu ul li {
-          padding: 20px; }
-          .homepage header .mobile-menu ul li a {
-            font-family: "Petrona", Georgia, serif;
-            font-size: 6em;
-            color: #0FA3B1;
-            line-height: 1.5em;
-            text-decoration: none; }
-    .homepage header nav {
-      display: none; }
-    .homepage header .line {
-      position: absolute;
-      top: 7.5em;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background-color: #EAEAEA; }
-    @media screen and (min-width: 1000px) {
-      .homepage header {
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+      header .hamburger span:nth-child(1) {
+        top: 0em; }
+      header .hamburger span:nth-child(2), header .hamburger span:nth-child(3) {
+        top: 1em; }
+      header .hamburger span:nth-child(4) {
+        top: 2em; }
+    header .hamburger.open span:nth-child(1) {
+      top: 7px;
+      left: 50%;
+      width: 0%; }
+    header .hamburger.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    header .hamburger.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    header .hamburger.open span:nth-child(4) {
+      top: 7px;
+      left: 50%;
+      width: 0%; }
+  header .mobile-menu {
+    display: none;
+    margin: 5em auto; }
+    header .mobile-menu ul {
+      list-style-type: none; }
+      header .mobile-menu ul li {
+        padding: 20px; }
+        header .mobile-menu ul li a {
+          font-family: "Petrona", Georgia, serif;
+          font-size: 6em;
+          color: #0FA3B1;
+          line-height: 1.5em;
+          text-decoration: none; }
+  header nav {
+    display: none; }
+  header .line {
+    position: absolute;
+    top: 7.5em;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #EAEAEA; }
+  @media screen and (min-width: 1000px) {
+    header {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 1em; }
+      header:last-child {
+        margin-right: 0; }
+      header .title {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        padding: 1em; }
-        .homepage header:last-child {
+        width: 31.76157%; }
+        header .title:last-child {
           margin-right: 0; }
-        .homepage header .title {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .homepage header .title:last-child {
-            margin-right: 0; }
-        .homepage header .nav-mobile {
-          display: none; }
-        .homepage header nav {
-          display: block; }
-          .homepage header nav ul {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            list-style-type: none;
-            line-height: 24px;
-            text-align: right; }
-            .homepage header nav ul li {
-              float: right; }
-              .homepage header nav ul li a {
-                display: block;
-                padding-left: 40px;
-                font-family: "Muli", Helvetica, sans-serif;
-                font-size: 16px;
-                color: #BABABA;
-                text-decoration: none; }
-                .homepage header nav ul li a:hover {
-                  color: #0FA3B1; }
-        .homepage header .line {
-          top: 55px; } }
+      header .nav-mobile {
+        display: none; }
+      header nav {
+        display: block; }
+        header nav ul {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          list-style-type: none;
+          line-height: 24px;
+          text-align: right; }
+          header nav ul li {
+            float: right; }
+            header nav ul li a {
+              display: block;
+              padding-left: 40px;
+              font-family: "Muli", Helvetica, sans-serif;
+              font-size: 16px;
+              color: #BABABA;
+              text-decoration: none; }
+              header nav ul li a:hover {
+                color: #0FA3B1; }
+      header .line {
+        top: 55px; } }
+
+.homepage {
+  margin: 0 0; }
   .homepage .content-container h1 {
     font-family: "Petrona", Georgia, serif;
     font-size: 5em;
@@ -1658,138 +1660,6 @@ you can use the generic selector below, but it's slower:
 
 .case-studies {
   margin: 0 0; }
-  .case-studies .top-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #0FA3B1; }
-  .case-studies header {
-    padding: 16px 1em 15px 1em; }
-    .case-studies header .title {
-      font-family: "Petrona", Georgia, serif;
-      font-size: 21px;
-      line-height: 24px;
-      letter-spacing: 1.5px; }
-      .case-studies header .title a {
-        color: #BABABA;
-        text-decoration: none; }
-      .case-studies header .title .split {
-        color: #0FA3B1; }
-    .case-studies header .hamburger {
-      position: absolute;
-      top: 20px;
-      right: 5px;
-      width: 20px;
-      height: 24px;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer; }
-      .case-studies header .hamburger span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        background: #0FA3B1;
-        opacity: 1;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out; }
-        .case-studies header .hamburger span:nth-child(1) {
-          top: 0px; }
-        .case-studies header .hamburger span:nth-child(2), .case-studies header .hamburger span:nth-child(3) {
-          top: 7px; }
-        .case-studies header .hamburger span:nth-child(4) {
-          top: 14px; }
-      .case-studies header .hamburger.open span:nth-child(1) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-      .case-studies header .hamburger.open span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
-      .case-studies header .hamburger.open span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      .case-studies header .hamburger.open span:nth-child(4) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-    .case-studies header .mobile-menu {
-      display: none;
-      margin: 0 auto; }
-      .case-studies header .mobile-menu ul {
-        list-style-type: none; }
-        .case-studies header .mobile-menu ul li {
-          padding: 20px; }
-          .case-studies header .mobile-menu ul li a {
-            font-family: "Petrona", Georgia, serif;
-            font-size: 38px;
-            color: #0FA3B1;
-            text-decoration: none; }
-    .case-studies header nav {
-      display: none; }
-    .case-studies header .line {
-      position: absolute;
-      top: 55px;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background-color: #6C7074; }
-    @media screen and (min-width: 1000px) {
-      .case-studies header {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .case-studies header:last-child {
-          margin-right: 0; }
-        .case-studies header .title {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .case-studies header .title:last-child {
-            margin-right: 0; }
-        .case-studies header .nav-mobile {
-          display: none; }
-        .case-studies header nav {
-          display: block; }
-          .case-studies header nav ul {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            list-style-type: none;
-            line-height: 24px;
-            text-align: right; }
-            .case-studies header nav ul li {
-              float: right; }
-              .case-studies header nav ul li a {
-                display: block;
-                padding-left: 40px;
-                font-family: "Muli", Helvetica, sans-serif;
-                font-size: 16px;
-                color: #BABABA;
-                text-decoration: none; }
-                .case-studies header nav ul li a:hover {
-                  color: #0FA3B1; } }
   .case-studies .content-container h1 {
     font-family: "Petrona", Georgia, serif;
     font-size: 38px;
@@ -2225,139 +2095,6 @@ you can use the generic selector below, but it's slower:
 
 .about {
   margin: 0 0; }
-  .about .top-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #0FA3B1; }
-  .about header {
-    padding: 16px 1em 15px 1em;
-    background: #FFFFFF; }
-    .about header .title {
-      font-family: "Petrona", Georgia, serif;
-      font-size: 21px;
-      line-height: 24px;
-      letter-spacing: 1.5px; }
-      .about header .title a {
-        color: #BABABA;
-        text-decoration: none; }
-      .about header .title .split {
-        color: #0FA3B1; }
-    .about header .hamburger {
-      position: absolute;
-      top: 20px;
-      right: 5px;
-      width: 20px;
-      height: 24px;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer; }
-      .about header .hamburger span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        background: #0FA3B1;
-        opacity: 1;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out; }
-        .about header .hamburger span:nth-child(1) {
-          top: 0px; }
-        .about header .hamburger span:nth-child(2), .about header .hamburger span:nth-child(3) {
-          top: 7px; }
-        .about header .hamburger span:nth-child(4) {
-          top: 14px; }
-      .about header .hamburger.open span:nth-child(1) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-      .about header .hamburger.open span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
-      .about header .hamburger.open span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      .about header .hamburger.open span:nth-child(4) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-    .about header .mobile-menu {
-      display: none;
-      margin: 0 auto; }
-      .about header .mobile-menu ul {
-        list-style-type: none; }
-        .about header .mobile-menu ul li {
-          padding: 20px; }
-          .about header .mobile-menu ul li a {
-            font-family: "Petrona", Georgia, serif;
-            font-size: 38px;
-            color: #0FA3B1;
-            text-decoration: none; }
-    .about header nav {
-      display: none; }
-    .about header .line {
-      position: absolute;
-      top: 55px;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background-color: #EAEAEA; }
-    @media screen and (min-width: 1000px) {
-      .about header {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .about header:last-child {
-          margin-right: 0; }
-        .about header .title {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .about header .title:last-child {
-            margin-right: 0; }
-        .about header .nav-mobile {
-          display: none; }
-        .about header nav {
-          display: block; }
-          .about header nav ul {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            list-style-type: none;
-            line-height: 24px;
-            text-align: right; }
-            .about header nav ul li {
-              float: right; }
-              .about header nav ul li a {
-                display: block;
-                padding-left: 40px;
-                font-family: "Muli", Helvetica, sans-serif;
-                font-size: 16px;
-                color: #BABABA;
-                text-decoration: none; }
-                .about header nav ul li a:hover {
-                  color: #0FA3B1; } }
   .about .content-container h1 {
     font-family: "Petrona", Georgia, serif;
     font-size: 38px;
@@ -3152,139 +2889,6 @@ you can use the generic selector below, but it's slower:
 
 .resume {
   margin: 0 0; }
-  .resume .top-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0.2em;
-    background-color: #0FA3B1; }
-  .resume header {
-    padding: 1em;
-    background: #FFFFFF; }
-    .resume header .title {
-      font-family: "Petrona", Georgia, serif;
-      font-size: 21px;
-      line-height: 24px;
-      letter-spacing: 1.5px; }
-      .resume header .title a {
-        color: #BABABA;
-        text-decoration: none; }
-      .resume header .title .split {
-        color: #0FA3B1; }
-    .resume header .hamburger {
-      position: absolute;
-      top: 20px;
-      right: 5px;
-      width: 20px;
-      height: 24px;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer; }
-      .resume header .hamburger span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        background: #0FA3B1;
-        opacity: 1;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out; }
-        .resume header .hamburger span:nth-child(1) {
-          top: 0px; }
-        .resume header .hamburger span:nth-child(2), .resume header .hamburger span:nth-child(3) {
-          top: 7px; }
-        .resume header .hamburger span:nth-child(4) {
-          top: 14px; }
-      .resume header .hamburger.open span:nth-child(1) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-      .resume header .hamburger.open span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
-      .resume header .hamburger.open span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      .resume header .hamburger.open span:nth-child(4) {
-        top: 7px;
-        left: 50%;
-        width: 0%; }
-    .resume header .mobile-menu {
-      display: none;
-      margin: 0 auto; }
-      .resume header .mobile-menu ul {
-        list-style-type: none; }
-        .resume header .mobile-menu ul li {
-          padding: 20px; }
-          .resume header .mobile-menu ul li a {
-            font-family: "Petrona", Georgia, serif;
-            font-size: 38px;
-            color: #0FA3B1;
-            text-decoration: none; }
-    .resume header nav {
-      display: none; }
-    .resume header .line {
-      position: absolute;
-      top: 55px;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background-color: #EAEAEA; }
-    @media screen and (min-width: 1000px) {
-      .resume header {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .resume header:last-child {
-          margin-right: 0; }
-        .resume header .title {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .resume header .title:last-child {
-            margin-right: 0; }
-        .resume header .nav-mobile {
-          display: none; }
-        .resume header nav {
-          display: block; }
-          .resume header nav ul {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            list-style-type: none;
-            line-height: 24px;
-            text-align: right; }
-            .resume header nav ul li {
-              float: right; }
-              .resume header nav ul li a {
-                display: block;
-                padding-left: 40px;
-                font-family: "Muli", Helvetica, sans-serif;
-                font-size: 16px;
-                color: #BABABA;
-                text-decoration: none; }
-                .resume header nav ul li a:hover {
-                  color: #0FA3B1; } }
   .resume .content-container h1 {
     margin: 6.4% 0% 0% 0%;
     font-family: "Petrona", Georgia, serif;
