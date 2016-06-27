@@ -1,4 +1,4 @@
-.resume {
+.resume { 
   margin: 0 0;
 
   /////* CONTENT */////
@@ -66,7 +66,7 @@
       }
     }
 
-    .role-1, .role-2 {
+    .role-1, .role-2, .role-3 {
       margin-bottom: 3em;
 
       @include media ($desktop) {
@@ -74,7 +74,7 @@
       }
     }
 
-    .role-2 {
+    .role-3 {
       margin-top: 3em;
 
       @include media ($desktop) {
