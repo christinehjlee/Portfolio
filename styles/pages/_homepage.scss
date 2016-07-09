@@ -40,6 +40,15 @@
           h1 {
             font-size: 2.375em;
           }
+
+          a {
+            color: $magenta;
+            text-decoration: none;
+
+            &:hover {
+              color: $black;
+            }
+          }
         }
       }
     }
